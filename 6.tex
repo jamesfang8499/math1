@@ -1,0 +1,2310 @@
+\chapter{分式与根式}
+\section{分式与分式方程}
+\subsection{分式与分式的基本性质}
+我们已经知道，两个整数$m,n$的比，是一个有
+理数$\frac{m}{n},\quad (n\ne 0)$. 同样，两个多项式$f(x)$和$g(x)$的比$\frac{f(x)}{g(x)},\quad (g(x)\ne 0)$就叫做\textbf{有理式}。
+
+在有理式$\frac{f(x)}{g(x)},\quad (g(x)\ne 0)$中，如果$g(x)$的次数为0，那么，有理式
+$\frac{f(x)}{g(x)}$就是\textbf{整式}，也就是我们已
+经学过的多项式；如果$g(x)$的次数高于0次，那么，
+有理式$\frac{f(x)}{g(x)}$就叫做\textbf{分式}。
+
+例如：$\frac{1}{x}$, $\frac{x+5}{x^2-9}$, $\frac{2x^2-3x+1}{x-3}$, $\frac{x^2+y^2}{2x+y}$等都是分式。$\frac{(x^2+1)^2}{x^2+1}$虽然恒等于整式$x^2+1$，而从形式上仍然叫做分式。
+
+但是，像$\frac{x^2-1}{1}$、$\frac{3x+1}{2}$等都是整式，而这些整式也就是多项式：$x^2-1$，$\frac{3}{2}x+\frac{1}{2}$等。
+
+对于整式来说，由于其中的未知数决不会出现在分母当中，因而未知数可以取一切实数值；但对于分式来说，由于它的分母中必定含有未知数，因而未知数的取值，就要求限制在“使分母不等于零的实数值”的范围内。例如：
+
+在分式$\frac{2x+3}{x^2-3}$中，未知数$x$只允许取“$x^2-3\ne 0$”的值，即
+$x\ne \pm\sqrt{3}$
+的一切实数值。也就是说，在这个分式中的未知数可以取除“$\pm\sqrt{3}$”以外的其它任何实数值。
+
+在分式中，分子的次数如果低于分母的次数，就叫做\textbf{真分式}；分子的次数如果不低于分母的次数，就
+叫做\textbf{假分式}。例如，$\frac{1}{x-3}$，$\frac{x+y}{2x^2+y}$等都是真分式；$\frac{2x+4}{x-3}$，$\frac{x^2+4x+6}{x+3}$，$\frac{x^2+y^2}{2x+y}$等都是假分式。
+
+\subsubsection{分式的基本性质}
+
+\begin{enumerate}
+\item 分式的分子、分母同乘以一个非零多项式，
+分式的值不变。用式子表示就是：
+
+如果$h(x)\ne 0$，那么$\frac{f(x)}{g(x)}=\frac{f(x)\cdot h(x)}{g(x)\cdot h(x)}$。
+
+例如：$\frac{x}{x-3}=\frac{x(x-2)}{(x-3)(x-2)}\quad (x\ne 3,\; x\ne 2)$
+
+\item 分式的分子、分母同除以一个非零多项式。
+分式的值不变。用式子表示就是：
+
+如果$h(x)\ne 0$，那么$\frac{f(x)}{g(x)}=\frac{f(x)\div h(x)}{g(x)\div h(x)}$。
+
+例如：$\frac{x^2(x^2+1)}{x^2+1}=x^2$
+\end{enumerate}
+
+利用以上两个基本性质，可以进行分式的约分和通分。
+
+\subsubsection{约分}
+
+如果一个分式的分子、分母有公因式时，可以类似于分数的约分，把最高公因式约去，使分式化简。分式的分子与分母没有非零次的公因式时，叫做\textbf{不可约分式（既约分式）}。不可约分式是最简分式，约分就是化分式为最简分式。
+
+\begin{example}
+    约简
+\begin{enumerate}
+    \item $\frac{18 a^{12} x^{3} y^{2}}{12 a^{3} b^{2} x^{5} z}$
+    \item $\frac{8 a^{2}-6 a^{5} b}{16 a^{20}}$
+    \item $\frac{32(x-2 y)^{2}(-x+y)}{24(2 y-x)^{2}(x-y)}$
+    \item $\frac{m^{2}-4 n^{2}}{-m^{2}-4 m n-4 n^{2}}$
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item $\frac{18 a^{12} x^{3} y^{2}}{12 a^{3} b^{2} x^{5} z}=\frac{3 a^{8} y^{2}}{2 b^{3} x^{2} z}$
+    \item $\frac{8 a^{2}-6 a^{5} b}{16 a^{20}}  =\frac{2 a^{2}\left(4-3 a^{3} b\right)}{16 a^{20}} = \frac{4-3 a^{3} b}{8 a^{18}} $
+    \item $ \frac{32(x-2 y)^{2}(-x+y)}{24(2 y-x)^{2}(x-y)}  =\frac{-4(x-2 y)^{2}(x-y)}{3(x-2 y)^{2}(x-y)}=-\frac{4}{3}$
+    \item \[\begin{split}
+        \frac{m^{2}-4 n^{2}}{-m^{2}-4 m n-4 n^{2}} &=
+    \frac{m^{2}-4 n^{2}}{-\left(m^{2}+4 m n+4 n^{2}\right)}\\&=-\frac{(m-2n)(m+2n)}{(m+2n)^2}\\&=-\frac{m-2n}{m+2n}
+    \end{split} \]
+\end{enumerate}
+\end{solution}
+
+\begin{example}
+    约简 $\frac{\poly{1,-2,0,1,-2}}{\poly{1,0,1,0,1}}$
+\end{example}
+
+\begin{solution}
+    用辗转相除法求得：
+\[(\poly{1,-2,0,1,-2}, \poly{1,0,1,0,1})=\poly{1,-1,1}\]
+用除法求得
+\[\begin{split}
+    \poly{1,-2,0,1,-2}&=(\poly{1,-1,1})(\poly{1,-1,-2})\\
+    \poly{1,0,1,0,1}&=(\poly{1,-1,1})(\poly{1,1,1})
+\end{split}\]
+$\therefore\quad \frac{\poly{1,-2,0,1,-2}}{\poly{1,0,1,0,1}}=\frac{\poly{1,-1,-2}}{\poly{1,1,1}}$
+\end{solution}
+
+\begin{example}
+    约简 $\frac{\poly{1,-6,11,-6}}{\poly{1,-8,11,-12}}$  
+\end{example}
+
+\begin{solution}
+用余式定理和综合除法求得：
+\[\begin{split}
+    \poly{1,-6,11,-6}&=(x-1)(x-3)(x-2)\\
+    \poly{1,-8,11,-12}&=(x-1)(x-3)(x-4)
+\end{split}\]
+$\therefore\quad \frac{\poly{1,-6,11,-6}}{\poly{1,-8,11,-12}}=\frac{x-2}{x-4}$
+\end{solution}
+
+下面我们和多项式一样，引入一个分式的符号：$F(x)$，它表示关于$x$的一个分式；同样，$G(x)$、
+$T(x)$可以分别表示$x$的另外的分式，例如：$F(x)=\frac{1}{x}$, $G(x)=\frac{2x}{x^2-3}$
+$T (x) =\frac{7x}{9-x}$等。很自然，在一个
+分式$F(x)$中，当$x=a$时，分式的值可以表示为$F (a)$。
+
+\begin{example}
+    先把下面的分式化简，再求它的值。
+    \[F(x)=\frac{-1-x^3}{2x^2-2x+2},\qquad \text{其中 } x=5 \]
+\end{example}
+\begin{solution}
+    \[\begin{split}
+        F(x)&=\frac{-(x^3+1)}{2(x^2-x+1)}\\
+&=-\frac{(x+1)(x^2-x+1)}{2(x^2-x+1)}=-\frac{x+1}{2}\\        
+F(5)&=-\frac{5+1}{2}=-3
+    \end{split}\]
+\end{solution}
+
+\begin{example}
+    约简$F(x)=\frac{2(x^2-1)(x-1)^2}{(1-x)^3(x+1)^2}$，问$x$取什么整数值时，能使$F(x)$的值是正整数。
+\end{example}
+
+\begin{solution}
+    \[\begin{split}
+        F(x)&=\frac{2(x+1)(x-1)(x-1)^2}{-(x-1)^3 (x+1)^2}\\
+        &=-\frac{2(x+1)(x-1)^3}{(x-1)^3(x+1)^2}\\
+        &=-\frac{2}{x+1}
+    \end{split}\]
+
+    要使$F(x)$的值是正整数，必须使$x+1=-1$或$x+1=-2$。
+
+    解得$x=-2$或$x=-3$。
+
+    $\therefore\quad $当$x=-2$或$x=-3$时，$F(x)$的值是正整数。
+\end{solution}
+
+由以上各例，可以得出：
+\begin{enumerate}
+    \item 约分应当约去分子与分母的最高公因式及分子与分母的系数的最大公约数；
+    \item 如果分式的分子、分母是多项式，可以把
+它们分别分解因式以后，再进行约分；对于高次多项式，应用余式定理或辗转相除法可以求得最高公因式。
+\end{enumerate} 
+
+\subsubsection{通分}
+
+对于分母不相同的几个分式，可将每个分式的分子、分母乘以适当的非零多项式，而使各分式的分母都相同，这种运算叫做\textbf{通分}。通分时应取原来每个分式的分母的最低公倍式与它们各系数的最小公倍数之积作公分母。
+
+\begin{example}
+    把$\frac{a}{2b},\quad \frac{b}{3a^2},\quad \frac{c}{4ab}$通分。
+\end{example}
+
+\begin{solution}
+$[2b,\; 3a^2,\; 4ab]=12a^2b$
+
+因此：
+\[\begin{split}
+    \frac{a}{2b}&=\frac{a\cdot 6a^2}{2b\cdot 6a^2}=\frac{6a^3}{12a^2b}\\
+    \frac{b}{3a^2}&=\frac{b\cdot 4b}{3a^2\cdot 4b}=\frac{4b^2}{12a^2b}\\
+     \frac{c}{4ab}&=\frac{c\cdot 3a}{4ab\cdot 3a}=\frac{3ac}{12a^2b}\\
+\end{split}\]
+\end{solution}
+
+\begin{example}
+    把$\frac{2x}{x^2-y^2}$，$\frac{3y}{x^3+y^3}$通分。
+\end{example}
+
+\begin{solution}
+    由于：
+    \[\begin{split}
+        x^2-y^2&=(x+y)(x-y)\\
+        x^3+y^3&=(x+y)(x^2-xy+y^2)
+    \end{split}\]
+
+$\therefore\quad [x^2-y^2, x^3+y^3]=(x-y)(x+y)(x^2-xy+y^2)$    
+
+因此：
+\[\begin{split}
+    \frac{2x}{x^2-y^2}&=\frac{2x(x^2-xy+y^2)}{(x-y)(x+y)(x^2-xy+y^2)}\\
+    \frac{3y}{x^3+y^3}&=\frac{3y(x-y)}{(x-y)(x+y)(x^2-xy+y^2)}
+\end{split}\]
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 不改变分式的值，使分子、分母的最高次幂的系数变为正数。
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\frac{-2 a}{-3 b}$
+\item  $\frac{7 x^{2}}{-9 y^{2}}$
+\item $ \frac{1-3 x^{2}+2 x}{7+7 x-x^{2}}$
+\item  $-\frac{-x^{2}-2 x^{4}+5}{x^{2}+2 x^{4}-5}$
+    \end{enumerate}
+\end{multicols}
+
+\item 
+\begin{enumerate}
+    \item 在什么条件下 $\quad \frac{3 a-6 b}{a+b}=0$
+    \item 在什么条件下 $\quad \frac{2 a-b}{b-a}=1$
+\end{enumerate}
+
+
+\item 约简下列各分式：
+\begin{enumerate}
+    \begin{multicols}{2}
+\item $\frac{8 x^{5} y^{7}}{-12 x^{3} y^{2}}$
+\item $\frac{32 p^{4} q^{3}}{16 p^{3} q^{4}}$
+\item  $\frac{-6 a^{2} b^{4}}{-3 a^{4} b^{5}}$
+\item  $\frac{15 m^{3} n^{4}(a+b)^{3}}{18 m^{2} n^{3}(a+b)^{4}}$
+\item  $\frac{2(3 x-2 y)}{3(2 y-3 x)}$
+\item  $\frac{-a b(x+y)^{3}(x-y)}{b(x+y)^{2}(y-x)^{2}}$
+\item  $\frac{3 a(x-y)^{3}}{15(y-x)^{3}}$
+\item  $\frac{(a-b)(b-c)(c-a)}{(b-a)(a-c)(c-b)}$
+    \end{multicols}
+\item $\frac{-(x+y-z)(x-y+z)(x-y-z)}{(y+z-x)(y-z+x)(y-z-x)}$
+\begin{multicols}{2}
+\item  $\frac{x^{2}-y^{2}}{x^{2}-2 x y+y^{2}}$
+\item  $\frac{1-x^{3}}{x^{2}-1}$
+\item  $\frac{x^{2}+9 x+14}{x^{2}+8 x+7}$,
+  \item  $\frac{9 a^{4}-1}{6 a^{2} b^{2}+2 b^{2}}$
+  \item  $\frac{a^{2}+b^{2}-c^{2}+2 a b}{a^{2}-b^{2}+c^{2}-2 a c}$
+  \item  $\frac{1+3 a^{2}-3 a-a^{3}}{\left(a^{2}-2 a+1\right)\left(2 a^{2}-3 a+1\right)}$
+  \item  $\frac{6 x^{3}+11 x^{2}-x-6}{12 x^{3}-8 x^{2}-27 x+18}$
+  \item  $\frac{x^{4}-2 x^{2}-3 x-2}{2 x^{4}-4 x^{3}+2 x-4}$
+  \item  $\frac{x^{3}+x^{2}-5 x-2}{x^{3}+2 x^{2}-2 x-1}$
+\end{multicols}
+\end{enumerate}
+
+
+\item  通分
+\begin{enumerate}
+    \begin{multicols}{2}
+\item  $\frac{z}{10 x^{2} y^{3}},\quad  \frac{y}{10 x^{3} z^{2}}$
+\item  $\frac{c}{-2 a b}, \quad \frac{b}{3 a c}, \quad \frac{a}{5 b c}$
+\item $\frac{4}{3 y},\quad  \frac{y-1}{-2 y^{2}},\quad  \frac{y^{2}-1}{4 y^{3}}$
+\item $\frac{3 b}{5 a},\quad  \frac{-2 c}{3 b},\quad  \frac{5 a}{-2 c}$
+\end{multicols}
+\item  $\frac{1}{(a-b)(a-c)},\quad  \frac{1}{(b-c)(b-a)}, \quad \frac{1}{(c-a)(c-b)}$
+\item $\frac{x}{x-y},\quad  \frac{y}{x+y}, \quad \frac{2}{y^{2}-x^{2}}$
+\item  $\frac{a-1}{a+1},\quad -\frac{1+a}{1-a}, \quad \frac{a^{2}+1}{a^{2}-1}$
+\item  $\frac{2 y-3}{2 y^{2}-3 y-2}, \quad \frac{y-2}{4 y^{2}+8 y+3}$
+\item  $\frac{1}{x^{3}-3 x^{2}+2 x}, \quad \frac{2}{x^{4}-x^{2}}, \quad \frac{-1}{x^{2}+x-2}$
+\item  $\frac{1}{x^{3}-6 x^{2}+11 x-6}, \quad \frac{1}{2 x^{3}-7 x^{2}+7 x-2}$
+\end{enumerate}
+
+\item 约简$F(x)=\frac{6x^2-12x+6}{x^3-3x^2+3x+1}$ 问$x$取何整数值，能使$F(x)$的值是正整数。
+\end{enumerate}
+\end{ex}
+
+\subsection{分式的运算}
+分式的四则运算法则和分数的四则运算法则是一样的。
+
+\subsubsection{分式的加减法}
+
+同分母的分式相加（减），只要把分子相加（减）作为分子，分母不变，并把结果化简；
+异分母的分式相加（减），就要先进行通分，再转化为同分母分式的相加（减）。
+
+列 1. 
+测 2 
+$m_{1}$ 原式 $\quad$ $\begin{aligned}=& \frac{2}{x}-\frac{x-3}{2(x+1)^{2}}+\frac{1}{2(x+1)}-\frac{2(2 x+1)}{x(x+1)^{2}} \\=& \frac{2 \cdot 2(x+1)^{2}}{2 x(x+1)^{2}}-\frac{(x-3) \cdot x}{2 x(x+1)^{2}}+\frac{x(x+1)}{2 x(x+1)^{2}} \\ &-\frac{2(2 x+1) \cdot 2}{2 x(x+1)^{2}} \end{aligned}$
+
+
+\begin{example}
+    计算: $\frac{x+3 y}{x^{2}-y^{2}}-\frac{x+2 y}{x^{2}-y^{2}}+\frac{2x-3y}{x^2-y^2}$
+\end{example}
+
+
+\begin{solution}
+    \[\begin{split}
+        \text{原式}&=\frac{x+3y-(x+2y)+(2x-3y)}{x^2-y^2}\\
+&=\frac{2x-2y}{x^2-y^2}=\frac{2(x-y)}{(x+y)(x-y)}\\
+        &=\frac{2}{x+y}
+    \end{split}\]
+\end{solution}
+
+
+\begin{example}
+    计算:
+$\frac{2}{x}-\frac{x-3}{2 x^{2}+4 x+2}+\frac{1}{2 x+2}-\frac{4 x+2}{x(x+1)^{2}}$
+\end{example}
+
+\begin{solution}
+\[\begin{split}
+    \text{原式}&= \frac{2}{x}-\frac{x-3}{2(x+1)^{2}}+\frac{1}{2(x+1)}-\frac{2(2 x+1)}{x(x+1)^{2}} \\
+    &= \frac{2 \cdot 2(x+1)^{2}}{2 x(x+1)^{2}}-\frac{(x-3) \cdot x}{2 x(x+1)^{2}}+\frac{x(x+1)}{2 x(x+1)^{2}}-\frac{2(2 x+1) \cdot 2}{2 x(x+1)^{2}} \\
+    &=\frac{4(x+1)^{2}-(x-3) x+x(x+1)-4(2 x+1)}{2 x(x+1)^{2}}\\
+&=\frac{4 x^{2}+4 x}{2 x(x+1)^{2}}=\frac{4 x(x+1)}{2 x(x+1)^{2}}=\frac{2}{x+1}
+\end{split}\]
+\end{solution}
+
+\begin{example}
+    化简：$\frac{1}{(a-b)(a-c)}+\frac{1}{(b-c)(b-a)}+\frac{1}{(c-a)(c-b)}$
+    \end{example}
+
+\begin{analyze}
+    $\because \quad a-c=-(c-a),\quad  b-a=-(a-b),\quad c-b=-(b-c)$,
+
+    $\therefore\quad (a-c,b-a,c-b)=(a-b)(b-c)(c-a)$.
+\end{analyze}
+
+\begin{solution}
+   \[\begin{split}
+    \text{原式}&=-\frac{1}{(a-b)(c-a)}-\frac{1}{(b-c)(a-b)}-\frac{1}{(c-a)(b-c)}\\
+    &=\frac{-(b-c)-(c-a)-(a-b)}{(a-b)(b-c)(c-a)}\\
+    &=\frac{-b+c-c+a-a+b}{(a-b)(b-c)(c-a)}\\
+    &=0     
+   \end{split}\] 
+\end{solution}
+
+\begin{example}
+    计算$\frac{a^3}{a-1}-a^2-a-1$
+\end{example}
+
+\begin{analyze}
+    $-a^2-a-1=-(a^2+a+1)$。一个分式和一个整式的代数和，可以把整式$a^2+a+1$当作
+    $\frac{a^2+a+1}{1}$。
+\end{analyze}
+
+\begin{solution}
+    \[\begin{split}
+        \text{原式}&=\frac{a^3}{a-1}-\frac{a^2+a+1}{1}   \\
+        &=  \frac{a^2}{a-1}-\frac{(a^2+a+1)(a-1)}{a-1}           \\
+        &=\frac{a^3-(a^3-1)}{a-1}\\
+        &=\frac{1}{a-1}
+    \end{split}\]
+\end{solution}
+
+
+\begin{example}
+计算：$\frac{x^2-1}{x^4+x^2-2x}+\frac{2x^2+3x-2}{2x^3+x^2+3x-2}$
+\end{example}
+
+\begin{analyze}
+由余式定理得$x-1$是第一个分式的分子、分母的公因式，将此分式约简：
+\[\frac{x^2-1}{x^4+x^2-2x}=\frac{(x+1)(x-1)}{(x-1)(x^3+x^2+2x)}=\frac{x+1}{x^3+x^2+2x}\]
+由余式定理得$2x-1$是第二个分式的分子、分母的公因式，将此分式约简：
+\[\frac{2x^2+3x-2}{2x^3+x^2+3x-2}=\frac{(x+2)(2x-1)}{(2x-1)(x^2+x+2)}=\frac{x+2}{x^2+x+2}\]
+\end{analyze}
+
+\begin{solution}
+\[\begin{split}
+    \text{原式}&=\frac{x+1}{x^3+x^2+2x}+ \frac{x+2}{x^2+x+2}  \\
+    &= \frac{x+1}{x(x^2+x+2)}+ \frac{x(x+2)}{x(x^2+x+2)}   \\
+    &=\frac{x^2+3x+1}{x(x^2+x+2)}
+\end{split}\] 
+\end{solution}
+
+\begin{example}
+    已知$a+b+c=0$，求证：$\frac{1}{b^2+c^2-a^2}+\frac{1}{c^2+a^2-b^2}+\frac{1}{a^2+b^2-c^2}=0$
+\end{example}
+
+\begin{analyze}
+利用已知条件$a+b+c=0$，使各个分母化简。
+\end{analyze}
+
+\begin{proof}
+由于：   
+\[\begin{split}
+    \frac{1}{b^2+c^2-a^2}&= \frac{1}{b^2+c^2-(b+c)^2}=-\frac{1}{2bc} \\
+    \frac{1}{c^2+a^2-b^2}&= \frac{1}{c^2+a^2-(c+a)^2}=-\frac{1}{2ac}  \\
+    \frac{1}{a^2+b^2-c^2}&=\frac{1}{a^2+b^2-(a+b)^2}=-\frac{1}{2ab}
+\end{split}\]
+因此：
+\[\begin{split}
+    &\quad \frac{1}{b^2+c^2-a^2}+\frac{1}{c^2+a^2-b^2}+\frac{1}{a^2+b^2-c^2}\\
+    &=-\frac{1}{2bc}-\frac{1}{2ac}-\frac{1}{2ab}\\
+&=-\frac{a+b+c}{2abc}=0
+\end{split}\]
+\end{proof}
+
+\begin{ex}
+\begin{enumerate}
+    \item 计算下列各式的值：
+  \begin{enumerate}
+\item $\frac{a^{2}-2 a+1}{a^{2}+a+1}-\frac{a^{2}+3 a-3}{a^{2}+a+1}+\frac{5 a-4}{a^{2}+a+1}$
+\begin{multicols}{2}
+    \item $\frac{1}{m^{4} n^{3}}+\frac{2}{m^{3} n^{4}}$
+    \item  $\frac{5 a}{6 b^{2} c}-\frac{7 b}{12 a c^{2}}+\frac{11 c}{8 a^{2} b}$
+    \item  $\frac{1}{2 a-b}+\frac{1}{2 a+b}$
+    \item  $\frac{2 x}{a-b}-\frac{x}{b-a}$
+    \item  $\frac{2}{x-y}-\frac{x+y}{(y-x)^{2}}$
+    \item  $a-b+\frac{2 b^{2}}{a+b}$
+    \item  $\frac{y^{3}}{x-y}+x^{2}+x y+y^{2}$
+\end{multicols}
+    
+  \end{enumerate}
+
+  \item 计算下列各式：
+\begin{enumerate}
+\item $\frac{1}{(x-3)(2-x)}+\frac{1}{(x-2)(3-x)}$
+    \item  $\frac{1}{x^{2}-3 x+2}+\frac{1}{x^{2}-5 x+6}+\frac{1}{4 x-x^{2}-3}$
+    \item  $\frac{(a+b)^{2}}{(a-b)(b-c)}+\frac{6 a b}{(b-a)(b-c)}-\frac{a^{2}+b^{2}}{(a-b)(c-b)}$
+    \item  $\frac{x^{2}-4}{x^{3}-3 x^{2}-x+c}-\frac{3 x^{2}-14 x-5}{3 x^{3}-2 x^{2}-10 x-3}$
+\end{enumerate}
+\end{enumerate}  
+\end{ex}
+
+\subsubsection{分式的乘法}
+
+两个分式相乘时，分子的乘积作为积的分子，分母的乘积作为积的分母，再把结果化简。
+即：
+\[\frac{f(x)}{g(x)}\cdot \frac{h(x)}{q(x)}=\frac{f(x)\cdot h(x)}{g(x)\cdot q(x)} \]
+
+
+\begin{example}
+    计算：$\frac{a^{2}-b^{2}}{a^{2}+a b+b^{2}} \times \frac{a-b}{a^{3}+b^{3}}$
+\end{example}
+
+
+\begin{solution}
+    \[\begin{split}
+    \text{原式}&=\frac{\left(a^{2}-b^{2}\right)(a-b)}{\left(a^{2}+a b+b^{2}\right)\left(a^{3}+b^{3}\right)}   \\
+    &=\frac{(a+b)(a-b)^{2}}{\left(a^{2}+a b+b^{2}\right)(a+b)\left(a^{2}-a b+b^{2}\right)}\\
+    &=\frac{(a-b)^{2}}{a^{4}+a^{2} b^{2}+b^{4}}\\
+\end{split}\]
+\end{solution}
+
+\begin{example}
+    计算：$\left(x y^{2}-2 x y+x\right) \cdot \frac{y^{3}+1}{y^{3}-y}$
+\end{example}
+
+\begin{solution}
+\[\begin{split}
+    \text{原式}&=\frac{x(y^2-2y+1)}{1}\cdot \frac{y^3+1}{y(y^2-1)}   \\
+    &= \frac{x(y-1)^2 (y+1)(y^2-y+1)}{y(y+1)(y-1)}  \\
+    &= \frac{x(y-1)(y^2-y+1)}{y}         \\
+\end{split}\]    
+    
+\end{solution}
+
+\begin{example}
+    计算：$\left(\frac{x^{2}+x+1}{x^{2}-2 x+1}-\frac{x^{3}+1}{(x-1)^{3}}\right)\cdot \left(x^{2}-2 x+1\right)$
+\end{example}
+
+
+\begin{solution}
+    \[\begin{split}
+        \text{原式}&=\left(\frac{x^{2}+x+1}{(x-1)^2}-\frac{x^{3}+1}{(x-1)^{3}}\right)\cdot (x-1)^2   \\
+        &= \frac{(x^2+x+1)(x-1)-(x^3+1)}{(x-1)^3} \cdot (x-1)^2   \\
+        &=\frac{(x^3-1)-(x^3+1)}{x-1}=-\frac{2}{x-1}
+    \end{split}\]  
+\end{solution}
+
+\subsubsection{分式的除法}
+两个分式相除时，把除式的分子、分母颠倒后与被除式相乘即可。
+即：
+\[ \frac{f(x)}{g(x)}\div \frac{h(x)}{q(x)}=\frac{f(x)}{g(x)}\x \frac{q(x)}{h(x)}=\frac{f(x)\cdot q(x)}{g(x)\cdot h(x)} \]
+
+\begin{example}
+    计算：$\frac{x^{2}-1}{x^{2}+1} \div \frac{x^{2}-1}{x^{4}-1}$
+\end{example}
+
+\begin{solution}
+    \[\begin{split}
+    \text{原式}&=\frac{x^{2}-1}{x^{2}+1} \times \frac{x^{4}-1}{x^{2}-1}   \\
+    &= \frac{\left(x^{2}-1\right)\left(x^{2}+1\right)\left(x^{2}-1\right)}{\left(x^{2}+1\right)\left(x^{2}-1\right)} \\ &=x^{2}-1
+\end{split}\]  
+\end{solution}
+
+\begin{example}
+    计算：$\frac{x^{3}-y^{3}}{x^{2}+y^{2}}\div (x-y)$
+\end{example}
+
+\begin{solution}
+\[\begin{split}
+    \text{原式}&=\frac{x^{3}-y^{3}}{x^{2}+y^{2}} \times \frac{1}{x-y}\\
+    &=\frac{(x-y)\left(x^{2}+x y+y^{2}\right)}{x^{2}+y^{2}} \times \frac{1}{x-y}\\
+    &=\frac{x^{2}+x y+y^{2}}{x^{2}+y^{2}}
+\end{split}\]      
+\end{solution}
+
+\begin{example}
+    计算 $\left(\frac{1}{a}+\frac{1}{b}\right) \div\left(\frac{1}{a}-\frac{1}{b}\right)$
+\end{example}
+
+\begin{solution}
+    \[\begin{split}
+        \text{原式}&=\frac{b+a}{ab}\div \frac{b-a}{ab}   \\
+        &= \frac{b+a}{ab} \x \frac{ab}{b-a}           \\
+        &=\frac{b+a}{b-a}
+    \end{split}\]  
+\end{solution}
+
+
+\begin{example}
+化简：
+$\frac{ \frac{2(1-x)}{1+x}+\frac{(1-x)^2}{(1+x)^2} +1 }{\frac{2(1+x)}{1-x}+\left(\frac{1+x}{1-x}\right)^2+1}$
+\end{example}
+
+\begin{note}
+  这是一个分子、分母都是分式的繁分式，实际上就是两个分式相除。可以先把它们分别化简后，再进行除法运算。    
+\end{note}
+
+
+\begin{solution}
+\[\begin{split}
+    \text{原式}&= \frac{ \frac{2(1-x)(1+x)+(1-x)^{2}+(1+x)^{2}}{(1+x)^{2}} }{\frac{2(1+x)(1-x)+(1+x)^{2}+(1-x)^{2}}{(1-x)^{2}}}  \\
+    &= \frac{[(1+x)+(1-x)]^{2}}{(1+x)^{2}}\div \frac{[(1+x)+(1-x)]^{2}}{(1-x)^{2}} \\
+    &= \frac{[(1+x)+(1-x)]^{2}}{(1+x)^{2}}\x \frac{(1-x)^{2}}{[(1+x)+(1-x)]^{2}}\\
+    &=\frac{(1-x)^2}{(1+x)^2}=\left(\frac{1-x}{1+x}\right)^2
+\end{split}\]    
+\end{solution}
+
+\begin{ex}
+\begin{enumerate} 
+\item 计算下列各式
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\frac{3 a b}{4 x y}\div \frac{10 x^{2} y}{21 a^{2} b}$
+    \item $8 a^{2} b^{4} \cdot\left(-\frac{3 a}{4 b^{3}}\right)$
+    \item $\frac{(a-b)^{2}}{a b} \div(a-b)$,
+    \item $\left(\frac{3 a^{2} b}{-2 c^{3}}\right)^{3}$
+    \item $\frac{a^{2}-x^{2}}{4 a x} \div \frac{x-a}{8 x}$
+    \item $\frac{x^{2}-x}{x-3} \div \frac{x^{2}-x^{3}}{3-x}$
+    \end{multicols}
+    \item  $\left(x^{2}-6 x+9\right) \div \frac{x^{2}-9 x+18}{x+3}$
+    \item $\frac{a+x}{(m+n)^{2}} \cdot \frac{x^{2}-y^{2}}{12} \cdot \frac{m+n}{n-m} \cdot \frac{6\left(m^{2}-n^{2}\right)}{x+y}$
+\end{enumerate}
+\item 化简：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{\frac{c}{b}}{a}$
+    \item $\frac{c}{\frac{b}{a}}$
+    \item $\frac{a-\frac{1}{a}}{a-1}$
+    \item $\frac{P+2-\frac{1}{P+2}}{P+2+\frac{1}{P+2}}$
+\end{enumerate}
+\end{multicols}
+\item 化简： $G(a)=\frac{1-\frac{4 a+1}{a+1}}{a}$, 问$a$取何整数值时, $G(a)$ 等于 正整数。
+\end{enumerate}
+\end{ex}
+
+\subsection{分式方程}
+如果方程式中含有分式，那么这样的方程，叫做
+\textbf{分式方程}，例如$\frac{2}{x}=1$, $y+1+\frac{2}{y}=\frac{y^2}{y-1}$, $\frac{5}{x-1}=\frac{1}{x+3}$
+等，都是分式方程。如果$x$是未知数，$a$
+表示一个非零常数，那么$\frac{x}{a}+x=1$，就不是分式方程。
+
+解分式方程主要是设法把原方程变形为整式方程，也就是在方程两边乘以同一个含有未知数的整式。这个整式一般是分母的最低公倍式。
+
+
+
+\begin{example}
+ 解方程$\frac{5}{x-1}=\frac{1}{x+3}$  
+\end{example}
+
+\begin{solution}
+两边乘以分母的最低公倍式：$(x-1)(x+3)$, 并约简得：
+\[5(x+3)=x-1\]
+
+解整式方程：$4x=-16\quad \Rightarrow\quad x=-4$
+
+验根：把$x=-4$分别代入原方程两边。
+\[\begin{split}
+    \text{左式}&=\frac{5}{-4-1}=-1\\
+    \text{右式}&=\frac{1}{-4+3}=-1  
+\end{split}\]
+
+$\because\quad \text{左}=\text{右}$
+
+$\therefore\quad $原方程的解集是：$\{-4\}$。
+\end{solution}
+
+
+\begin{example}
+解方程：$\frac{1}{x+2}+\frac{4x}{x^2-4}=1+\frac{2}{x-2}$
+\end{example}
+
+\begin{solution}
+    原方程就是：$\frac{1}{x+2}+\frac{4x}{(x+2)(x-2)}=1+\frac{2}{x-2}$
+
+    两边乘以分母的最低公倍式$(x+2)(x-2)$, 并约简得：
+    \[(x-2)+4x=(x+2)(x-2)+2(x+2)\]
+    解整式方程 $x^2-3x+2=0,\qquad \therefore\quad x_1=1,\;x_2=2$
+    
+    验根：把$x=1$代入原方程两边：
+    \[\begin{split}
+        \text{右式}&=\frac{1}{1+2}+\frac{4}{1-4}=\frac{1}{3}-\frac{4}{3}=-1\\
+        \text{左式}&=1+\frac{2}{1-2}=1-2=-1
+    \end{split}\]
+    $\therefore\quad x=1$是原方程的根。
+
+    把$x=2$代入原方程时，由于分母$x-2=0$, $x^2-4=0$，
+    就是说：当$x=2$时原方程没有意义，所以 $x=2$不是原方程的根，应舍去它。
+
+因此：原方程的解集是$\{1\}$。
+\end{solution}
+
+从以上两例可以看出：分式方程的两边乘以同一个含有未知数的整式，并进行约简，就得到一个新的整式方程。这个整式方程的根，可能是原分式方程的根，也可能不是原分式方程的根。而这里不适合原方程的根，就叫做原方程的\textbf{增根}，验根后应该舍去（例如，在例6.22中的$x=2$就是增根）。
+
+我们不禁要问：解分式方程的过程中，为什么可能增根呢？
+
+先观察例6.22,原分式方程未知数$x$的可取值范围是$x\ne \pm2$的一切实数，整式方程$x^2-3x+2=0$的$x$可取值范围扩大为一切实数，这样解整式方程得到的根$x_1=1$, 恰好在原方程$x$的可取值范围内，所以适合原方程，是原方程的根。而另一根$x_2=2$, 恰好在原方程$x$可取值范围外，所以不适合原方程，是原方程的增根。
+
+再观察例6.21,原分式方程未知数$x$的可取值范围是$x\ne 1$且$x\ne -3$的一切实数，整式方程$5(x+3)=x-1$的$x$可取值范围扩大为一切实数，但这个整式方程的根$x=-4$, 恰好在原分式方程的可取值范围内，所以是原方程的根。
+
+解分式方程过程中，由于原方程两边乘以含有未知数的整式，约简而得到一个整式方程。这样就扩大了未知数的可取值范围，自然就有产生增根的可能。但是，增根并不可怕，只要通过检验，就可以鉴别出来把它舍去。所以，解分式方程是必须进行验根的。
+
+仔细观察、分析，不难发现：分式方程的增根，都正好是“使原方程中的一些分母的值为零”的未知数值。因此，解分式方程时，比较简捷的验根的方法是：把整式方程的根，逐个代入分母的最低公倍式中，如果其值不等于零，则是原方程的根；如果其值等
+于零，则它是原方程的增根，要舍去。
+
+
+\begin{example}
+    试求一个正实数$x$满足下述条件：$x=\frac{1}{x-1}$
+\end{example}
+
+\begin{solution}
+方程两边乘以$x-1$，并约简得$x(x-1)=1$。
+
+解整式方程：$x^2-x-1=0$，
+
+$\therefore\quad x_1=\frac{1}{2}+\frac{\sqrt{5}}{2},\qquad x_2=\frac{1}{2}-\frac{\sqrt{5}}{2}$。
+
+验根：把$x_1=\frac{1}{2}+\frac{\sqrt{5}}{2}$代入$x-1$，其值不等于零。把$x_2=\frac{1}{2}-\frac{\sqrt{5}}{2}$代入$x-1$，其值不等于零。
+
+$\therefore\quad $原方程的解集是：$\left\{\frac{1}{2}+\frac{\sqrt{5}}{2},\; \frac{1}{2}-\frac{\sqrt{5}}{2}\right\}$
+
+但$\because\quad \frac{1}{2}-\frac{\sqrt{5}}{2}<0$，不合题意应舍去。
+
+$\therefore\quad $所求正实数是：$\frac{1}{2}+\frac{\sqrt{5}}{2}$。
+\end{solution}
+
+综合以上各例，可以概括出解分式方程的一般步骤是：
+\begin{enumerate}
+    \item 方程两边乘以分母的最低公倍式，并约简变
+形为整式方程。
+\item 解整式方程。
+\item 验根：把整式方程的根分别代入原方程分母的最低公倍式中去。如果其值不等于零，则是原方程的根；如果其值等于零，则是原方程的增根，要舍去。
+\end{enumerate}
+
+\begin{ex}
+   解下列方程：
+   \begin{multicols}{2}
+       \begin{enumerate}
+        \item $\frac{5}{y}=\frac{3}{y-2}$
+        \item $1-\frac{1}{x-4}=\frac{5-x}{x-4}$
+        \item $1+\frac{1}{x-4}=\frac{5-x}{x-4}$
+        \item $\frac{2}{1-x^2}=\frac{1}{1+x}+1$
+    \end{enumerate}
+   \end{multicols}
+   
+\end{ex}
+
+\begin{example}
+    解方程：$\frac{2}{1+x}-\frac{3}{1-x}=\frac{6}{x^2-1}$
+\end{example}
+
+\begin{solution}
+原方程就是$\frac{2}{x+1}+\frac{3}{x-1}=\frac{6}{(x+1)(x-1)}$
+
+方程两边乘以$(x+1)\cdot (x-1)$，并约简得：
+\[2(x-1)+3(x+1)=6\]
+解整式方程
+\[\begin{split}
+    2x-2+3x+3&=6\\
+    5x&=5\\
+    x&=1
+\end{split}\]
+ 
+验根：把$x=1$代入$(x+1)\cdot (x-1)$所得的值等于零。
+
+$\therefore\quad x=1$是增根（舍去），
+
+$\therefore\quad$原方程的解集是空集$\emptyset$。
+\end{solution}
+
+
+
+\begin{example}
+解方程$\frac{3}{x-2}-\frac{4}{x-1}=\frac{1}{x-4}-\frac{2}{x-3}$
+\end{example}
+
+\begin{analyze}
+如果开始就乘以分母的最低公倍式，这样很复杂，所以先采取方程两边分别通分，这样比较简便。
+\end{analyze}
+
+\begin{solution}
+    方程两边分别通分得：
+\[\begin{split}
+    \frac{3x-3-4x+8}{(x-1)(x-2)}&=\frac{x-3-2x+8}{(x-3)(x-4)}\\
+    \frac{-x+5}{(x-1)(x-2)}&=\frac{-x+5}{(x-3)(x-4)}
+\end{split}\]
+
+方程两边乘以$(x-1)(x-2)(x-3)(x-4)$，得：
+\begin{equation}
+    (-x+5)(x-3)(x-4)=(-x+5)(x-1)(x-2)
+\end{equation}
+即：
+\[(-x+5)[(x^2-7x+12)-(x^2-3x+2)]=0\]
+
+解整式方程 $(-x+5)(-4x+10)=0$
+
+$\therefore\quad x_1=5,\quad x_2=\frac{5}{2}$
+
+验根：把$x_1=5,\quad x_2=\frac{5}{2}$分别代入分母的最低公倍式中，很明显其值都不等于零。
+
+$\therefore\quad $ 原方程的解集是$\left\{5,\frac{5}{2}\right\}$。
+\end{solution}
+
+\begin{rmk}
+  如果在方程(6.1)的两边除以$-x+5$, 那么就会丢失$x=5$这一个根，所以在解方程的过程中，如果方程两边除以含有未知数的整式，那末原方程就有丢根的可能，丢根是不易找回来的，因此在解方程的过程中，要尽量避免进行这种变形。    
+\end{rmk}
+
+\begin{ex}
+解下列方程：
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $x=\frac{1}{x-1}$
+        \item $\frac{10x}{2x-1}+\frac{5}{1-2x}=2$
+        \item $\frac{1}{1-y}+\frac{3y-y^2}{y^2-1}=0$
+        \item $\frac{1}{t+2}+\frac{1}{t+7}=\frac{1}{t+3}+\frac{1}{t+6}$
+    \end{enumerate}
+\end{multicols}
+\end{ex}
+
+在解有些分式方程的过程中，如果利用换元法，引进一个辅助未知数，那末，就可以得到一个容易解的方程，使解法简化。
+
+
+\begin{example}
+解方程 $\frac{(x-1)^2}{x}+\frac{x}{(x-1)^2}=2$
+\end{example}
+
+\begin{solution}
+设$\frac{(x-1)^2}{x}=y$，则$\frac{x}{(x-1)^2}=\frac{1}{y}$
+
+代入原方程就是 $y+\frac{1}{y}=2$，两边乘以$y$，并约简得
+\[y^2+1=2y\quad \Rightarrow\quad y^2-2y+1=0\]
+解这个方程，得：$y=1$。
+
+把$y=1$代入 $\frac{(x-1)^2}{x}=y$，得：
+\begin{equation}
+    \frac{(x-1)^2}{x}=1
+\end{equation}
+两边乘以$x$，并约简得：
+\begin{equation}
+    (x-1)^2=x
+\end{equation}
+即：$x^2-3x+1=0$
+
+$\therefore\quad x_1=\frac{3}{2}+\frac{\sqrt{5}}{2},\qquad x_2=\frac{3}{2}-\frac{\sqrt{5}}{2}$。
+
+把$x_1,x_2$分别代入方程(6.2)的分母中，其值不等于零。
+
+$\therefore\quad $原方程的解集是$\left\{\frac{3}{2}+\frac{\sqrt{5}}{2},\; \frac{3}{2}-\frac{\sqrt{5}}{2}\right\}$
+
+\end{solution}
+
+\begin{note}
+   解上例的过程中，由方程(6.2)到方程(6.3)有产生增根的可能，所以只要把$x_1,x_2$代入方程(6.2)验根就可以。
+\end{note}
+
+
+
+\begin{example}
+    解方程
+$\frac{1}{a}+\frac{a}{x}=\frac{1}{b}+\frac{b}{x}\quad (a\ne b)$
+\end{example}
+
+\begin{solution}
+    方程两边乘以$abx$得：
+\[bx+a^2b=ax+ab^2\]
+解整式方程 $(b-a)x=ab(b-a)$
+
+$\because\quad a\ne b,\qquad \therefore\quad b-a\ne 0$
+
+$\therefore\quad x=ab$。
+
+验根：把$x=ab$代入$abx$得$a^2b^2$。
+
+$\because\quad a\ne 0,\; b\ne 0$ (如果$a=0$, $b=0$, 那么原方程
+无意义）。
+
+$\therefore\quad a^2b^2\ne 0$
+
+$\therefore\quad $原方程的解集是$\{ab\}$。
+\end{solution}
+
+\begin{ex}
+    解下列方程：
+\begin{enumerate}
+    \item $\frac{a+b}{x}-\frac{a}{b}=1\quad (a+b\ne 0)$
+    \item $\frac{1}{x}-\frac{1}{a}-\frac{1}{b}=\frac{1}{x-a-b}\quad (a+b\ne 0)$
+    \item 在$\frac{1}{R}=\frac{1}{r}-\frac{1}{r-r_1}$中，已知$R,r_1$，求$r$。（其中各字母表示正数，$r_1>4R$）
+\end{enumerate}
+\end{ex}
+
+\begin{example}
+    某公社原计划要在一定的日期里开垦荒地
+960亩，如果实际每天比原计划多开垦40亩，可提前
+4天完成原计划。求原计划一天开垦荒地的亩数和完
+成的天数。
+\end{example}
+
+\begin{analyze}
+    这个应用题中的数量关系，可列表如下：
+\begin{center}
+    \begin{tabular}{cccc}
+        \hline
+    &    工作总量&一天的工作量&所需天数\\
+    \hline
+原计划工作情况&960亩& $x$亩  & $\tfrac{960}{x}$\\
+实际工作情况&960亩&$(x+40)$亩 & $\tfrac{960}{x+40}$\\
+\hline
+    \end{tabular}
+\end{center}
+\[\text{原计划需要的天数}=\text{实际需要天数}+4\text{(天)}\]
+\end{analyze}
+
+
+\begin{solution}
+    设原计划每天开垦荒地$x$亩，则原计划需要
+    $\frac{960}{x}$（天）完成，实际每天开垦荒地$(x+40)$亩，实际需要
+   $\frac{960}{x+40}$
+    （天）
+    
+    按题意得：$\frac{960}{x}=\frac{960}{x+40}+4$
+    
+    两边乘以
+    $x(x+40)$, 得：
+    \[960(x+40)=960x+4x(x+40)\]
+    整理得：$x^2+40x-9600=0$
+
+    $\therefore\quad x_1=80,\quad x_2=-120$
+    
+    检验：$x_1=80$是原方程的根。    $x_2=-120$是原方程的根，但不合题意，应舍去。
+
+    又$\frac{960}{x}=\frac{960}{80}=12$(天)
+
+    答：原计划每天开垦荒地80亩，需要12天。
+\end{solution}
+
+
+\begin{example}
+    $A$、$B$两地相距87公里，甲骑自行车从$A$
+出发向$B$驶去，经过30分钟后，乙骑自行车由$B$出发，
+用每小时比甲快4公里的速度向$A$驶来，两人在距离
+$B$45公里的$C$处相遇，求各人的速度。
+\end{example}
+
+\begin{analyze}
+\begin{center}
+    \begin{tikzpicture}[>=latex]
+        \draw (0,0)node[below]{$A$}--(4,0)node[below]{$C$}--(8.2,0)node[below]{$B$};
+        \foreach \x in {0,4,8.2}
+        {
+            \draw (\x,0)--(\x,.75);
+        }
+\draw[<->] (0,.35)--node[fill=white]{$(87-45)$公里}(4,.35);
+\draw[<->](4,.35)--node[fill=white]{45公里}(8.2,.35);
+    \end{tikzpicture}
+\end{center}
+\begin{center}
+\begin{tabular}{cccc}
+    \hline
+    & 所行距离 &  速度 & 时间\\
+    \hline
+    甲&    $(87-45)$公里&    $x$公里/小时   & $\tfrac{87-45}{x}$   \\
+    乙& 45 公里&     $(x+4)$公里/小时&    $\tfrac{45}{x+4}$   \\
+    \hline
+\end{tabular}    
+\end{center}
+
+\[\text{甲自$A$到$C$所需要时间}=\text{乙由$B$到$C$所需
+要时间}+\frac{30}{60}\text{小时}\]
+\end{analyze}
+
+\begin{solution}
+    设甲每小时行$x$公里，则乙每小时行$(x+4)$
+公里，按题意：
+\[\frac{87-45}{x}=\frac{45}{x+4}+\frac{30}{60}  \]
+两边乘以$2x(x+4)$得：
+\[\begin{split}
+    2\x 42(x+4) &=2\x 45x+x(x+4)\\
+    x^2+10x-336&=0
+\end{split}\]
+$\therefore\quad x_1=14,\qquad x_2=-24$
+
+检验：$x=14$是原方程根，
+$x=-24$是原方程根，但不合题意，舍去。
+\[x+4=14+4=18\]
+
+答：甲每小时行14公里，乙每小时行18公里。
+\end{solution}
+
+\begin{example}
+    甲乙两个工程队合做一项工程，两队合做
+两天后，由乙队单独做1天就完成了全部工程。已知
+乙队单独做所需的天数是甲队单独做所需天数的$1\frac{1}{2}$
+倍。求甲、乙两队单独做各需多少天？
+\end{example}
+
+\begin{solution}
+    设甲队独做$x$天完成，乙队独做$\frac{3}{2}x$
+天完成，则甲每天工作量是$\frac{1}{x}$，
+乙每天工作量是$\frac{1}{\tfrac{3}{2}x}$，
+甲、乙两队合做一天的工作量是$\frac{1}{x}+\frac{1}{\tfrac{3}{2}x}$；
+合做两天的工作量是$2\left(\frac{1}{x}+\frac{1}{\tfrac{3}{2}x}\right)$。
+
+按题意得：
+\[2\left(\frac{1}{x}+\frac{1}{\tfrac{3}{2}x}\right)+\frac{1}{\tfrac{3}{2}x}=1\]
+就是 $\frac{2}{x}+\frac{4}{3x}+\frac{2}{3x}=1$
+
+方程两边乘以$3x$得：
+\[\begin{split}
+   6+4+2&=3x\\
+3x&=12\\
+x&=4 
+\end{split}\]
+
+经检验，$x=4$是原方程的根。又$\frac{3}{2}x=6$。
+
+答：甲独做4天完成任务，乙独做6天完成任
+务。
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 甲、乙两个车工，各车1500个螺丝。乙改进了操作方
+    法，生产效率提高到甲的3倍，因此比甲少用20个工时
+    完成任务。他们每小时各车多少个螺丝？
+    \item 甲、乙两个车站相距96公里，快车和慢车同时从甲站开
+    出，1小时后，快车在慢车前12公里，快车比慢车早40
+    分钟到达乙站。快车和慢车的速度各是多少？
+    \item 甲、乙、丙三人合做一件工作12天完成，已知甲1天完
+    成的工作，乙须要2天，两须要3天，问三人单独完成。
+    这件工作，各需要多少天？
+\end{enumerate}    
+\end{ex}
+
+\section*{习题6.1}
+\addcontentsline{toc}{subsection}{习题6.1}
+\begin{enumerate}
+    \item 下列各分式在什么条件下无意义：
+ \begin{multicols}{2}
+ \begin{enumerate}
+     \item $\frac{1}{2x-3}$
+     \item $\frac{x-y}{x+y}$
+     \item $\frac{x}{x^4+1}$
+     \item $\frac{2x-1}{x^2-2}$
+ \end{enumerate}
+ \end{multicols}
+    \item 当$x$取何值时，分式$\frac{x-2}{(1-x)(x+3)}$
+    \begin{enumerate}
+        \item 没有意义；
+        \item 分式值等于0;
+        \item 分式值等于1.
+    \end{enumerate}
+\item 分式$\frac{a+3}{a-4}$和$\frac{(a+3)(a-3)}{(a-4)(a-3)}$
+的值是不是永远相等？
+\item 先化简下列各式，再求它的值。
+\begin{enumerate}
+    \item $\frac{3 a^{2}-a b}{8 a^{2}-6 a b+b^{2}}$, 其中 $a=- \frac{2}{3}, \quad b=\frac{1}{2}$
+    \item  $\frac{75(x-2 y)^{3}(2 x-y)^{2}}{15(y-2 x)^{2}(2 y-x)}$, 其中 $x=4.5,\quad -y=1.7$
+\end{enumerate}
+
+\item 计算下列各式：
+\begin{enumerate}
+\item $\frac{a}{a^{2}-1}+\frac{a^{2}+ a-1}{a^{3}-a^{2}+a-1}+\frac{a^{2}-a-1}{a^{3}+a^{2}+a+1}-\frac{2 a^{3}}{a^{4}-1}$
+\item  $a-\frac{a^{2}-b^{2}}{a}+\frac{a^{2}+b^{2}}{a}-b$
+\item $\frac{1}{x-2}+\frac{2}{x+1}-\frac{2}{x-1}-\frac{1}{x+2}$
+\item $\frac{1}{1-x}+\frac{1}{1+x}+\frac{2}{1+x^{2}}+\frac{4}{1+x^{4}}$
+\item $\frac{x^{2}+7 x+12}{x^{2}-8 x+15} \div \frac{x^{2}+3 x-4}{x^{2}-5 x+6} \div \frac{x^{2}+x-6}{x^{2}-4 x-5}$
+\item $\frac{(a-b)^{2}}{a^{2}-a b+b^{2}} \cdot \frac{a^{3}+b^{3}}{(a-b) x^{2}} \div \frac{b^{2}-a^{2}}{x^{2}}$
+\item  $\frac{x}{x-1}+\frac{x}{x+1}-\frac{x+1}{x^{3}-1} \div \frac{1}{x^{2}+x+1}$
+\item $\left(x-1+\frac{1}{x}\right)\div \frac{x^{2}-x+1}{x}$
+\item $\left(1+\frac{a}{x}+\frac{a^2}{x^2}\right)\left(1-\frac{a}{x}\right)-\frac{2x^3-a^3}{x^3}$
+\item $\left(\frac{x}{y}-\frac{y}{x}\right)\div \left(\frac{x}{y}+\frac{y}{x}-2\right)\div \frac{x}{x-y}$
+\end{enumerate}
+
+\item 化简 $F(x)=-\frac{1}{1-\frac{1+x}{x-\frac{1}{x}}}$
+，又$x$取何值能使 $F(x)$的值等于2？$F(x)$的值能等于1吗？为什么？
+\item 解下列各方程：
+\begin{enumerate}
+\item $\frac{1-3 x}{1+3 x}+\frac{3 x+1}{3 x-1}=\frac{12}{1-9 x^{2}}$
+\item $\frac{7}{x^{2}+x}-\frac{1}{x-x^{2}}=\frac{6}{x^{2}-1}$
+\item $5+\frac{96}{x^{2}-16}=\frac{2 x-1}{x+4}-\frac{3 x-1}{4-x}$
+\item $\frac{1}{x+2}-\frac{1}{x+4}=\frac{1}{x+3}-\frac{1}{x+1}$
+\item $\left(x+\frac{1}{x}\right)^{2}-\frac{9}{2}\left(x+\frac{1}{x}\right)+5=0$
+\item $\frac{x^{2}+3 x+1}{4 x^{2}+6 x-1}-\frac{3\left(4 x^{2}+6 x-1\right)}{x^{2}+3 x+1}-2=0$
+\end{enumerate}
+
+\item 解下列关于 $x$ 的方程：
+\begin{enumerate}
+    \item $x+\frac{1}{x}=a+\frac{1}{a}$ 
+    \item $\frac{1}{b+x}=\frac{3b}{2x^2}-\frac{1}{x}$
+    \item $\frac{x+m}{x-n}+\frac{x+n}{x-m}=2\quad (n+m\ne 0)$
+    \item $\frac{2x}{x+b}+\frac{x}{x-b}=\frac{b^2}{4x^2-4b^2}$
+\end{enumerate}
+
+\item 解下列应用题：
+\begin{enumerate}
+\item 甲组人数比乙组人数多10人，甲、乙两组人数的
+比是$\frac{5}{4}$，
+求两组人数。
+\item 甲做90个机器零件所用的时间和乙做120个机器
+零件所用的时间相同，已知两人每小时一共做35
+个机器零件，两人每小时各做多少个？
+\item 马车后轮周长比前轮周长大20厘米，行了2500米
+时，前轮比后轮多转了60转。求前后轮的周长各
+等于多少米？（精确至0.01米）
+\item 一辆汽车原定在若干小时内以某一定的速度到达
+相距300里的目的地，如果每小时加快10里，那
+么可以早到$1\frac{1}{2}$
+小时。求原定的速度。
+\item 甲组的工作效率比乙组高25\%, 因此甲组加工
+2000个零件所用的时间比乙组加工1800个零件所
+用的时间还少30分钟。甲，乙两组每小时各能加
+工多少个零件？
+\item 某工厂有一个水池，上面装有甲、乙两个水管，
+如果把两个水管都打开，1小时20分就可以把水池
+注满，若打开甲管10分钟和打开乙管12分钟，就
+可以注满水池的$\frac{2}{15}$，
+求单独一个水管注满水池各
+需多少时间？
+\item 汽船顺流、逆流各走48公里，共经5小时。如果
+水流速度每小时4公里，求汽船在静水中的速度。
+\item 一架飞机顺风飞行1380公里和逆风飞行1020公里
+所需的时间相等，已知这架飞机的速度是每小时
+300公里。求风的速度。
+\end{enumerate}
+\end{enumerate}
+
+\section{二次根式与根式方程}
+我们已经学习过平方根，也就是如果$x^2=a$, 那
+么$x$叫做$a$的二次方根，简称平方根。正数的平方根
+是两个相反的数，记作$\pm\sqrt{a}$; 0的平方根是0; 负
+数在实数范围内没有平方根。
+
+正数的正平方根叫做算术平方根；零的算术平方
+根是零，记作$\sqrt{0}=0$。
+
+\subsection{二次根式和二次根式的变形}
+表示平方根的式子，叫做\textbf{二次根式}。
+
+例如：$\sqrt{3},\quad -2\sqrt{7},\quad -\sqrt{x}\; (x\ge 0),\quad \sqrt{b^2+1}$
+等都是二次根式。
+
+由第三章学过的平方根与算术平方根的意义，可
+以得到二次根式的基本性质：
+\begin{blk}{}
+    \begin{enumerate}
+        \item $\left(\sqrt{a}\right)^2=a\quad (a\ge 0)$
+        \item $\sqrt{a^2}=|a|=\begin{cases}
+            a, & a\ge 0\\ -a, & a<0
+        \end{cases}$
+        \item $\sqrt{a\cdot b}=\sqrt{a}\cdot \sqrt{b}\quad (a\ge 0,\; b\ge 0)$
+        \item $\sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}}\quad (a\ge 0,\; b>0)$
+    \end{enumerate}
+\end{blk}
+
+利用二次根式的基本性质，可以进行化简。
+
+
+\begin{example}
+    化简$\sqrt{(x-2)^2}$
+\end{example}
+
+\begin{solution}
+    \[\sqrt{(x-2)^2}=|x-2|=\begin{cases}
+        x-2, & x\ge2\\ 2-x, & x<2
+    \end{cases}\]
+\end{solution}
+
+
+
+\begin{example}
+化简$\sqrt{x^2-2xy+y^2}$    
+\end{example}
+
+\begin{solution}
+    \[\begin{split}
+\sqrt{x^2-2xy+y^2}&=\sqrt{(x-y)^2}=|x-y|\\
+&=\begin{cases}
+    x-y, & x\ge y\\
+    y-x, & x<y
+\end{cases}
+    \end{split}\]
+\end{solution}
+
+\begin{example}
+    化简$\sqrt{(x^2+1)^2}$
+\end{example}
+
+\begin{solution}
+    $\sqrt{(x^2+1)^2}=x^2+1$
+\end{solution}
+
+\begin{example}
+    如果$a$、$b$为非负实数，试化简下列各式：
+\[\sqrt{a^4},\qquad \sqrt{0.01a^2b^6},\qquad \sqrt{a^{2n}} \]
+（n是自然数）。
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item $\sqrt{a^4}=\sqrt{(a^2)^2}=a^2$
+    \item $\sqrt{0.01a^2b^6}=\sqrt{(0.1ab^3)^2}=0.1ab^3$
+    \item $\sqrt{a^{2n}}=\sqrt{(a^n)^2}=a^n$
+\end{enumerate}
+\end{solution}
+
+从例6.34可见，如果被开方数中的字母与数字因数
+都为非负实数，那么当被开方数的指数是偶数的时候
+可以化去根号。
+
+\begin{ex}
+\begin{enumerate}
+    \item 回答下列各题：
+    \begin{enumerate}
+    \item 289的平方根等于什么？
+    \item 0的平方根等于什么？
+    \item 361的算术平方根等于什么？
+    \item $\sqrt{\frac{144}{169}}$等于什么？
+    \item $-\sqrt{0.0064}$等于什么？
+    \item $-0.01$有没有平方根？
+\end{enumerate}
+
+
+
+\item 化简下列各式：
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $\sqrt{(-3)^2}$
+    \item $\sqrt{x^2}$
+    \item $\sqrt{(a-1)^2}$
+    \item $x^2-6x+9$
+\end{enumerate}
+\end{multicols}
+
+
+
+\item 
+\begin{enumerate}
+    \item 如果$\sqrt{a^2}=-a$, $a$是怎样的数？
+    \item 式子$\sqrt{-a}$在什么条件下有意义（在实数范围内）？
+\end{enumerate}
+
+
+\item $x$取何值下列各式有意义？
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $\sqrt{x-3}$
+    \item $\sqrt{x+4}$
+    \item $\sqrt{a^2+1}$
+    \item $\sqrt{-x^2}$
+\end{enumerate}  
+\end{multicols}
+
+
+\item 如果$x,y$是非负实数，化去下列各式的根号。
+\begin{enumerate}
+    \item $\sqrt{0.04x^2y^4}$
+    \item $\sqrt{121x^4y^6}$
+    \item $\sqrt{\frac{1}{16}x^6y^8}$
+    \item $\sqrt{x^{2n}y^{4m}}$\quad ($n,m$为自然数)
+\end{enumerate}
+\end{enumerate}
+\end{ex}
+
+应当指出，如果没有特殊说明，根号内的字母取
+值，都要使二次根式有意义。
+
+利用二次根式的基本性质，还可以进行二次根式
+的变形。
+
+\subsubsection{因式的外移和内移}
+如果在二次根式的根号内，有的因式能够开得
+尽，那么，就可以用它的算术根代替而移到根号外
+面；反过来，也可以将根号外面的正因式，平方以后
+移到根号里面去。
+
+如果被开方数是代数和的形式，那么先分解因式，
+变形为积的形式，再移因式到根号外面来。
+
+\begin{example}
+    把下列各根号内的因式移到根号外面来。
+    \begin{multicols}{2}
+     \begin{enumerate}
+    \item $\sqrt{x^{5}}$
+    \item $\sqrt{8 a^{3} b^{2}}\quad (b \ge 0)$
+    \item $\sqrt{a^{3}+3 a^{2} b+3 a b^{2}+b^{3}}$
+    \item $\sqrt{\frac{c}{a^{2} b^{2}}}\quad (a>0,\; b>0)$
+\end{enumerate}   
+    \end{multicols}
+
+\end{example}
+
+
+\begin{solution}
+\begin{enumerate}
+    \item $\sqrt{x^{5}}=\sqrt{x^{4} \cdot x}=\sqrt{x^{4}} \cdot \sqrt{x}=x^{2} \sqrt{x}$
+    \item $\sqrt{8 a^{3} b^{2}}=\sqrt{4 a^{2} b^{2} \cdot 2 a}=\sqrt{4 a^{2} b^{2}} \cdot \sqrt{2 a}=2 {a} b \sqrt{2 a}$
+    \item $\sqrt{a^{3}+3 a^{2} b+3 ab^{2}+b^{3}}=\sqrt{(a+b)^{3}}=(a+b) \sqrt{a+b}$
+    \item $\sqrt{\frac{c}{a^{2} b^{2}}}=\frac{\sqrt{c}}{\sqrt{a^{2} b^{2}}}=\frac{\sqrt{c}}{a b}=\frac{1}{a b} \sqrt{c}$
+\end{enumerate}
+\end{solution}
+
+\begin{example}
+    把下列各根号外面的因式移到根号里面去。
+\[2a\sqrt{a},\qquad (m-n)\sqrt{m}\;\; (m-n\ge 0),\qquad -x\sqrt{a}\;\;(x>0) \]
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item $2a\sqrt{a}=\sqrt{(2a)^2\cdot a}=\sqrt{4a^3}$
+    \item $(m-n)\sqrt{m}=\sqrt{(m-n)^2\cdot m}$
+    \item $-x\sqrt{a}=-\sqrt{ax^2}$
+\end{enumerate}
+\end{solution}
+
+这里要注意，$-x\sqrt{a}=\sqrt{a(-x)^2}=\sqrt{ax^2}$
+是
+不正确的，因为$-x<0$, 不能进行内移。
+
+\subsubsection{化去根号内的分母}
+在根号内的分母中，如果有开得尽的因式，就可
+以用它的算术根代替而移到根号外面；如果有开不尽
+的因式，就可以利用分式的基本性质，将分子、分母
+乘以同一个适当的非零代数式，使分母的各因式都能
+开得尽，从而用其算术根代替，并移到根号外面，使
+根号里面不含有分母。
+\begin{example}
+    化去根号里面的分母
+\[\sqrt{\frac{3}{50}},\qquad \sqrt{\frac{c}{a^2b}}\quad (a>0,\; b>0),\qquad \sqrt{\frac{(a+b)^2}{a^2-b^2}}\quad (a>b)\]
+\end{example}
+
+\begin{solution}    
+\begin{enumerate}
+    \item $\sqrt{\frac{3}{50}}=\sqrt{\frac{3\x2}{50\x2}}=\frac{\sqrt{6}}{\sqrt{100}}=\frac{1}{10}\sqrt{6}$
+    \item $\sqrt{\frac{c}{a^2b}}=\frac{1}{a}\sqrt{\frac{bc}{b^2}}=\frac{1}{ab}\sqrt{bc}$
+    \item \[\begin{split}
+        \sqrt{\frac{(a+b)^2}{a^2-b^2}} &= \sqrt{\frac{(a+b)^2}{(a+b)(a-b)}}\\
+        &=\sqrt{\frac{a+b}{a-b}}\\
+        &=\sqrt{\frac{(a+b)(a-b)}{(a-b)^2}}\\
+        &=\frac{\sqrt{a^2-b^2}}{\sqrt{(a-b)^2}}\\
+        &=\frac{1}{a-b}\sqrt{a^2-b^2}
+    \end{split}\]
+\end{enumerate}
+
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item  把下列根号内的因式移到根号外面来：      
+    \begin{multicols}{2}\begin{enumerate}
+        \item $\sqrt{27}$
+    \item $\sqrt{98}$
+    \item $\sqrt{0.32}$
+    \item $\sqrt{0.0003}$
+    \item $\sqrt{x^3}$
+    \item $\sqrt{16a}$
+    \item $\sqrt{121a^4}$
+    \item $\sqrt{\frac{x^2y}{16}}\quad (x\ge 0)$   
+    \item $\sqrt{x^2+6x+9}\quad (x\ge 3)$
+    \item $\sqrt{\poly{1,6,12,8}}$
+\end{enumerate}    \end{multicols}
+ 
+\item 把下列各根号外面的因式移到根号里面去：
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $5\sqrt{2}$
+    \item $2\sqrt{7}$
+    \item $x\sqrt{y}\quad (x\ge 0)$
+    \item $\frac{2}{5}\sqrt{a}$
+    \item $2m\sqrt{mn}\quad (m\ge 0)$
+    \item $3x\sqrt{\frac{y}{3x}}\quad (x>0)$
+\end{enumerate}
+\end{multicols}
+
+\item 化去根号里面的分母。
+\begin{enumerate}
+    \item $\sqrt{1\frac{1}{2}}$
+    \item $a\sqrt{\frac{a}{b}}\quad (b>0)$
+    \item $\sqrt{\frac{a^3y}{b^4z^3}}\quad (a\ge 0,\; b>0)$
+    \item $(x+y)\sqrt{\frac{1}{x+y}}\quad (x+y>0)$
+    \item $\frac{4a}{3m}\sqrt{\frac{3m}{2a}}\quad (a>0)$
+    \item $(m-n)\sqrt{\frac{m+n}{m-n}}\quad (m-n>0)$
+\end{enumerate}
+\end{enumerate}   
+\end{ex}
+
+\subsection{最简二次根式与同类根式}
+如果一个二次根式具备下列两个条件称为最简二
+次根式。
+\begin{enumerate}
+    \item 被开方数每一个因数的指数都小于开方次数2；
+    \item 根号内不含分母。
+\end{enumerate}
+
+如根式$\sqrt{2a},\; 3\sqrt{a^2+b^2},\; \sqrt{4x^2+1}$等都是最简二
+次根式；如$\sqrt{a^3b},\; \sqrt{\frac{b}{3a}}$
+等就不是最简二次根式。
+
+\begin{example}
+    把下列根式化成最简根式。
+\begin{enumerate}
+    \item $\sqrt{4 x^{3} y^{5}}\quad (x \ge 0)$
+    \item  $\sqrt{8 x^{3} y^{4}}\quad (x \ge 0)$
+    \item  $x y \sqrt{\left(\frac{1}{x}+\frac{1}{y}\right)(x+y)} \quad(x>0, \; y>0)$.
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item $\sqrt{4 x^{3} y^{5}}=2 x y^{2} \sqrt{x y}$
+    \item $\sqrt{8 x^{3} y^{4}}=2 x y^{2} \sqrt{2 x}$
+    \item \[\begin{split}
+    x y \sqrt{\left(\frac{1}{x}+\frac{1}{y}\right)(x+y)}
+&=x y \sqrt{\frac{(x+y)^{2}}{x y}}\\
+&={x} y \sqrt{\frac{(x+y)^{2} x y}{x^{2} y^{2}}}\\
+&=(x+y) \sqrt{x y}
+\end{split}\]
+\end{enumerate}
+    
+\end{solution}
+
+如果几个二次根式化成最简根式以后，被开方数
+相同，那么这几个二次根式叫做\textbf{同类根式}。
+
+例如：$2\sqrt{5}$、$\frac{1}{3}\sqrt{5}$、$a\sqrt{5}$等都是同类根
+式；而$\sqrt{2}$与$\sqrt{3}$、$\sqrt{x}$与$\sqrt{y}$、$\sqrt{a}$与$\sqrt{7a}$等都不
+是同类根式。
+
+\begin{example}
+    把下列各根式化为最简根式，并指出哪些
+是同类根式？
+\[\sqrt{2},\qquad \sqrt{75},\qquad \sqrt{\frac{1}{50}},\qquad \sqrt{\frac{1}{27}},\qquad \sqrt{3}\]
+\[\frac{2}{3}\sqrt{8ab^3}\quad (b>0),\qquad 6b\sqrt{\frac{a}{2b}}\quad (b>0)\]
+\end{example}
+
+
+\begin{solution}
+由于：
+\[\begin{split}
+    \sqrt{75}&=\sqrt{25\x 3}=5\sqrt{3}\\
+    \sqrt{\frac{1}{50}}&=\frac{1}{50}\sqrt{25\x 2}=\frac{1}{10}\sqrt{2}    \\
+    \sqrt{\frac{1}{27}}&=\frac{1}{27}\sqrt{9\x 3}=\frac{1}{9}\sqrt{3}    \\
+    \frac{2}{3}\sqrt{8ab^3}&=\frac{2}{3}\x 2b\sqrt{2ab}=\frac{4b}{3}\sqrt{2ab}    \\
+    6b\sqrt{\frac{a}{2b}}&=\frac{6b}{2b}\sqrt{2ab}=3\sqrt{2ab}    \\
+\end{split}\]
+因此：$\sqrt{2}$与$\sqrt{\frac{1}{50}}$、$\sqrt{75}$与$\sqrt{\frac{1}{27}}$与$\sqrt{3}$、$\frac{2}{3}\sqrt{8ab^3}$
+与$6b\sqrt{\frac{a}{2b}}$ 分别是同类根式。 
+\end{solution}
+
+同类根式与同类项一样，可以进行合并，通常称
+为\textbf{合并同类根式}。其方法也与合并同类项类似，只要
+先化为最简根式，再运用分配律把同类根式各根号前
+的因式相加即可。
+
+\begin{example}
+    合并下列各式中的同类根式：
+\begin{enumerate}
+    \item $\sqrt{5}+\frac{1}{2}\sqrt{5}+\frac{1}{3}\sqrt{5}+\frac{1}{6}\sqrt{5}$
+    \item $\sqrt{12}-\sqrt{\frac{3}{4}}-\sqrt{\frac{1}{3}}\sqrt{18}$
+    \item $5\sqrt{ab}-x\sqrt{ab}+y\sqrt{ab}$
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item \[\begin{split}
+        \text{原式}&=\left(1+\frac{1}{2}+\frac{1}{3}+6\frac{1}{6}\right)\sqrt{5}\\
+        &=2\sqrt{5}
+    \end{split}\]
+    \item \[\begin{split}
+        \text{原式}&=2\sqrt{3}-\frac{1}{2}\sqrt{3}-\frac{1}{3}\sqrt{3}+3\sqrt{2}\\
+        &=\left(2-\frac{1}{2}-\frac{1}{3}\right)\sqrt{3}+3\sqrt{2}\\
+        &=\frac{7}{6}\sqrt{3}+3\sqrt{2}
+    \end{split}\]
+    \item  \[\text{原式}=(5-x+y)\sqrt{ab}\]
+\end{enumerate}
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 把下列各根式化成最简根式：
+\begin{enumerate}
+    \item $\sqrt{72}$
+    \item $\sqrt{17^{2}-8^{2}}$
+    \item $\sqrt{9 a^{3} b c^{3}}\quad (a \ge 0, c \ge 0)$
+    \item  $\sqrt{\frac{1}{3}+\frac{1}{4}}$
+    \item  $\sqrt{\frac{y^{2}}{x}}(y \ge 0)$,
+    \item  $\sqrt{\frac{(a+b)^{4}}{(a-b)^{8}}}$
+    \item  $\sqrt{x^{3}-2 x^{2}+x}\quad (x>1)$;
+    \item $a b \sqrt{\frac{1}{a}+\frac{1}{b}}$
+\end{enumerate}
+    \item 下列各组根式是不是同类根式？
+    \begin{enumerate}
+\item $5 \sqrt{125}$ 和 $3 \sqrt{45}$
+\item $2 \sqrt{a^{3} b^{3} c},\quad \frac{1}{2} \sqrt{4 a b^{5} c}$ 和 $3 \sqrt{\frac{c}{a b}}$
+\item $\sqrt{2 x},\quad \sqrt{2 a^{2} x^{3}}\;\; (a>0)$ 和 $\sqrt{50 x y^{2}}\;\;(y>0)$.
+    \end{enumerate}
+    \item 合并下列各式中的同类根式：
+\begin{enumerate}
+    \item $6 \sqrt{3}+\sqrt{0.12}+\sqrt{48}$
+    \item $\frac{1}{2} \sqrt{a}- 2 \sqrt{b}+4 \sqrt{a}+3 \sqrt{b}-\frac{3}{2} \sqrt{a}$
+    \item $\sqrt{125}+\sqrt{\frac{2}{3}}-4 \sqrt{216}+3 \sqrt{\frac{1}{5}}$
+    \item $2 a \sqrt{3 a b^{2}}-\left(\frac{b}{5} \sqrt{27 a^{3}}-2 a b \sqrt{\frac{3a}{4}}\right)\quad (b>0)$
+\end{enumerate}
+\end{enumerate}
+\end{ex}
+
+\subsection{二次根式的运算}
+二次根式的运算与整式的运算类似。
+
+\subsubsection{加法和减法法则}
+
+先把根式化成最简根式，再合并同类根式。
+
+\begin{example}
+    计算 $\left(\sqrt{24}-\sqrt{0.5}-2 \sqrt{\frac{2}{3}}\right)-\left(\sqrt{\frac{1}{2}}-\sqrt{6}\right)$
+\end{example}
+
+\begin{solution}
+    \[\begin{split}
+ \text{原式}&= 2 \sqrt{6}-\frac{1}{2} \sqrt{2}-\frac{2}{3} \sqrt{6} -\frac{1}{2} \sqrt{2}+\sqrt{6} \\
+ &=\left(2-\frac{2}{3}+1\right) \sqrt{6}-\left(\frac{1}{2}+\frac{1}{2}\right) \sqrt{2} \\
+ &=\frac{7}{3} \sqrt{6}-\sqrt{2}     
+    \end{split}\]
+\end{solution}
+
+
+\begin{example}
+计算 $\frac{2 x}{3} \sqrt{18 x}+12 x \cdot \sqrt{\frac{x}{8}}-x^{2} \sqrt{\frac{2}{x^{3}}}$
+\end{example}    
+
+\begin{solution}
+    \[\begin{split}
+ \text{原式}&=2 x \sqrt{2 x}+3 x \sqrt{2 x}-\sqrt{2 x} \\
+ &=(2 x+3 x-1) \sqrt{2 x}\\
+ &=(5 x-1) \sqrt{2 x}    
+    \end{split}\]
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 计算下列各式
+\begin{enumerate}
+    \item $\sqrt{0.2}+\sqrt{125}$
+    \item $2\sqrt{\frac{1}{27}}-\frac{2}{3}\sqrt{\frac{1}{3}}+\sqrt{1\frac{1}{3}}$
+    \item $\sqrt{3 a x^{2}}-\sqrt{3 a^{3} x^{2}}$
+    \item $\sqrt{\frac{y}{3 x^{2}}}-\frac{1}{3} \sqrt{\frac{y}{3}}$
+    \item $\sqrt{2 a b}-2 b \sqrt{\frac{a}{2 b}}$
+    \item $2 \sqrt{25 a}-3 \sqrt{a^{2}b}+5 \sqrt{36 a}-2 \sqrt{a^{2} b}$
+    \item  $\left(\sqrt{32}+\sqrt{0.5}-2 \sqrt{\frac{1}{3}}\right)-\left(\sqrt{\frac{1}{18}}-\sqrt{48}\right)$
+    \item  $(5 \sqrt{a}-3 \sqrt{25 a})+(2 \sqrt{35 a}+2 \sqrt{9 a})$.
+\end{enumerate}
+
+\item 下列计算是否正确? 为什么?
+\begin{enumerate}
+    \item  $\sqrt{3}+\sqrt{97}=10_{3}$
+    \item $5+\sqrt{3}=5 \sqrt{3}$
+    \item $\sqrt{2 x}+\sqrt{14 x}=\sqrt{16 x}=4 \sqrt{x}$
+    \item $\frac{\sqrt{50}+\sqrt{8}}{2}=\sqrt{25}+\sqrt{4}=5+2=7$
+\end{enumerate}
+\end{enumerate}
+\end{ex}
+
+由二次根式的基本性质3、4，反过来运用，就
+可以得到二次根式的乘、除法法则。
+
+\subsubsection{乘法和除法法则}
+\[\sqrt{a}\cdot \sqrt{b}=\sqrt{ab}\quad (a\ge 0,\; b\ge 0),\qquad \frac{\sqrt{a}}{\sqrt{b}}=\sqrt{\frac{a}{b}}\quad (a\ge 0,\; b>0)  \]
+并化为最简根式。
+一般地，还可以写成以下公式：
+\[\begin{split}
+    m\sqrt{a}\cdot n\sqrt{b}&= mn\sqrt{ab}\\
+    m\sqrt{a}\div n\sqrt{b}&=\frac{m\sqrt{a}}{n\sqrt{b}}=\frac{m}{n}\sqrt{\frac{a}{b}}
+\end{split}\]
+并将结果化为最简二次根式。
+
+\begin{example}
+    计算下列各式：
+\begin{enumerate}
+    \item $\sqrt{4x^3}\cdot \sqrt{\frac{3x}{2}}$
+    \item $3\sqrt{5a}\cdot 4\sqrt{10b}$
+\item $\left(\sqrt{xy}+2\sqrt{\frac{y}{x}}-\sqrt{\frac{x}{y}}+\sqrt{\frac{1}{xy}}\right)\cdot \sqrt{xy}$
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+    \begin{enumerate}
+        \item $\sqrt{4x^3}\cdot \sqrt{\frac{3x}{2}}=\sqrt{4x^3\cdot \frac{3x}{2}}=\sqrt{6x^4}=x^2\sqrt{6}$
+        \item $3\sqrt{5a}\cdot 4\sqrt{10b}=3\x 4\sqrt{50ab}=12\x \sqrt{2ab}=60\sqrt{2ab}$
+    \item $\left(\sqrt{xy}+2\sqrt{\frac{y}{x}}-\sqrt{\frac{x}{y}}+\sqrt{\frac{1}{xy}}\right)\cdot \sqrt{xy}=xy+2y-x+1$
+    \end{enumerate}
+\end{solution}
+
+
+\begin{example}
+    计算下列各式：
+\begin{enumerate}
+    \item $\left(3\sqrt{2}-2\sqrt{3}\right)\left(7\sqrt{2}+5\sqrt{3}\right)$
+    \item $\left(6\sqrt{3}+3\sqrt{6}\right)^2$
+    \item $\left(x\sqrt{a}-y\sqrt{b}\right)^2$
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+    \begin{enumerate}
+    \item $\text{原式}=42-14\sqrt{6}+15\sqrt{6}-30=12+\sqrt{6}$
+    \item $\text{原式}=\left(6\sqrt{3}\right)^2+2\cdot 6\sqrt{3}\cdot 3\sqrt{6}+\left(3\sqrt{6}\right)^2=108+108\sqrt{2}+54=162+108\sqrt{2}$
+    \item $\text{原式}=ax^2+by^2-2xy\sqrt{ab}$
+\end{enumerate}
+\end{solution}
+
+
+\begin{example}
+    计算下列各式：
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $\left(\sqrt{7}+\sqrt{3}\right)\cdot \left(\sqrt{7}-\sqrt{3}\right)$
+    \item $\left(\sqrt{xy}-\sqrt{ab}\right)\cdot \left(\sqrt{xy}+\sqrt{ab}\right)$
+    \item $\left(4\sqrt{\frac{a}{2}}+6\sqrt{\frac{b}{4}}\right)\cdot \left(\sqrt{8a}-3\sqrt{b}\right)$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+\begin{solution}
+    \begin{enumerate}
+        \item $\text{原式}=\left(\sqrt{7}\right)^2-\left(\sqrt{3}\right)^2=7-3=4$
+        \item $\text{原式}=\left(\sqrt{xy}\right)^2-\left(\sqrt{ab}\right)^2=xy-ab$
+        \item $\text{原式}=\left(2\sqrt{2a}+3\sqrt{b}\right)\cdot\left(2\sqrt{2a}-3\sqrt{b}\right)=\left(2\sqrt{2a}\right)^2-\left(3\sqrt{b}\right)^2=8a-9b$
+    \end{enumerate}    
+\end{solution}
+
+由例6.45中，我们发现：计算结果都不再含有根
+式。
+
+两个含有根式的式子相乘，如果它们的乘积中不
+再含有根式，那么，这两个式子就叫做\textbf{互为有理化因
+式}。
+
+例如，$\sqrt{7}+\sqrt{3}$与$\sqrt{7}-\sqrt{3}$；$\sqrt{x+y}$与$\sqrt{x+y}$；$a+2\sqrt{b}$与$a-2\sqrt{b}$；$\sqrt{xy}+\sqrt{ab}$与
+$\sqrt{xy}-\sqrt{ab}$；$2\sqrt{2a}+3\sqrt{b}$与$2\sqrt{2a}-3\sqrt{b}$等
+等，都是互为有理化因式。
+
+\begin{ex}
+    计算下列各题：
+\begin{enumerate}
+    \item \begin{multicols}{2}
+\begin{enumerate}
+    \item $\sqrt{6x}\cdot \sqrt{2x}$
+    \item $2\sqrt{2a}\cdot \sqrt{24ab}$
+    \item $\frac{3}{4}\sqrt{\frac{5a}{2}}\cdot \sqrt{\frac{0.4}{a}}$
+    \item $\left(\sqrt{10}-2\sqrt{15}\right)\cdot \sqrt{5}$
+    \item $\left(x\sqrt{y}-y\sqrt{x}\right)\cdot \sqrt{xy}$
+\end{enumerate}
+    \end{multicols}
+\item \begin{enumerate}
+    \item $\left(4\sqrt{3}+5\sqrt{2}\right)\cdot \left(\sqrt{3}-\sqrt{2}\right)$
+    \item $(a+\sqrt{ab})\cdot (b+\sqrt{ab})$
+    \item $\left(\sqrt{mn}+\sqrt{\frac{m}{n}}-m\right)\cdot \left(\sqrt{\frac{m}{n}}-n\right)$
+\end{enumerate}
+
+\item \begin{enumerate}
+    \item $\left(7+3\sqrt{2}\right)\cdot \left(\sqrt{18}-7\right)$
+    \item $\left(2\sqrt{ax}+5\sqrt{by}\right)\cdot \left(2\sqrt{ax}-5\sqrt{by}\right)$
+    \item $\left(\sqrt{x+3}-\sqrt{2x}\right)\cdot \left(\sqrt{x+3}+\sqrt{2x}\right)$
+    \item $\left(\frac{-1+\sqrt{3}}{2}\right)^2$
+    \item $\left(\sqrt{\frac{a}{b}}+\sqrt{\frac{b}{a}}\right)^2$
+    \item $\left(\sqrt{a}+\sqrt{b}\right)^2+\left(\sqrt{a}-\sqrt{b}\right)^2$
+    \item $\left(1+\sqrt{x}-\sqrt{y}\right)\cdot \left(1-\sqrt{x}+\sqrt{y}\right)$
+
+\end{enumerate}
+
+\item 写出以下各根式的有理化因式：
+\[3\sqrt{7},\quad 7-\sqrt{11},\quad 5\sqrt{3}+\sqrt{10},\quad \sqrt{2x^2-1},\quad x+x\sqrt{y}\]
+\[a^2-b\sqrt{a+1},\qquad \sqrt{x+2}-\sqrt{x}\]
+\end{enumerate}
+\end{ex}
+
+\begin{example}
+    计算下列各式：
+    \begin{multicols}{2}
+        \begin{enumerate}
+    \item $\sqrt{104}\div\sqrt{13}$
+    \item $9\sqrt{45}\div \frac{3}{2}\sqrt{1\frac{1}{2}}$
+    \item $18\sqrt{2x^3}\div 3\sqrt{3y}$
+    \item $-6\sqrt{\frac{2a-2b}{x^2}}\div \frac{4}{5}\sqrt{\frac{a-b}{2bx^2}}$
+\end{enumerate}
+    \end{multicols}
+\end{example}
+
+\begin{solution}
+  \begin{enumerate}
+        \item $\text{原式}=\frac{\sqrt{104}}{\sqrt{13}}=\sqrt{\frac{104}{13}}=\sqrt{8}=2\sqrt{2}  $
+        \item $\text{原式}=9\x \frac{2}{3}\sqrt{45\x \frac{2}{3}}=6\sqrt{30}  $
+        \item $\text{原式}=\frac{18\sqrt{2x^3}}{3\sqrt{3y}}=6\frac{2x^3}{3y} =\frac{2x}{y}\sqrt{6x}  $
+        \item $\text{原式}=-6\x \frac{5}{4}\sqrt{\frac{2a-2b}{x^2}\cdot \frac{2bx^2}{a-b}}=-\frac{15}{2}\sqrt{4b}=-15\sqrt{b}   $
+    \end{enumerate}    
+\end{solution}
+
+在二次根式的除法运算中，总是先用法则将分
+子、分母并入一个根号内，再将根号里边的分母化
+去，使结果成为最简根式。
+
+在实际的运算中，有时先把分母中的根号化去再
+进行计算，较为简便，例如，计算$\frac{\sqrt{3}}{\sqrt{2}}$
+的近似值（精确到
+0.01）时，就可以先把分母中的根号化去再计算：
+\[\frac{\sqrt{3}}{\sqrt{2}}=\frac{\sqrt{3}\cdot \sqrt{2}}{\sqrt{2}\cdot \sqrt{2}}=\frac{\sqrt{6}}{2}\approx \frac{2.449}{2}\approx 1.23  \]
+
+同样，在计算$\frac{1}{\sqrt{3}-\sqrt{2}}$
+（精确到0.01）的近似值
+时，也可以先将分母中的根号化去再计算，较为简
+便。
+\[\begin{split}
+    \frac{1}{\sqrt{3}-\sqrt{2}}&=\frac{\sqrt{3}+\sqrt{2}}{\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)}\\
+    &=\frac{\sqrt{3}+\sqrt{2}}{3-2}=\sqrt{3}+\sqrt{2}\\
+    &\approx 1.732+1.414=3.146\approx 3.15
+\end{split}\]
+
+把分母中的根号化去，叫做\textbf{分母有理化}。分母有
+理化的方法是：根据分式的基本性质，只要将分子、
+分母同乘以分母的有理化因式，就可以达到目的。
+
+在根式的除法中，先进行有理化分母，往往是较
+简便的。
+
+\begin{example}
+计算：
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\left(\sqrt{a^3b}+\sqrt{ab^3}-ab\right)\div \sqrt{ab}$
+        \item $\frac{a^2-b^2}{\sqrt{a+b}}$
+        \item $\left(4\sqrt{3}+5\sqrt{2}\right)\div \left(\sqrt{3}-\sqrt{2}\right)$
+        \item $\frac{2}{3+2\sqrt{2}}$
+        \item $\frac{\sqrt{a+b}+\sqrt{a-b}}{\sqrt{a+b}+\sqrt{a-b}}\quad (a>b)$
+    \end{enumerate}   
+\end{multicols}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item \[\begin{split}
+\text{原式 }&=\frac{\left(\sqrt{a^{3} b}+\sqrt{a b^{3}}-a b\right) \cdot \sqrt{a b}}{\sqrt{a b \cdot \sqrt{a b}}}\\
+&=\frac{1}{a b}\left(a^{2} b+a b^{2}-a b \sqrt{a b}\right)\\
+&=a+b-\sqrt{ab}
+    \end{split}\]
+    \item \[\begin{split}
+\text{原式 }&= \frac{(a^2-b^2)\sqrt{a+b}}{\sqrt{a+b}\cdot \sqrt{a+b}}   \\
+&= \frac{a^2-b^2}{a+b}\cdot \sqrt{a+b}  \\
+&=  (a-b)\sqrt{a+b}
+    \end{split}\]
+    \item \[\begin{split}
+\text{原式 }&= \frac{4\sqrt{3}+5\sqrt{2}}{\sqrt{3}-\sqrt{2}}   \\
+&= \frac{\left(4\sqrt{3}+5\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)}{\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)}  \\
+&=  \frac{12+4\sqrt{6}+5\sqrt{6}+10}{(\sqrt{3})^2-(\sqrt{2})^2}\\
+&=22+9\sqrt{6}
+    \end{split}\]
+        \item \[\begin{split}
+\text{原式 }&= \frac{2\cdot (3-2\sqrt{2})}{(3+2\sqrt{2})(3-2\sqrt{2})}   \\
+&= \frac{6-4\sqrt{2}}{3^2-(2\sqrt{2})^2}  \\
+&=  \frac{6-4\sqrt{2}}{9-8}=6-4\sqrt{2}
+    \end{split}\]
+            \item \[\begin{split}
+\text{原式 }&= \frac{(\sqrt{a+b}+\sqrt{a-b})^2}{(\sqrt{a+b}-\sqrt{a-b})(\sqrt{a+b}+\sqrt{a-b})}   \\
+&= \frac{a+b+2\sqrt{a+b}\cdot \sqrt{a-b}+a-b}{(\sqrt{a+b})^2-(\sqrt{a-b})^2}  \\
+&= \frac{2a+2\sqrt{a+b}\cdot \sqrt{a-b}}{2b}\\
+&=\frac{a+\sqrt{a^2-b^2}}{b} 
+    \end{split}\]
+\end{enumerate}
+\end{solution}
+
+\begin{example}
+    计算（精确到0.01):
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{\sqrt{3}}{\sqrt{2}+\sqrt{3}+\sqrt{5}}$
+        \item $2\div \left(1-\sqrt{2}+\sqrt{3}\right)$
+    \end{enumerate}
+\end{multicols}
+\end{example}
+
+\begin{solution}
+    \begin{enumerate}
+    \item \[\begin{split}
+\text{原式 }&=\frac{\sqrt{3}(\sqrt{2}+\sqrt{3}-\sqrt{5})}{\left[(\sqrt{2}+\sqrt{3})+\sqrt{5}\right]\left[(\sqrt{2}+\sqrt{3})-\sqrt{5}\right]}   \\
+&= \frac{\sqrt{3}(\sqrt{2}+\sqrt{3}-\sqrt{5})}{(\sqrt{2}+\sqrt{3})^2-(\sqrt{5})^2}  \\
+&= \frac{\sqrt{6}+3-\sqrt{15}}{2\sqrt{6}}\\
+&= \frac{(3+\sqrt{6}-\sqrt{15})\cdot \sqrt{6}}{2\sqrt{6}\cdot \sqrt{6}}\\
+&=\frac{3\sqrt{6}+6-\sqrt{90}}{12}=\frac{1}{4}\left(2+\sqrt{6}-\sqrt{10}\right)\\
+&\approx \frac{1}{4}(2+2.449-3.162)\approx 0.32
+    \end{split}\]
+            \item \[\begin{split}
+\text{原式 }&= \frac{2\left[(1-\sqrt{2})-\sqrt{3}\right]}{\left[(1-\sqrt{2})+\sqrt{3}\right]\cdot \left[(1-\sqrt{2})-\sqrt{3}\right]}  \\
+&= \frac{2-2\sqrt{2}-2\sqrt{3}}{(1-\sqrt{2})^2-(\sqrt{3})^2} \\
+&=  \frac{2-2\sqrt{2}-2\sqrt{3}}{-2\sqrt{2}}  \\
+&= \frac{1-\sqrt{2}-\sqrt{3}}{-\sqrt{2}} =\frac{(1-\sqrt{2}-\sqrt{3})\cdot \sqrt{2}}{-\sqrt{2}\cdot \sqrt{2}}\\
+&=\frac{\sqrt{2}-2-\sqrt{6}}{-2}\\
+&\approx -\frac{1}{2}(1.414-2-2.449)\approx 1.52
+    \end{split}\]
+    \end{enumerate}
+\end{solution}
+
+
+
+\begin{ex}
+\begin{enumerate}
+    \item 计算下列各式：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\sqrt{ab}\div \sqrt{3a}$
+    \item $5n\div 3\sqrt{mn}$
+\item $\sqrt{9a^2}\div \sqrt{\frac{a}{9}}$
+\item $25a^2x\div 5a\sqrt{x}$
+\item  $\left(x\sqrt{y}-y\sqrt{x}\right)\div \sqrt{xy}$
+\item $\left(\sqrt{x}-\sqrt{\frac{x}{2}}\right)\div \sqrt{x}$
+\item $\left(\sqrt{mn}+\sqrt{\frac{m}{n}}{-m}\right)\div \sqrt{\frac{m}{n}}$
+\item $\frac{\sqrt{5}}{\sqrt{5}+1}$
+\item $(\sqrt{5}+\sqrt{2})\div (\sqrt{5}-\sqrt{2})$
+\item $(a+\sqrt{ab}\div (b+\sqrt{ab}))$
+\end{enumerate}    
+\end{multicols}
+
+    \item 将下列各式分母有理化：
+    \begin{multicols}{2}
+\begin{enumerate}
+\item $\frac{5y^2}{\sqrt{75y}}$
+\item $\frac{1-\sqrt{3}}{2+\sqrt{3}}$
+\item $\frac{5}{2\sqrt{3}-\sqrt{2}}$
+\item $\frac{a-b}{\sqrt{a}-\sqrt{b}}$
+\item $\frac{1}{x-\sqrt{1+x^2}}$
+\item $\frac{\sqrt{2x^2+1}}{\sqrt{2x^2+1}+\sqrt{2x^2-1}}$
+\end{enumerate}    
+\end{multicols}
+
+    \item 试一试：你能把下列各式的分子有理化吗？
+    \begin{multicols}{2}
+        \begin{enumerate}
+        \item  $\frac{\sqrt{10}-\sqrt{6}}{4}$
+        \item $\frac{b(\sqrt{x^2-a^2}-x)}{a}$
+        \end{enumerate}    
+        \end{multicols}
+\end{enumerate}    
+\end{ex}
+
+\subsection{根式方程}
+已经学过的整式方程和分式方程统称为有理方
+程。在实际中我们还会遇到像$\sqrt{x^2-1}=2$, $\sqrt{1-x}+\sqrt{12+x}=5$,
+$\frac{1}{\sqrt{x}}=7$等方程，这些\textbf{根号里含有未知
+数的方程叫做根式方程}．方程$\sqrt{2}x^2+3x-\sqrt{5}=0$, 
+$\frac{x}{\sqrt{2}-1}=3$, 虽然带有根号，但根号内不含有未知
+数，所以它们不是根式方程。
+
+在根式方程中，由于未知数包含在根号内，因而，
+未知数只允许取使二次根式有意义的值。例如，根式
+方程$\sqrt{x-1}+\sqrt{3-x}=2$中，未知数$x$只允许在
+“能使$x-1\ge 0$, 且$3-x\ge 0$”的范围内取值。
+
+解根式方程主要是设法把原方程变形为有理方
+程。我们通常采用的方法是方程两边平方，逐步使含
+有未知数的根式有理化。
+
+
+
+
+
+\begin{example}
+解方程$\sqrt{x+7}=x-5$
+\end{example}
+
+\begin{solution}
+    两边平方得：
+    \[(\sqrt{x+7})^2=(x-5)^2\]
+    整理后，得方程：$x^2-11x+18=0$
+    解出：
+    $x_1=9,\qquad x_2=2$
+
+    验根：把$x=9$代入原方程两边。
+    \[\begin{split}
+        \text{左式}&=\sqrt{9+7}=4\\
+        \text{右式}&=9-5=4      
+    \end{split}\]
+$\therefore\quad x=9$是原方程的根。
+    
+把$x=2$代入原方程两边。
+\[\begin{split}
+    \text{左式}&=\sqrt{2+7}=3\\
+    \text{右式}&=2-5=-3      
+\end{split}\]
+两边的值不等。
+
+$\therefore\quad x=2$是原方程的增根（舍去）。
+
+$\therefore\quad $原方程的解集是：$\{9\}$。
+
+通过上例可以看出：根式方程两边平方后，就得
+到一个新的整式方程，这个新方程的根可能是原根式
+方程的根；也可能是原方程的增根。但为什么会产生
+增根呢？
+
+观察原方程$\sqrt{x+7}=x-5$, 不难知道：未知
+数$x$的取值范围，既要使
+$x+7\ge 0$, 又要使$x-5
+\ge 0$, 这样才能使原方程中的根式有意义。
+
+但是，在原方程两边平方后所得的新方程
+$(\sqrt{x+7})^2=(x-5)^2$中，未知数$x$的取值范围，
+只要求使$x+7\ge 0$就能使新方程有意义。这就是说，
+新方程中未知数的取值范围扩大了。
+
+事实上，方程两边平方$(\sqrt{x+7})^2=(x-5)^2$
+可以变形为：
+\[(\sqrt{x+7})^2-(x-5)^2=0\]
+即：
+\[\left[\sqrt{x+7}-(x-5)\right]\left[\sqrt{x+7}+(x-5)\right]=0 \]
+这就相当于得到以下两个方程：
+\[\sqrt{x+7}-(x-5)=0,\qquad \sqrt{x+7}+(x-5)=0\]
+这样一来，解整式方程：$x+7=(x-5)^2$, 就相当
+于解以上两个根式方程，但原题所给出的根式方程只
+是其中的一个。因此，解的过程中就可能产生增根。
+\end{solution}
+
+很明显，在例6.49中，原方程的增根$x=2$就是方
+程$\sqrt{x+7}=-(x-5)$的根。
+
+由以上分析，可以得出以下结论：
+
+\begin{blk}{}
+    方程两边平方，实际上就是方程两边乘以同一
+个含有未知数的因式，这样，未知数的取值范围就可
+能扩大，就可能产生原方程的增根。这时，就必须进
+行验根，把增根舍去。
+\end{blk}
+
+
+
+\begin{example}
+    解方程$\sqrt{x+10}+\sqrt{x-11}=7$
+\end{example}
+
+\begin{analyze}
+    解根式方程时，利用“\textbf{移项规则}”可以把
+所含根式比较均匀地分列于等号两边，然后再逐步平
+方。这样比较简便。
+\end{analyze}
+
+
+\begin{solution}
+\begin{align*}
+    \sqrt{x+10}&=7-\sqrt{x-11}\tag{移项}\\
+x+10&=49-14\sqrt{x-11}+x-11  \tag{两边平方}\\
+\sqrt{x-11}&=2\\
+x-11&=4 \tag{两边平方}\\
+x&=15
+\end{align*}
+验根：把$x=15$代入原方程：
+\[\begin{split}
+    \text{左式}&=15+10+15-11=5+2=7\\
+    \text{右式}&=7
+\end{split}\]
+$\therefore\quad $
+原方程的解集是$\{15\}$。
+\end{solution}
+
+\begin{example}
+    解方程$\sqrt{2x-3}+\sqrt{3x-5}-\sqrt{5x-6}=0$
+\end{example}
+
+\begin{solution}
+\begin{align*}
+    \sqrt{2x-3}+\sqrt{3x-5}&=\sqrt{5x-6}  \tag{移项}\\
+2x-3+2\sqrt{2x-3}\cdot \sqrt{3x-5}+3x-5&=5x-6  \tag{两边平方}\\
+\sqrt{2x-3}\cdot \sqrt{3x-5}&=1
+(2x-3)(3x-5)&=1   \tag{两边平方}\\
+6x^2-19x+14&=0
+\end{align*}
+$\therefore\quad x_1=2,\quad x_2=\frac{7}{6}$
+
+把$x=2$代入原方程：
+\[\begin{split}
+    \text{左式}&=1+1-2=0\\
+    \text{右式}&=0
+\end{split}\]
+$\therefore\quad x=2$是原方程的根。
+
+把$x=\frac{7}{6}$代入原方程，因为$\sqrt{2x-3}=\sqrt{-\frac{2}{3}}$，
+被开方数是负数，使原方程无意义，所以
+$x=\frac{7}{6}$是增根（舍去）。
+
+$\therefore\quad $原方程的解集是$\{2\}$。
+\end{solution}
+
+由以上例题，告诉我们：
+
+解根式方程进行验根时，可以把有理方程的每一
+个根分别代入原根式方程的每一个根号内，如果代入
+后，至少有一个根号内得负数，就说明这个根使原方
+程无意义，肯定是增根，应该舍去（如例6.51）；如果
+代入后，使原方程中的每一个根号内都为非负数，就
+说明这个根能使原方程中的根式有意义，但还不能保
+证能使原方程两边相等，仍然有可能是增根（如例
+6.49），所以还应该继续代入原方程两边，进行检验。
+
+总之，解根式方程的一般步骤是：
+\begin{enumerate}
+    \item 移项，使方程中含未知数的根式比较均匀的
+    分列于等号的两边；
+    \item 方程两边同时平方，逐次化去根号，得到有
+    理方程；
+    \item 解有理方程；
+    \item 验根。
+\end{enumerate}
+
+\begin{ex}
+\begin{enumerate}
+    \item 解下列方程：
+    \begin{multicols}{2}
+      \begin{enumerate}
+    \item $\sqrt{x^2-1}=\sqrt{3}$
+    \item $\sqrt{x^2-3x+4}+5=x$
+    \item $\sqrt{2x-4}-\sqrt{x+5}=1$
+    \item $\sqrt{x-1}\cdot \sqrt{2x+6}-x=3$
+    \end{enumerate}      
+    \end{multicols}
+
+
+    \item 不解方程判别下列各方程是否有解
+      \begin{enumerate}
+        \item $\sqrt{3x-2}=-4$
+    \item $\sqrt{2x+1}=-(x^2+1)$
+    \item $\sqrt{2x-1}+\sqrt{x+1}=0$
+    \item $\sqrt{x-1}+\sqrt{x-2}+\sqrt{x-3}=-3$
+    \end{enumerate}  
+\end{enumerate}
+\end{ex}
+
+\begin{example}
+解方程$x^2-2x+6\sqrt{x^2-2x+6}=21$
+\end{example}
+
+
+\begin{solution}
+    设$\sqrt{x^2-2x+6}=y$, 则$x^2-2x+6=y^2$。
+原方程可变形为$y^2+6y-27=0$
+$\because\quad y_1=3,\qquad y_2=-9$
+
+这就是$\sqrt{x^2-2x+6}=3$或$\sqrt{x^2-2x+6}=-9$
+，其中$\sqrt{x^2-2x+6}$是算术根，所以不能等于$-9$。
+
+$\therefore\quad \sqrt{x^2-2x+6}=-9$无解。
+
+解方程
+\begin{equation}
+    \sqrt{x^2-2x+6}=3
+\end{equation}
+两边平方：
+\begin{equation}
+    x^2-2x+6=9 \quad \Rightarrow\quad  x^2-2x-3=0
+\end{equation}
+$\therefore\quad x_1=3,\qquad x_2=-1$
+
+验根：把$x_1=3,\; x_2=-1$, 分别代入方程检验，
+可知这两个根都是原方程的根。
+
+$\therefore\quad $原方程的解集是：$\{3,\;-1\}$。
+\end{solution}
+
+在上题求解过程中，由方程(6.4)变形为方程(6.5)
+有产生增根的可能，所以，验根时只须代入方程(6.4)
+检验就可以。
+
+\begin{ex}
+    解下列方程
+    \begin{enumerate}
+        \item $x^2+8x+\sqrt{x^2+8x}=12$
+        \item $x^2-x+\sqrt{x^2-x+2}-4=0$
+    \end{enumerate}
+\end{ex}
+
+\begin{example}
+    解方程：$\sqrt{3x-1}+\frac{2}{\sqrt{3x-1}}=\sqrt{5x+3}$
+\end{example}
+
+\begin{solution}
+    方程两边乘以$\sqrt{3x-1}$得：
+\[3x-1+2=\sqrt{5x+3}\cdot \sqrt{3x-1} \]
+即：
+\[3x+1=\sqrt{(5x+3)\cdot (3x-1)}\]
+两边平方：$(3x+1)^2=(5x+3)  (3x-1)$，整理得：
+\[3x^2-x-2=0 \]
+$\therefore\quad x_1=2,\quad x_2=-\frac{2}{3}$
+
+经检验，当$x=-\frac{2}{3}$时，
+原方程所含的根号内都
+是负数，因而$x=-\frac{2}{3}$
+是增根，应舍去。
+
+$x=1$是原方程的根。
+
+$\therefore\quad $原方程的解集是：$\{1\}$。
+\end{solution}
+
+\begin{example}
+    解方程$\frac{1}{1-\sqrt{1-x^2}}-\frac{1}{1+\sqrt{1-x^2}}=\frac{\sqrt{3}}{x^2}$
+\end{example}
+
+\begin{solution}
+    分母有理化得：
+\[\frac{1+\sqrt{1-x^2}}{1-(1-x^2)}-\frac{1-\sqrt{1-x^2}}{1-(1-x^2)}=\frac{\sqrt{3}}{x^2}\]
+就是
+\[\frac{1+\sqrt{1-x^2}}{x^2}-\frac{1-\sqrt{1-x^2}}{x^2}=\frac{\sqrt{3}}{x^2}\]
+去分母：
+\[\begin{split}
+    2\sqrt{1-x^2}&= \sqrt{3}\\
+    4(1-x^2)&=3\\
+    4x^2&=1
+\end{split}\]
+$\therefore\quad x_1=\frac{1}{2},\quad x_2=-\frac{1}{2}$
+
+经检验知，$x_1=\frac{1}{2}$和$x_2=-\frac{1}{2}$
+都是原方程的根。
+
+原方程的解集是$\left\{\frac{1}{2},\; -\frac{1}{2}\right\}$
+\end{solution}
+
+\begin{ex}
+    解下列方程：
+\begin{enumerate}
+    \item $\sqrt{x}+\frac{1}{\sqrt{x}}=2$
+    \item $\frac{1}{x+\sqrt{1+x^2}}+\frac{1}{x-\sqrt{1+x^2}}+2=0$
+\end{enumerate}
+\end{ex}
+
+
+
+\section*{习题6.2}
+\addcontentsline{toc}{subsection}{习题6.2}
+
+\begin{enumerate}
+    \item 求下列各式的值:
+\begin{enumerate}
+    \item $\sqrt{(a-b)^{2}}$, 当 $a=15,\; b=9$
+    \item $\sqrt{(2 m-3 n)^{2}}$, 当 $m=4,\; n=5$
+    \item $\sqrt{b^{2}-6 b+9}$, 当 $0<b<3$.
+\end{enumerate}
+\item 化简并讨论下列各式:
+\begin{multicols}{2}
+   \begin{enumerate}
+    \item $\sqrt{x^{2}}+x$
+    \item $x+\sqrt{1-2 x+x^{2}}$
+    \item $(m-n) \sqrt{\frac{m+n}{(m-n)^{2}}}$
+    \item $\frac{1}{x-1} \sqrt{(x-1)\left(x^{2}-1\right)}$
+\end{enumerate} 
+\end{multicols}
+
+
+\item 化简下列各式:
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $2 \sqrt{9 a^{2} b c^{3}}$
+\item $\sqrt{12(x+y)^{3}}$
+\item $\sqrt{\frac{32 c^{3}}{9 a^{5} b} }$
+\item $\sqrt{25 m^{3}+50 m^{2}}$
+\item  $\sqrt{\frac{a c^{2}+b c^{2}}{a-b}}$
+\item  $\sqrt{27 x^{2}-9 x^{3}} \quad(x<0)$
+\end{enumerate}
+\end{multicols}
+
+
+\item 计算下列各式:
+\begin{enumerate}
+\item $\sqrt{a b}+2 \sqrt{\frac{b}{a}}+\sqrt{\frac{1}{a b}}-6 \sqrt{\frac{a}{b}}$
+\item $0.1 \sqrt{200}-2 \sqrt{0.12}+4 \sqrt{0.5}+0.4 \sqrt{108}$
+\item $a \sqrt{\frac{a+b}{a-b}}-b \sqrt{\frac{a-b}{a+b}}-\frac{2 b^{2}}{\sqrt{a^{2}-b^{2}}}\quad (a>b>0)$
+\item $\left(\sqrt{a b}-\sqrt{\frac{a}{b}}\right)-\left(\sqrt{\frac{b}{a}}-\sqrt{\frac{a}{b}}+\frac{b}{a}+2\right)$
+\end{enumerate}
+
+\item 计算下列各式:
+\begin{enumerate}
+\item $\left(\sqrt{24}-3 \sqrt{1.5}+2 \sqrt{2 \frac{2}{3}}\right) \cdot \sqrt{2}$
+\item $\left(\frac{a}{b} \sqrt{\frac{n}{m}}-\frac{a b}{n} \sqrt{m n}+\frac{a^{2}}{b^{2}} \sqrt{\frac{m}{n}}\right) \cdot a^{2} b^{2} \sqrt{\frac{n}{m}}$
+\item $10 a^{2} \sqrt{a b} \cdot 5 \sqrt{\frac{b}{a}} \cdot 15 \sqrt{\frac{a}{b}}$
+\item  $(\sqrt{27}+\sqrt{28})(\sqrt{12}-\sqrt{63})$
+\item  $\left(\frac{1}{4} \sqrt{a-b}+2 \sqrt{a}\right)\left(\frac{1}{4} \sqrt{a-b}-2 \sqrt{a}\right)$
+\item $\left(\sqrt{4+2 \sqrt{3}}-\sqrt{4-2 \sqrt{3}}\right)^{2}$
+\end{enumerate}
+
+\item 计算下列各式:
+\begin{enumerate}
+\item  $\left(\frac{3 x}{2} \sqrt{\frac{x}{y}}-0.4 \sqrt{\frac{3}{x y}}+\frac{1}{3} \sqrt{\frac{x y}{2}}\right) \div \frac{4}{15} \sqrt{\frac{3 y}{2 x}}$
+\begin{multicols}{2}
+    \item  $\frac{3 \sqrt{5}+\sqrt{32}}{3 \sqrt{5}-\sqrt{32}}$
+\item  $\frac{a+\sqrt{a^{2}-1}}{a-\sqrt{a^{2}-1}}\quad (a>1)$
+\item $\frac{x+y+2 \sqrt{x y}}{(\sqrt{x}-\sqrt{y})^{2}}$
+\item $\frac{\sqrt{x^{2}+a^{2}}+\sqrt{x^{2}-a^{2}}}{\sqrt{x^{2}+a^{2}}-\sqrt{x^{2}-a^{2}}}\quad (x>a)$
+\item $\frac{\sqrt{3}}{\sqrt{8}-\sqrt{12}-3 \sqrt{2}}$
+\item $\frac{1}{\sqrt{2}+\sqrt{5}-\sqrt{7}}$
+\item $\frac{1-\sqrt{2}+\sqrt{3}}{1+\sqrt{2}-\sqrt{3}}$
+\end{multicols}
+
+\end{enumerate}
+
+\item 计算下列各式:
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\frac{\sqrt{2}+\sqrt{3}}{3+\sqrt{3}}+\frac{2-\sqrt{3}}{\sqrt{3}+1}$
+\item $\frac{1}{\sqrt{3}+\sqrt{2}}+\frac{1}{\sqrt{2}-1}-\frac{2}{\sqrt{3}+1}$,
+\item $\frac{\sqrt{y+1}-\sqrt{y}}{\sqrt{y+1}+\sqrt{y}}-\frac{\sqrt{y-1}+\sqrt{y}}{\sqrt{y-1}-\sqrt{y}}$
+\item $\frac{1}{x+\sqrt{1+x^{2}}}\left(1+\frac{x}{\sqrt{1+x^{2}}}\right)$.
+\end{enumerate}
+\end{multicols}
+
+
+\item 解下列方程:
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\sqrt{x-1} \cdot \sqrt{x+1}=\sqrt{x+5}$
+\item $\sqrt{x^{2}-3 x+1}+7=2 x$
+\item $\sqrt{1-x}+\sqrt{12+x}=5$
+\item $\sqrt{x+8}-\sqrt{5 x+20}+2=0$
+\item $\sqrt{y-1}-\sqrt{y+2}=\sqrt{5 y-1}$
+\item $\sqrt{3+\sqrt{x}}=\sqrt{9-5 \sqrt{x}}$
+\end{enumerate}
+\end{multicols}
+
+
+
+\item 解下列方程：
+\begin{enumerate}
+\item $\frac{\sqrt{y}+\sqrt{y-3}}{\sqrt{y}-\sqrt{y-3}}=2 y-5$
+\item $\frac{\sqrt{2 x+1}+\sqrt{2 x-1}}{\sqrt{2 x+1}-\sqrt{2 x-1}}=2 x+3$ 
+\item  $\frac{x+\sqrt{x^{2}-a^{2}}}{x-\sqrt{x^{2}-a^{2}}}-\frac{x-\sqrt{x^{2}-a^{2}}}{x+\sqrt{x^{2}-a^{2}}}-4 \sqrt{x^{2}-a^{2}}=0\quad (a \neq 0)$
+\end{enumerate}
+
+\item 解下列方程：
+\begin{enumerate}
+\item  $7 x^{2}-4 \sqrt{7 x^{2}+1}-31=0$
+\item  $x^{2}-3 x+\sqrt{2 x^{2}-7 x+6}=\frac{x}{2}-3$ 
+\item $3 x^{2}-6 x-2 \sqrt{x^{2}-2 x+4}+4=0$
+\item  $\sqrt{\frac{x-1}{x+1}}+\sqrt{\frac{x+1}{x-1}}=3 \frac{1}{3}$
+\end{enumerate}
+
+\end{enumerate}
+
+
+\section*{本章内容要点}
+
+本章是在学习多项式（整式）的基础上，进一步学习了分式及其运算、根式及其运算和分式方程、根式方程。
+
+一、多项式，分式，根式等，都是含有数字和字
+母并涉及加、减、乘、除、乘方、开平方六种代数运算的式子，这些式子统称为代数式。其中，凡只涉及字母的加、减、乘、乘方运算的式子，叫做多项式
+（整式）；凡涉及字母的除法运算且字母含在除式中的式子，叫做分式；
+分式与整式，又统称为有理式。
+
+凡涉及字母或数字的开方运算的式子叫做根式，根号内含有字母的根式，又称为关于这个字母的无理
+式。如$\sqrt{2}$是根式，但不是无理式，$\sqrt{x}$，$\sqrt{x-1}$，$\frac{x}{\sqrt{x-2}}$
+等都是无理式。
+
+关于代数式的概念，可以列表如下：
+\[
+\text{代数式}\begin{cases}
+    \text{有理式} & \begin{cases}
+        \text{多项式（即整式）}\\\text{分式}
+    \end{cases}\\
+    \text{无理式}
+\end{cases}    
+\]
+
+二、如果有多项式$f(x),g(x)$且$g(x)$的次数大于
+零次，那么分式$\frac{f (x)}{g (x)}$有以下基本性质：
+\[\frac{f (x) \cdot h (x)}{g(x)\cdot h(x)}=\frac{f(x)}{g (x)}=\frac{f (x) \div h (x)}{g(x)\div h(x)}\]
+其中，$h(x)$是非零多项式。
+
+利用基本性质，可以进行分式的通分和约分。分式的四则运算和分数的四则运算是一样的。
+
+三、表示平方根的式子，叫做二次根式。
+
+二次根式有以下基本性质：
+\begin{itemize}
+    \item $\left(\sqrt{a}\right)^2=1\quad (a\ge 0)$
+    \item $\sqrt{a^2}=|a|$
+    \item $\sqrt{ab}=\sqrt{a}\cdot \sqrt{b}\quad (a\ge 0,\; b\ge 0)$
+    \item $\sqrt{a\div b}=\sqrt{a}\div \sqrt{b} \quad (a\ge 0,\; b>0)$
+\end{itemize}
+
+利用基本性质，二次根式可以进行以下变形：
+\begin{enumerate}
+    \item 因式的内移与外移，即
+    \[\begin{split}
+        m\sqrt{a}&=\sqrt{am^2}\quad (m>0)\\
+        \sqrt{a^2m}&=a\sqrt{m}\quad (a>0)
+    \end{split}\]
+    \item 化去根号内的分母或化去分母中的根号——都是有理化分母的内容，即
+\[\sqrt{\frac{a}{b}}=\sqrt{\frac{a\x b}{b\x b}}=\frac{\sqrt{ab}}{b}\qquad (b>0)\]
+或
+\[\sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}}=\frac{\sqrt{a}\cdot \sqrt{b}}{\sqrt{b}\cdot \sqrt{b}}=\frac{\sqrt{ab}}{b}\qquad (b>0)\]
+\end{enumerate}
+
+如果一个二次根式符合条件：
+\begin{enumerate}
+    \item 被开方各因数的指数小于2；
+    \item 根号内不含分母（即分母已经有理化）。
+\end{enumerate}
+那么这个二次根式就叫做最简二次根式。
+
+如果几个二次根式化为最简根式以后，根号内的式子相同，那么，这几个二次根式就叫做同类根式。同类根式和同类项一样可以合并。
+
+二次根式的四则运算和多项式的运算很类似。只
+要注意化为最简根式和合并同类根式就行了。
+
+四、分式方程与根式方程的解法要点是：设法转
+化为整式方程求解。由于它们的特点不同，转化方法也就不同。
+
+分式方程的特点是：分母中含有未知数。因而，要利用分式的基本性质或等式的基本性质，两边乘以同一个整式（一般是取各分母的最低公倍式），约简后
+转化为一个整式方程。
+
+根式方程的特点是：根号内含有未知数，因而，就要方程两边同次乘方（如：同平方）后，利用根式的基本性质转化为有理方程，并进而转化为整式方程。
+
+但是，一定要注意，在解分式方程与根式方程的过程中，由于各自的转化方式都能引起未知数允许取值范围的扩大，所以都可能产生增根。因此，无论是解分式方程，还是解根式方程，最后的验根都是不可缺少的，验根，将起到“识别真假”“去伪存真”的作用。
+
+五、已学过的方程有：整式方程、分式方程、根
+式方程，统称为代数方程。其系统可列表如下：
+\begin{center}
+\begin{tikzpicture}[yscale=.6]
+    \node at (6,3)[right]{一次方程};
+    \node at (6,2)[right]{二次方程};
+    \node at (6,1)[right]{高次方程};
+    \node at (4,2)[right]{整式方程};
+    \node at (4,0)[right]{分式方程};
+    \node at (2,1)[right]{有理方程};
+    \node at (2,-1)[right]{根式方程};
+    \node at (0,0)[right]{代数方程};
+    \draw[decorate,decoration=brace, thick](6,1)--(6,3);
+    \draw[decorate,decoration=brace, thick](4,0)--(4,2);
+    \draw[decorate,decoration=brace, thick](2,-1)--(2,1);
+\end{tikzpicture}
+\end{center}
+
+\section*{复习题六}
+\addcontentsline{toc}{section}{复习题六}
+\begin{enumerate}
+    \item 约简下列各分式：
+    \begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{\poly{1,1,0,-1,-1}}{\poly{1,-1,0,1,-1}}$
+    \item $\frac{\poly{1,-2,0,-2,-1}}{\poly{1,0,-2,-2,-3,-2}}$
+\end{enumerate}
+\end{multicols}
+
+\item 判别$\frac{\poly{1,1,1,1}}{\poly{1,-1,-1,-1}}$是不是最简分式，为什么？
+%$\frac{\poly{}}{\poly{}}$
+
+\item 计算下列各式：
+    \begin{enumerate}
+    \item $\left(\frac{x}{y}-\frac{y}{x}\right) \div(x+y)+x\left(\frac{1}{y}-\frac{1}{x}\right)$
+    \item $\frac{m^{2}+n^{2}}{m^{2}+2 m n+n^{2}}+\frac{2}{m n} \div\left(\frac{1}{m}+\frac{1}{n}\right)^{2}$
+    \begin{multicols}{2}
+    \item $\frac{1}{1-\frac{1}{1-\frac{1}{x}}}$
+    \item $1+\frac{1}{2+\frac{1}{3+\frac{1}{x}}}$
+\end{multicols}
+\end{enumerate}
+
+
+\item \begin{enumerate}
+    \item 已知 $a=-2, b=-1$. 求 $\left(a-\frac{a^{2}}{a+b}\right)\left(\frac{a}{a-b}-1\right)\div \frac{b^{2}}{a+b}$ 的值。
+    \item 已知 $x=-2$, $y=\frac{1}{3}$, 求 $\frac{4 x^{2}+12 x y+9 y^{2}-16}{4 x^{2}-9 y^{2}-4(2 x-3 y)}$ 的值。
+\end{enumerate}
+
+\item 解下列方程：
+\begin{enumerate}
+    \item $\frac{3}{1+3 x}\left(x-\frac{x}{1+x}\right)+\frac{x}{1+x}\left(1+\frac{1}{1+3 x}\right)=1$
+    \item $\frac{1}{x(x+1)}+\frac{1}{(x+1)(x+2)}+1=0$
+    \item $x^{2}+5 x-5=\frac{6}{x^{2}+5 x}$
+\end{enumerate}
+
+\item 解下列关于 $x$ 的方程：
+\begin{enumerate}
+\item $\frac{5 a^{2}}{4 x^{2}-a^{2}}=\frac{2 x}{2 x-a}-\frac{x}{2 x+a}$
+\item $\frac{x}{3 a+x}-\frac{x}{x-3 a}=\frac{a^{2}}{9 a^{2}-x^{2}}$
+\end{enumerate}
+
+\item 当$a$取何值时，下列各式的值最小？
+\[\sqrt{8+a},\qquad \sqrt{4-a^2},\qquad \sqrt{16-a}  \]
+
+\item \begin{enumerate}
+    \item 已知$x=25$, $y=15$，计算：
+    \[\sqrt{x^3+x^2y+\frac{1}{4}xy^2}+\sqrt{\frac{1}{4}x^3+x^2y+xy^2} \]
+    \item 已知$x=\frac{2ab}{b^2+1}$，其中$a,b$都是正数，
+    
+    求 $\frac{\sqrt{a+x}+\sqrt{a-x}}{\sqrt{a+x}-\sqrt{a-x}}$的值。
+\end{enumerate}
+
+\item 已知 $\sqrt{3} \approx 1.732$, 求 $\frac{3+\sqrt{6}}{\sqrt{3}+\sqrt{2}}$ 的值.
+\item 化简下列各式:
+\begin{enumerate}
+    \item $y=\sqrt{x+2 \sqrt{x-1}}+\sqrt{x-2 \sqrt{x-1}}\qquad (x \geqslant 1)$
+    \item $\sqrt{3+2 \sqrt{5+12 \sqrt{3+2 \sqrt{2}}}}$
+\end{enumerate}
+
+\item 设 $x=\sqrt{3+\sqrt{5}},\quad  y=\sqrt{3-\sqrt{5}}$,
+
+求 $\frac{x+y}{x-y}-\frac{x-y}{x+y}$-的值.
+\item 关于 $x$ 的二次方程 $(a+1)\left(x^{2}-x\right)=(a-1)(x-2)$
+的两个根互为相反数, 取其正根求 $\sqrt{4 x^{2}-12 x+9}$ 的值。
+\item 
+\begin{enumerate}
+    \item 若 $a+\frac{1}{b}=1, \quad b+\frac{1}{c}=1$. 求证 $a b c+1=0$.
+    \item 若 $\frac{y}{x}+\frac{x}{z}=a,\quad  \frac{z}{y}+\frac{y}{x}=b,\quad  \frac{x}{z}+\frac{z}{y}=c$
+    
+求证 $(a+b-c)(a-b+c)(-a+b+c)=8$。
+\end{enumerate}
+
+
+\item 解方程 $\frac{x^{3}+2}{x^{2}-x+1}+\frac{x^{3}-2}{x^{2}+x+1}=2 x$
+\item 试证明：
+\begin{enumerate}
+    \item 两个真分式的和仍是真分式；
+    \item 两个真分式的差也是真分式。
+\end{enumerate}
+
+\end{enumerate}
+

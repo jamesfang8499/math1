@@ -1,0 +1,180 @@
+\documentclass[b5paper, openany]{ctexbook}
+
+
+\usepackage[margin=2.5cm]{geometry}
+
+
+\usepackage{pifont}
+\usepackage[perpage,symbol*]{footmisc}
+\DefineFNsymbols{circled}{{\ding{192}}{\ding{193}}{\ding{194}}
+{\ding{195}}{\ding{196}}{\ding{197}}{\ding{198}}{\ding{199}}{\ding{200}}{\ding{201}}}
+\setfnsymbol{circled}
+
+\usepackage{ulem}
+
+\usepackage{amsmath,amsfonts,mathrsfs,amssymb}
+\usepackage{graphicx}
+
+\usepackage[font=bf,labelfont=bf,labelsep=quad]{caption}
+
+\usepackage{tikz}
+
+
+\usepackage{ntheorem}
+\theoremseparator{\;}
+
+
+
+\usepackage{blkarray}
+\usepackage{bm}
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
+
+\usepackage{enumerate}
+
+
+\theoremstyle{plain}
+\theoremheaderfont{\normalfont\bfseries} 
+\theorembodyfont{\normalfont}
+
+
+\usepackage[framemethod=tikz]{mdframed}
+
+
+\newtheorem{example}{\bf 例}[chapter]
+\newenvironment{solution}{\noindent {\bf 解：}}{}
+\newenvironment{analyze}{\noindent {\bf 分析：}}{}
+\newenvironment{rmk}{\noindent {\bf 注意：}}{}
+\newenvironment{note}{\noindent {\bf 说明：}}{}
+
+
+
+\renewcommand{\proofname}{\bf 证明：}
+\newenvironment{proof}{{\noindent \bf 证明：}}{}%{\hfill $\square$\par}
+
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\Pr}{\mathbb{P}}
+\newcommand{\EP}{\mathbb{E}^{\mathbb{P}}}
+\newcommand{\EQ}{\mathbb{E}^{\mathbb{Q}}}
+\newcommand{\dif}{\,{\rm d}}
+\newcommand{\Var}{{\rm Var}}
+\newcommand{\Cov}{{\rm Cov}}
+\newcommand{\x}{\times}
+
+
+ \usepackage{tcolorbox}
+ \tcbuselibrary{breakable}
+ \tcbuselibrary{most}
+
+
+
+\newtcolorbox{ex}[1][]
+  {colback = white, colframe = cyan!75!black, fonttitle = \bfseries,
+    colbacktitle = cyan!85!black, enhanced,
+    attach boxed title to top center={yshift=-2mm},breakable, 
+    title=练习, #1}
+
+\newtcolorbox{blk}[2][]
+  {colback = white, colframe = magenta!75!black, fonttitle = \bfseries,
+    colbacktitle = magenta!85!black, enhanced,
+    attach boxed title to top left={xshift=5mm, yshift=-2mm},breakable, 
+    title=#2, #1}
+
+
+\setcounter{tocdepth}{2}
+
+\setcounter{secnumdepth}{3}
+
+
+
+\ctexset {
+section = {
+	name = {第,节},
+ 	number = \chinese{section}},
+subsection = {
+	name = {,、\hspace{-1em}},
+	number = \chinese{subsection}
+},
+subsubsection = {
+	name = {（,）\hspace{-1em}},
+	number = \chinese{subsubsection},
+}
+}
+
+
+
+\renewcommand{\contentsname}{目~~录}
+
+\newcommand{\poly}{\polynomial[reciprocal]}
+
+
+
+\usepackage{mathtools}
+
+\setlength{\abovecaptionskip}{0.cm}
+\setlength{\belowcaptionskip}{-0.cm}
+
+\usetikzlibrary{decorations.pathmorphing, patterns}
+\usetikzlibrary{calc, patterns, decorations.markings}
+\usetikzlibrary{positioning, snakes}
+
+
+
+\usepackage{yhmath}
+\usepackage{longdivision}
+\usepackage{polynom}
+\usepackage{polynomial}
+\usepackage{cancel}
+
+\renewcommand{\frac}{\dfrac}
+\newcommand{\oc}{$^{\circ}{\rm C}$}
+
+
+\usepackage{multicol}
+\usepackage{cases}
+\begin{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\title{中学数学实验教材\\第一册}
+
+
+
+\author{中学数学实验教材编写组编}
+\date{1981年6月}
+
+\maketitle
+
+
+
+
+\frontmatter
+
+\input{preface.tex}
+\tableofcontents
+
+
+\mainmatter
+
+ \input{1.tex}
+
+ \input{2.tex}
+ \input{3.tex}
+\input{4.tex}
+ \input{5.tex}
+\input{6.tex}
+ \input{7.tex}
+
+
+
+\end{document}

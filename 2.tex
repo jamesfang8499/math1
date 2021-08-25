@@ -1,0 +1,2995 @@
+\chapter{一次方程式}
+
+
+    在第一章，复习小学算术的基础之上，又引进了
+负数，建立了对于加、减、乘、除以及乘方运算通行
+无阻的有理数系，还着重讨论了对任何有理数都适用
+的“运算通性”。这样一来，当我们用字母表示数
+时，就应该注意领会：这个字母既可以表示所指范围
+内的任一个数，同时也具有数的运算通性这两层意
+义；例如：矩形的面积公式$S=a\cdot b$中，字母$a,  b,  S$
+分别表示矩形的长度、宽度与面积。它们可以表示所
+有正数中的任一个；在它们的运算中，同样具有“运
+算通性”。
+
+    本章将在字母表示数的基础上，由应用问题入
+手，引进一次方程式，并应用代数方法去讨论解应用
+题的一般途经。
+
+\section{算术解法与代数解法}
+    这一节我们将以应用题为目标，分别用算术解法
+与代数解法来解决，从中领会代数解法的要点，并通
+过比较分析，初步认识代数解法的一普遍性与优越性。
+进而去掌握代数解法的原理，熟练运用其方法解决应
+用问题。
+
+\subsection{两种解法的分析、对比}
+从两个实例谈起：
+
+\begin{example}
+    某农场计划播种小麦与大豆共138亩，要求
+种小麦的面积是大豆的四倍，试问：该农场应种小麦
+与大豆各多少亩？
+\end{example}
+
+【算术解法分析】由题目所给条件，可知：播种
+总面积就是种大豆面积的$(4 + 1)$倍。因此，
+\[\begin{split}
+    \text{(种大豆亩数)}&=\text{(总亩数)}\div (4 + 1)\\
+    \text{(种小麦亩数)}&=\text{(总亩数)}-\text{(种大豆亩数)}
+\end{split}\]
+即：
+\begin{align*}
+    138\div(4 + 1)&=27.6\text{(亩)}\tag{大豆亩数}\\
+    138-27. 6 &= 110.4\text{(亩)}\tag{小麦亩数}
+\end{align*}
+
+当然，求出种大豆的亩数以后，也可根据题目已
+知，4倍这个数，就是种小麦亩数。
+
+【代数解法分析】可以用一个字母$x$表示我们所
+求的一个数量，例如在此题中，$x$可以表示“种大豆
+的亩数”；再由题目所给条件，显然可知“种小麦的
+亩数”就应该用$4x$表示；因此，只要根据“(总亩数)
+$=$(种小麦亩数)$+$(种大豆亩数)”的关系式，和
+题目给出“总亩数$=13$”的条件，就可以直截了当
+地得到一个等式：
+\[4x+x=138\]    
+
+对于这个等式，比起算术中的算式来说，只是多
+了一个“表示要求的数的字母$x$”，尽管还不知道$x$
+究竟是多少，但终归是一个数，就必然要具有“数的
+运算通性”，特别是在运算中同样可以有效地对它使
+用加、乘的交换、结合和分配律；又因为所列是一个
+等式，就必然具有等式的基本性质。因此，我们可以
+作如下的变形：
+\begin{align*}
+    (4+1)x=138  \tag{分配律}
+\end{align*}
+即：$5x=138$
+\begin{align*}
+    \therefore\quad x&=138\div 5  \tag{等式两边同除以5}\\
+    x&=27.6\text{(亩)} \tag{种大豆亩数}\\
+    4x&=4\x 27.6=110.4\text{(亩)} \tag{种小麦亩数}
+\end{align*}
+
+【对比】算术解法中，要求对题意进行思考，说
+明每一个算式的意义。如$(4+1)$表示“总亩数是种
+大豆亩数”的倍数等；而代数解法只要求用字母$x$表
+示所求的一个数量(例2.1中，可以自己练习设$x$表示
+  “种小麦亩数”的解法)，将$x$与已知的数量一起考
+虑它们之间的关系，根据题意能够直接了当地把关系
+列成一个等式然后应用“运算通性”及“等式性
+质”求出$x$应有的值。
+
+\begin{example}
+    小明用六角四分人民币买面值为4分、8分
+两种邮票一共12张。试问：小明买了4分、8分邮票各几张？
+\end{example}
+
+【算术解法分析】首先假定小明所买12张都是
+9分邮票，就应该花钱$12 \x 0. 04=0.48$(元)。而这
+与实际所花的钱$0. 64$(元)还相差$(0. 64 - 0.48)
+=0.16$(元)。
+
+    其次，为了使所花钱数增加，且邮票张数不变，
+就要用8分邮票去换取4分邮票，每换取一张，钱数
+增加$(0. 08-0. 04)=0. 04$(元)，而邮票张数还保持
+不变。这样，我们的问题就可以转化为：换几次(用
+几张8分邮票)后，才能使所花钱数正好能补上所差
+的0.16(元)呢？
+
+    由此可以得出本题算术解法是：
+\begin{equation}
+    \begin{split}
+ \text{“8分邮票的张数”}&=\text{“换取的次数”}   \\
+ &=[0.64-(12\x 0.04)]\div (0.08-0.04) \\
+ &=0.16\div 0.04=4\text{(张)}   
+    \end{split}
+\end{equation}
+\[ \text{“4分邮票的张数”}=12-4=8 \text{(张)} \]
+
+【代数解法分析】首先仍可以用一个字母$y$表
+示所求的“8分邮票的张数”；由题目显然可以
+知道“4分邮票的张数”就应该用$(12-y)$表示
+了。
+
+    其次，由于$\text{(每张邮票的价钱)}\x\text{(张数)}=\text{(这
+种邮票所用的钱数)}$，因而可以知道小明买8分、4分
+邮票分别使用的钱数为：$(0,08\cdot y)$元与$0.04(12-y)$元。
+
+    再次，由于两种邮票总共花钱六角四分，因此就
+得到：
+\begin{equation}
+    (0.08)y+0.04(12-y)=0.64
+\end{equation}
+
+最后，由(2.2)出发，运用数系运算通性和等式
+的性质(特别是分配律)，就可求出$y$应取的值来，
+即：
+\begin{align*}
+    0.08y+0.04 \x 12-0.04y&= 0.64  \tag{分配律}\\
+    (0.08y-0.04y)+0.48&=0.64          \tag{交换、结合律}\\
+    (0.08-0.04)y+0.48&=0.64\tag{分配律}\\
+    0.04y&= 0.64-0.48\tag{两边同减0.48}\\
+        0.04y&=0.16
+\end{align*}
+\begin{align*}
+    \therefore\quad y&=\frac{0.16}{0.04} \tag{两边同除以0.04}\\
+y&=4\text{(张)} \tag{8分邮票张数}\\
+12-y&=12-4=8\text{(张)} \tag{4分邮票张数}\\
+\end{align*}
+
+【对比】算术解法中，我们要得出关键的算式
+(2.1)是不容易的，必须要经过一番思考，化费一定
+心血才能得出的。而且每一步都要给出必要的说明，
+显得“拐弯抹角”、“道路曲折”；而代数解法从思
+路到计算都是比较直截了当，平铺直叙的。再加上我
+们只要由例2.1、例2.2两题的代数解法中，不难发现，
+它的基本路子、格式是相类似的。也就是说，代数解
+法是有普遍性的。特别是在解一些较复杂的应用题
+中，这种普遍可行的解法，更能显示出它的优越性
+来。
+
+\begin{example}
+    有两所图书馆，自建馆以来每年各进图书五
+千册；如果今年甲馆藏书23万册，乙馆藏书11万册，
+今后仍然是每年各进书5千册。试问：由今年起，几
+年后甲馆所藏图书的册数是乙馆的三倍？
+\end{example}
+    
+我们采用直接了当的代数解法，从中进一步明确
+这种解法的普遍性、一贯性，并领略它的优越性。
+
+\begin{solution}
+首先，设由今年起$x$年后甲馆藏书册数为乙
+馆的三倍。
+
+    其次，由于今后每年两图书馆都是仍然进书5千
+册，因此，$x$年后：
+\begin{itemize}
+    \item 甲馆藏书册数为：$(23 + 0. 5x)$万册；
+    \item  乙馆藏书册数为：$(11+0.5x)$万册。
+\end{itemize}
+
+    再次，由于$x$年后，甲所藏图书的册数是乙的三
+倍，所以就有等式：
+\[(23 + 0. 5x)=3(11+0.5x) \]
+
+以下只须用“通性”及等式性质进行变形：
+\begin{align*}
+    23 + 0. 5x& =33+1.5x \tag{分配律}\\
+23&=33+1.5x-0.5x  \tag{两边同减$0.5x$}\\
+23-33&=1.5x-0. 5x  \tag{两边同减33}\\
+23-33&=(1.5-0.5) x  \tag{分配律}\\
+-10&=x  \tag{减法法则}\\
+x&=-10  \tag{两边调换位置}\\
+\end{align*}
+    
+这就是说：从今年起，$-10$年后(也就是10年前)
+甲馆藏书册数就是乙馆的三倍。
+\end{solution}
+
+    可见，代数解法因为启用了字母表示所求的数，
+所得结果用有理数的意义很容易做出问题的答案，如
+果还用算术解法，就要经过一番周折，多费一些心血
+去说明了。这也是代数解法较算术解法优越的表现之一。
+
+\begin{ex}
+\begin{enumerate}
+    \item 试用算术、代数两种解法解下列各题：
+    \begin{enumerate}
+        \item 某数的4倍减去3，恰等于13，求某数.
+        \item 现有一堆小球，分给若干儿童，若每人平均分给5个，
+    最后缺2个小球，若每人平均分给4个，又多余3个小
+    球。试问：有几个儿童？几个小球？
+    \end{enumerate}
+
+    \item 你能说说代数解法有几个步骤吗？
+\end{enumerate}
+\end{ex}
+    
+\subsection{未知数和方程式}
+  由前边三个应用题的代数解法，不难看出，这种
+解法的一般做法要点是：
+
+    用一些字母$x,  y,\ldots$来表示所要求的数量，我
+们称为“\textbf{未知数}”。就是用来表达“未知量”的符
+号。
+
+    用含有未知数的算式，表达问题中所涉及到的其
+它数量。
+
+    把问题中的数量关系，平铺直叙、直截了当地用
+等式表示出来，这个等式我们称为\textbf{方程式}。
+
+    运用“通性”与等式性质，由所列方程式求出\textbf{未
+知数应有的值}。
+
+    在以上做法中，由引进未知数到列出等量关系式
+  (方程)，只是解应用题的准备工作；而有效地应用
+  “通性”、等式性质却是代数解法的关键所在。但要
+注意：准备工作是基础，必须做得充分、熟练、正
+确。否则，是谈不上能够正确解决问题的。
+
+    因此，我们还要首先讨论方程式的意义及怎样列
+方程式，然后再进一步探讨求出“未知数应有的值”
+的原理和方法。
+
+    正如前面三个例题的代数解法中，通过引入未知
+数，我们列出了等式：
+\[4x+x=138\]
+\[0.08y+(12-y)\x 0.04=0.64\]
+\[23+0.5x=3(11+0.5x)\]
+
+我们就把这些\textbf{含有未知数的等式，叫做方程式}。
+简称\textbf{方程}。又如：$x\cdot y-3x=5$也是方程式。
+
+在一个方程中，所含未知数，又称为\textbf{元}；被“$+$”
+“$-$”号隔开的每一部分(包括这部分前边的“$+$”、
+“$-$”号在内)称为\textbf{一项}；在一项中，数字或表示已
+知数的字一母因数叫做未知数的\textbf{系数}。并且在各项中，
+所含有的未知数的\textbf{次数和}，称为\textbf{这一项的次数}，如：
+$+ 0. 08x$,  $x$, $-1$, $5x$等项的次数都是1，而$xy$项的
+次数就是2；不含未知数的项，称为\textbf{常数项}，它的次
+数是0，因此也称为0次项。
+
+  在一个方程的各项中，最高次项的次数，就称为
+这个\textbf{方程的次数}。
+
+  例如：方程$4x+x=138$中，共有三项：$4 x$, $+x$
+及138；各项的系数分别是4, $+1$和常数项138；各
+项的次数分别是1、1及0；方程的次数是1。
+
+  又如：方程$xy-3x=5$中，共有三项：$xy$, $-3x$
+及5；各项的系数分别是$+1$，$-3$及常数项5；各项
+的次数分别是2，1及0；方程的次数是2。等
+等。
+
+  实际上，方程就是表达已知数与未知数之间的一
+种等式关系，这种关系式是解决问题的基础，必须在
+明确量与量之间的正确关系的前提下，适当引入未知
+数，才能表达出来。
+
+\begin{example}
+引入未知数，正确表达出以下问题中的等量
+关系：
+\begin{enumerate}
+    \item 某数的五分之一等于九，求某数。
+    \item 某数与它的一半之和，恰好是24，求某数。
+    \item 某两班学生总数是101人，而这两班的人
+    数相差三人，求这两班各多少人？
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item 设某数为$x$，则$\frac{x}{5}=9$
+    \item 设某数为$y$，则$y+\frac{y}{2}=24$
+    \item 设一个班有$x$人，另一班就有
+  $(101-x)$人，则  $x-(101-x)=3$ 或   $(101-x)-x=3$。
+
+也可以这样解：    设一个班有$x$人，另一个班就有$(x+3)$人，
+      则$$x+(x+3)=101$$
+      
+还可以引入两个未知数：
+    设一个班有$x$人，另一个班有$y$人，
+则由题目可知，应该同时有两个关系成立：
+\[\begin{cases}
+    x+y=101\\
+    x-y=3
+\end{cases}\]
+\end{enumerate}    
+\end{solution}
+
+
+\begin{ex}
+\begin{enumerate}
+    \item 试说明下列各方程式有哪些项组成？各项的系数是什么？
+    方程的次数是几？
+    \begin{multicols}{2}
+        \begin{enumerate}
+ \item $\frac{1}{2}x-5x=7$
+ \item $3x^2-5=2x$
+ \item $-0.05+7.2x=x$
+ \item $x-xy=0$           
+        \end{enumerate}
+    \end{multicols}
+
+\item 引入一个未知数，列出方程式：
+\begin{enumerate}
+    \item 用某数的2倍去乘$-\frac{1}{3}$，正好是$-10$，求某数。
+    \item 用2元钱去买回若干本书，每本书两角钱，还找回了六角
+  钱，问买回几本书？
+  \item 高为4米，长比宽多2米的长方体体积为140米$^3$。求这
+  个长方体的长和宽。
+  \item 两数之和为36，若已知一数是$m$，试求另一数。(注意：
+  $m$表示已知数)。
+  \item 浓度为20\%的糖水300克中，含有多少克糖？多少克水？
+  \[\text{浓度}=\frac{\text{糖}}{\text{水+糖}}\]
+  \item 浓度为20\%的糖水150克中，加入50克水，浓度就变成
+  百分之几？
+\end{enumerate}
+\end{enumerate}
+\end{ex}
+
+\subsection{方程的解与解方程的原理}
+    根据应用题所给条件，引入未知数，正确的列出
+方程式，只是为解决问题提供了基础，作好了必要的
+准备。要使问题得到完满解决，就要从所列方程式出
+发，求出未知数应有的值来，并加以验证。
+
+    在这里所说的\textbf{未知数应取的值是指：把所列方程
+中的未知数换成这个值以后，就使它变成一个恒等
+式}。也就是说：把未知数应取的值代入原方程中，能
+使原方程成为“真正等式”。例如：
+\begin{itemize}
+    \item 把$x = 49$代入$x+ (x+3)=101$，    得$101=101$；
+    \item 把$y=7$代入$2-0.2y=0.6$，    得$0 .6=0. 6$；
+    \item 把$x=1$与$y=8$同时代入$xy-3x=5$，    得$5=5$，等等。
+\end{itemize}
+  
+象这样，\textbf{能使方程式成为真正等式的未知数的
+值，叫做方程的解}。或简单说：\textbf{使方程成立的未知数
+的值}，叫做\textbf{方程的解}。(一元方程的\textbf{解}，也叫做\textbf{根})。例如：
+\begin{itemize}
+    \item $x = 49$是方程$x+ (x+3)=101$的解（或根）；
+    \item $y=7$是方程$2-0.2y=0.6$的解（或根）；
+    \item $x=1$与$y=8$是方程$xy-3x=5$的解（或根）等。
+\end{itemize}
+
+
+\begin{ex}
+    观察一下，下列方程的解各是什么？为什么？
+    \begin{multicols}{2}
+        \begin{enumerate}
+ \item $2x+1=6$
+ \item $x+3=2x$
+ \item $xy=0$
+ \item $0.5x+1=3$           
+        \end{enumerate}
+    \end{multicols}
+\end{ex}
+
+求方程的解的过程，叫做\textbf{解方程}。
+
+解方程不能只靠观察、试验，而需要有系统地、
+有根据地去探求普遍方法。这就要用“数系运算通
+性”及“等式性质”作为我们的有力工具了。
+
+\textbf{解方程的原理}是十分简朴的，那就是：对于一个
+方程式中的未知数与已知数进行统一考虑，因为它们
+都是数，又同在一个等式当中，所以，它们在运算上
+就应该满足“通性”及等式的性质。只要我们有效地
+应用这些性质，就可以逐步变形，求出方程式的解
+(根)来。
+
+下面以方程$4x+2(12-x) =32$为例，分析一下
+是如何有效地应用这些性质(特别是分配律)去求出
+方程的解的，从中我们可以总结出代数解法的一般方
+法和规律。
+
+首先，由于在方程$4x+2(12-x)= 32$中，含有未
+知数$x$，因而无法按运算顺序(先括号里，后括号外)
+进行变形。这时候，分配律就要大显身手发挥作用
+了，运用它可以“小表及里”地把括号打开，将方程
+变形为：$4x+2\cdot 12-2 \cdot  x = 32$；
+
+其次，运用加法交换、结合律及分配律，可以逐
+步将方程变形如下：
+\begin{equation}
+    \begin{split}
+        \underline{(4x-2x)}+24&=32\\
+        \underline{(4-2)x}+24&=32\\
+        \underline{2x}+24&=32
+    \end{split}
+\end{equation}
+
+由此，可总结出方程变形的第一个规律：
+
+\textbf{运用“通性”}(特别是运用\textbf{分配律})\textbf{可以“由
+表及里”的将括号打开，并将“含有相同未知数且所
+含未知数的次数也相同”的各项结合起来，合并在一
+起}——这叫做\textbf{合并同类项}。从而使方程式简化。
+
+再次，对于方程(2.3)，利用等式性质可以继续
+变形，将方程$2x+24 = 32$两边同加$(-24)$得：
+\[2x = 32 -24\]
+
+可以发现，利用等式性质3进行的这一变形，就
+相当于把方程$2x+24 = 32$中的左边一项$+24$，\textbf{改变符
+号后，移到右边去}，就得到方程式：
+\begin{equation}
+    \begin{split}
+        2x &= 32 -24\\
+        2x&=8
+    \end{split}
+\end{equation}
+
+由此，又可以总结出方程变形的第二个规律：
+
+\textbf{运用等式性质3把方程一边的任意一项改变符号
+以后，移到方程的另一边}——这叫做\textbf{移项}。简单说，
+就是“移项变号”。
+
+最后，由方程(2.4)，只要再用等式性质40就可以变形为最简单的形式，未知数应取的值也就一目
+了然了。这就是：
+
+将方程$2x = 8$两边同乘(或同除以)一个非零数$\frac{1}{2}$（或2），即可得出
+\begin{equation}
+    x=4
+\end{equation}
+
+由此，还可以总结出方程变形的第三个规律：
+
+\textbf{运用等式性质4，把方程两边各项同除以未知数
+的系数(或乘以系数的倒数)}，使方程化为最简形
+式。得到未知数应取的值。
+
+综合以上三条规律，得到\textbf{解方程的具体方法是：
+展开括号、移项变号、合并同类项、除以未知数的系
+数，使方程化为最简形式}。当然，在求出未知数的值
+以后，还要代入原方程加以检验，最后确定出原方程
+的解。
+
+\begin{example}
+    解方程$9x-5=5-x$
+\end{example}
+
+
+\begin{solution}
+    先“移项变号”得
+                \[9x+x=5+5\]
+再“合并同类项”得：
+                  \[10x=10\]
+最后“除以$x$的系数10”得：
+                  \[x=1\]
+把$x=1$代入原方程的两边，进行检验：
+\[\text{左边}=9\x 1-5=4,\qquad \text{右边}=5-1=4\]
+
+$\therefore\quad $  左边$=$右边
+
+$\therefore\quad x=1$ 是原方程$9x-5=5-x$的解。
+\end{solution}
+
+
+\begin{example}
+    解方程$-5=5x-7(1-x)$
+\end{example}
+
+\begin{solution}
+\begin{align*}
+    -5&=5x-7+7x  \tag{用分配律展开括号}\\
+  -7x-5x &= 5-7 \tag{移项变号}\\
+  -12x&=-2  \tag{合并同类项}\\
+  x&=\frac{1}{6}  \tag{两边除以$-12$}
+\end{align*}    
+把$x=\frac{1}{6}$代入原方程两边，经检验知：
+$\frac{1}{6}$是方程 $-5=5x-7(1-x)$ 的解。
+\end{solution}
+
+
+\begin{ex}
+\begin{enumerate}
+    \item “解方程”和“方程的解”一样吗？区别是什么？
+    \item  解方程的原理是什么？根据原理又得出些什么样具体方法
+    和规律？
+    \item  试用解方程的具体规律，将下列各方程化为最简单形式：
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $x-7=9$
+            \item $6-y=y-5$
+            \item $2x+\frac{1}{2}=0$
+            \item $12=6x-9(2-x)$
+        \end{enumerate}
+    \end{multicols}
+\end{enumerate}   
+\end{ex}
+
+\section*{习题2.1}
+\addcontentsline{toc}{subsection}{习题2.1}
+
+\begin{enumerate}
+    \item 试用算术、代数两种解法解下列各题，并比较优劣：
+\begin{enumerate}
+\item 某生产队今年植树18000棵，正是去年植树的2
+倍还多400棵。问：去年植树多少棵？
+\item 一本864页的书，每页55行，每行40个字；再版
+时计划每页增印5行，每行又多印8个字。问：再版这本书
+时能比原版减少几页？
+\item 兄、弟二人，今年分别为15岁和9岁。问：几年
+后，兄是弟的年龄的2倍？
+\end{enumerate}
+
+\item 引入未知数$x$，把下列问题中所求的量，用含有未知数
+的算式列出来：
+\begin{enumerate}
+\item $x$的$1\frac{1}{2}$倍与$-7$的代数和。
+\item $x$的相反数与27的差。
+\item $x$与已知数$a$的平方和再减去10所得的差。
+\item $x$的20\%与51的差的一半。
+\item 浓度为51\%的盐水$x$克中，含有的纯盐量与含水
+量。
+\item $x$克盐溶化到100克水中，盐水的浓度。
+\item 一件工作，小李$x$天作完，求：每天的工作量和
+3天的工作量。
+\item 以每小时20公里的速度，要走出$x$公里的路程，
+需要多少时间？
+\item 操场上有400米一圈的跑道，速度分别是$x$米/秒
+和2$x$米/秒的两个人，同时，同地相背而跑时，在什么时间
+相遇？
+\item 上题中，如果两人同向跑时，快的在什么时间追
+上慢的。
+\end{enumerate}
+
+\item  适当引入未知数，列出下边问题的方程：
+\begin{enumerate}
+\item 某数与五的和，正好是这个数的3倍，试求某
+数。
+\item 矩形的周长是40，长比宽多10，试求这个矩形的
+面积。
+\item 浓度为85\%的酒精100斤与浓度为15\%的酒精100
+斤混合在一起以后，它的浓度是多少？
+\item 甲、乙二人由同地出发，甲以每小时走5里的速
+度先出发1.5小时，乙骑自行车经过50分钟才赶上甲。试
+求：乙每小时骑车能走多少里？
+\end{enumerate}
+
+\item 指出下列各方程中：有那些项，各项的系数、次数分别
+是多少？方程是几次的？
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $7x+1=0$
+    \item $-\frac{1}{5}x-1=x+10$
+    \item $0=0.1x$
+    \item $1-xy=3x$
+\end{enumerate}
+\end{multicols}
+
+\item  利用解方程原理得出的具体规律，把下列方程式化为
+最简形式：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{1}{2}x=-1$
+    \item $\frac{1}{3}x+1=\frac{1}{3}$
+    \item $3-x=6$
+    \item $-7+2(1-x)=0$
+\end{enumerate}
+\end{multicols}
+
+\item  解下列方程，并注明每步变形的根据：
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $x-1=2x$
+        \item $0=7x-\frac{1}{2}$
+        \item $8-10y=-32-5y$
+        \item $\frac{1}{4}=2x-\frac{1}{2}(1-4x)$
+    \end{enumerate}
+    \end{multicols}
+
+\item  如果$a,  b$都是已知的数，并且$a\ne -1$，试利用解方程的
+原理，解方程：
+\[ax+1=b-x,\qquad b-ax=\frac{1}{2}+x   \]
+
+\end{enumerate}
+
+\section{一元一次方程}
+\subsection{一元一次方程}
+    在第一节所列举的方程式中，可以找出具有这样
+特点的方程：
+\begin{enumerate}
+    \item 只含有一个未知数；
+    \item 分母不含有未知数；
+    \item 方程的次数是1次。
+\end{enumerate}
+比如：$4x+x = 138$；$\frac{x}{5}=9$；$0.08y+0.04(12-y)=0.64$；$x+\frac{x}{2}=24$等
+都属于这一类方程式。
+
+    我们把\textbf{只含一个未知数、分母不含未知数，且次
+数又是1的方程，称为一元一次方程}。
+
+一元一次方程的一般形式是：
+\[ax+b=0\quad \text{($a,b$是已知数，且$a\ne 0$)}\]
+
+\subsection{一元一次方程的解法}
+    我们利用由“通性”及等式性质而归纳出来的代
+数解法的具体规律，来讨论一元一次方程的解法。
+
+\begin{example}
+    解方程$8x=5x-3$
+\end{example}
+
+
+\begin{solution}
+    原方程移项得\quad $8x-5x=-3$
+
+    合并同类项得\quad $3x=-3$
+
+    两边除以3得\quad $x=-1$
+\end{solution}
+
+\textbf{验算：} 把$x=-1$代入原方程中的两边，
+\[\begin{split}
+    \text{左}&=8\x(-1)=-8,\\
+    \text{右}&=5\x(-1)-3=-8,
+\end{split}\]
+左边$=$右边，$\therefore\quad $原方程的解是$x=-1$。
+
+\begin{example}
+    解方程$7(1-x)=2(x+3)-4 (5+4x)$。
+\end{example}
+
+
+\begin{solution}
+    先运用分配律去括号：
+    \[7-7x=2x+6-20-16x\]
+移项：把含$x$的各项移至方程左边，而把所有的常数项移至右边。
+   \[ -7x-2x+16x=6-20-7\]
+合并同类项：分别求含x项的系数的代数和与常数项的代数和：
+    \[7x=-21\]
+两边除以7：$x=-3$。
+\end{solution}
+
+\textbf{验算：}
+$x=-3$代入原方程两边，
+\[\begin{split}
+    \text{左}&=7[1-(-3)]=28,\\
+    \text{右}&=2(-3+3)-4 [5+4(-3)]=28,
+\end{split}\]
+左边$=$右边，$\therefore\quad $原方程的解是$x=-3$。
+
+
+
+\begin{example}
+    解方程$3(3y+1)=2(1+y)+3(y+3)$
+\end{example}
+
+\begin{solution}
+    把原方程去括号： $9y+3=2+2y+3y+9$
+
+    移项：$9y-2y-3y=2+9-3$
+
+    合并同类项：$4y=8$
+       
+    除以$y$的系数4：$y=2$
+\end{solution}
+
+同学可以自己验算，从而得到： 原方程的解是$y=2$。
+
+
+\begin{ex}
+解下列方程： 
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $0=5x-1$
+\item   $x+5=-2-6x$
+\item $3(1-x)+1=-(x-1)$      
+\item $5(x-1)-3(x-1)=0$
+    \end{enumerate}
+\end{multicols}
+\end{ex}
+
+\begin{example}
+    解方程$0.3(8x-1)=2x+2.9$
+\end{example}
+
+\begin{solution}
+\begin{align*}
+    3 (8x-1)&=20x+29  \tag{原方程两边乘以10}\\
+    24x-3&=20x+29   \tag{去括号}\\
+    24x-20x&=29+3\tag{移项变号}\\
+    4x &= 32\tag{合并同类项}\\
+    x&=8\tag{两边除以4}\\
+\end{align*}
+经验算以后，可知：
+原方程的解是$x=8$.    
+\end{solution}
+
+\begin{ex}
+解下列方程：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $0.1x+1=0.2$
+    \item $0.16(x+5)=1-0.2x$
+    \item $0.625=0.5(y-2)$
+    \item $-0.1(x-10)=9-0.2(1-x)$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+\begin{example}
+  解方程
+$\frac{2y-1}{3}-1=\frac{5y+1}{8}-\frac{3y+1}{6}$
+\end{example}
+
+\begin{analyze}
+   遇到分数系数的方程时，可以先由等式
+    性质，两边乘以“各分母的最小公倍数”，把系数的
+    分母去掉，转化为整数系数方程以后，再求解。本例
+    中3，8，6的最小公倍数为24。
+\end{analyze}
+
+\begin{solution}
+    方程两边各项乘以24
+ \begin{align*}
+    8 (2y-1)-24&=3 (5y+1)-4 (3y+1)  \tag{去分母}\\
+    16y-8-24&=15y + 3-12y-4  \tag{去括号}\\
+    16y-15y+12y&=3-4+8+24  \tag{移项}\\
+    13y&=31    \tag{合并同类项}\\
+    y&=\frac{31}{13}=2\frac{5}{13} \tag{两边除以13}
+ \end{align*}   
+ 经验算(可以口算或在草稿纸上笔算，不写入解
+ 题过程中)后知道，原方程的解是$y=2\frac{5}{13}$。
+\end{solution}
+
+\begin{ex}
+解下列方程：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{1}{5}+x=-1$
+    \item $\frac{1}{4}(1-5x)=0.5$
+    \item $\frac{3}{7}(1-x)=1-\frac{x}{7}$
+    \item $-\frac{1}{8}(24-16x)=-\frac{1}{9}(18x+9)$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+归纳以上例题，可以看出：
+\begin{blk}{}
+    解一元一次方程的一般步骤为
+    \begin{enumerate}[I.]
+        \item 去分母(或化为整系数)。
+        \item 去括号。
+        \item 移项变号。
+        \item 合并同类项、化为$ax=-b$的形式$(a\ne 0)$。
+        \item 除以未知数的系数得：$x=-\frac{b}{a}$。
+    \end{enumerate}
+\end{blk}
+      
+这里还要指出：
+\begin{enumerate}
+    \item 由于方程的形式多样，在解的
+过程中不必死套以上五步，要根据具体情况，灵活应
+用。
+\item 验算可以不必写出，但一定要自己口算或笔算
+进行检验，以确实保证计算正确。
+\end{enumerate}
+
+\begin{example}
+解下列方程：
+\begin{enumerate}
+    \item $25(1-2x)=12.5+12.5(1-4x)$
+    \item $\frac{1}{2}(4x+6)=-1+2x$
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item     观察所给方程，显然用不着化小数系
+    数为整数，去括号以后，一合并即可“凑整”。因
+    此
+    \begin{align*}
+25-50x&=12.5+12.5-50x  \tag{去括号}\\
+    -50x+50x&=25-25  \tag{移项}\\
+    0\cdot x&=0 \tag{合并同类项}    
+    \end{align*}
+    
+    显然，$x$可以是任意数。
+
+    事实上，当$x$取任意数时，原方程两边都能得
+到相等的结果。
+
+    所以，原方程的解是：$x$取任意数(无限多个)。
+    
+\item     \begin{align*}
+    2x+3&=-1+2x  \tag{去括号}\\
+        2x-2x&=-1-3  \tag{移项}\\
+        0\cdot x&=-4 \tag{合并同类项}    
+        \end{align*}
+        显然，无论$x$取什么值，方程的左边总是0，
+    边总是$-4$，不可能使左、右相等；这也就说明，
+    论x取什么值，总是不能使原方程式两边的值相等。
+
+        这时，我们就说：原方程式无解。
+\end{enumerate}    
+\end{solution}
+
+\begin{ex}
+解下列方程：
+\begin{enumerate}
+    \item $4\left[\frac{1}{4}-\frac{1}{2}(3x-1)\right]=2[0.5(-3-x)+1]$
+    \item $7-9x=3\left(2\frac{1}{3}-x\right)-6x$
+    \item $\frac{1}{5}(10-20x)=7-4x$
+    \item $\frac{x}{2}+\frac{x}{3}+\frac{x}{6}-7=2x+5$
+\end{enumerate}
+\end{ex}
+
+
+\begin{example}
+    解方程$\frac{1}{2}\left\{\frac{1}{3}\left[\frac{1}{4}\left(\frac{0.1x-0.5}{0.5}\right)-2\right]-3\right\}-4=0$
+\end{example}
+
+\begin{analyze}
+方程左边的算式很繁，但很有规律，特
+    别是小括号内的算式$\frac{0.1x-0.5}{0.5}$，可以利用分数的
+    基本性质，分子、分母同乘以10，就变成为
+$\frac{x-5}{5}=\frac{1}{5}x-1$，
+    因此原方程就可以写成：
+   \[\frac{1}{2}\left\{\frac{1}{3}\left[\frac{1}{4}\left(\frac{1}{5}x-1\right)-2\right]-3\right\}-4=0 \]
+    这时，也不一定非要先去括号，或先去分母，那样计
+    算稍繁，为计算方便，可逐步进行去分母与合并。
+\end{analyze}
+
+\begin{solution}
+    原方程式可写成：\[\frac{1}{2}\left\{\frac{1}{3}\left[\frac{1}{4}\left(\frac{1}{5}x-1\right)-2\right]-3\right\}-4=0 \]
+\begin{align*}
+    \frac{1}{3}\left[\frac{1}{4}\left(\frac{1}{5}x-1\right)-2\right]-3 &=8  \tag{两边乘以2}\\
+    \frac{1}{3}\left[\frac{1}{4}\left(\frac{1}{5}x-1\right)-2\right]&=11   \tag{移项、合并}\\
+    \frac{1}{4}\left(\frac{1}{5}x-1\right)-2&=33  \tag{两边乘以3}\\
+    \frac{1}{4}\left(\frac{1}{5}x-1\right)&=35   \tag{移项、合并}\\
+    \frac{1}{5}x-1&=140 \tag{两边乘以4}\\
+    \frac{1}{5}x&=141  \tag{移项、合并}\\
+    x&=705  \tag{两边乘以5}\\
+\end{align*}   
+
+经检验，原方程的解是$x=705$。
+\end{solution}
+
+\begin{ex}
+解下列方程：
+\begin{enumerate}
+    \item $\frac{0.1-0.3x}{0.2}=5$
+    \item $\frac{x-3}{0.5}-\frac{x+4}{0.2}=16$
+    \item $\frac{3}{2}\left[\frac{2}{3}(x-1)-2\right]=3$
+    \item $\frac{1}{3}\left\{\frac{1}{3}\left[\frac{1}{3}\left(\frac{1}{3}-1\right)-1\right]-1\right\}-1=0$
+\end{enumerate}
+\end{ex}
+
+\section*{习题2.2}
+\addcontentsline{toc}{subsection}{习题2.2}
+
+\begin{enumerate}
+\item 检验以下各题方括号中所给出的数是不是所给方程的解
+(或根)？
+\begin{enumerate}
+    \item $2 (3x-4)=5(x-2),\qquad [3,\; -2]$
+    \item $ x(x+ 1)=12,\qquad [3,\; -3,\; 4,\; -4]$
+    \item $\frac{x}{2}+\frac{x}{3}+\frac{x}{4}=x,\qquad \left[-0.1,\; -2,\; \frac{1}{4},\; 7,\; -101,\; 0,\; 1981\right]$
+    \item $9-10x=\frac{1}{4}(2-36x)-x,\qquad [0,\; 1,\; -1,\; a]$
+\end{enumerate}
+
+\item 解方程：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $0.8x=1$
+    \item $7x-1=5x$
+    \item $0=6x-\frac{1}{2}$
+    \item $4-7x=7x-4$
+    \item $2|x|=2$
+    \item $1=3-|x|$
+\end{enumerate}
+\end{multicols}
+
+\item 解方程：
+\begin{enumerate}
+    \item $-5(x-1)=0$
+    \item $1-2(x-3)=x$
+    \item $10y+7=3(4y-1)+4(1-y)$
+    \item $9=2(3x-1)+x-4$
+    \item $4(2t+3)=8(1-t)-5(t-2)$
+    \item $5(z-1)-9(1-z)+3(2z-2)-(z-1)=2$
+\end{enumerate}
+
+\item 解下列方程：
+\begin{enumerate}
+    \item $-0.3(1-x)+0.1=2$
+    \item $0.7=x-0.2(5-x)$
+    \item $0.2(2x-1)-0.5(2-4x)+1=0$
+    \item $7(2x+1)-3(4x+2)+5(x+0.5)-1=0$
+    \item $1.8-8x-0.6(1.3-3x)=4(5x-0.4)$
+\end{enumerate}
+
+\item 解方程：
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\frac{7x-5}{4}=\frac{3}{8}$
+\item $\frac{3-x}{2}=\frac{x-4}{3}$
+\item $\frac{2x-1}{6}-\frac{5x-1}{8}=1$
+\item $\frac{3x-1}{2}+x=\frac{2x+1}{5}-1$
+\item $y-\frac{y-1}{2}=2-\frac{y-2}{5}$
+\item $\frac{2}{5}y+\frac{1}{9}=\frac{1}{9}y-\frac{2}{5}$
+\item $\frac{x-2}{5}-\frac{x+3}{10}-\frac{2x-5}{3}+3=0$
+\item $\frac{9t+2}{7}-\frac{3+2t}{3}-\frac{3t-14}{2}=1$
+\item $1\frac{1}{2}x-\frac{14-x}{3}=3x$
+\item $x-\frac{3x+6}{2}+\frac{3x+6}{5}=0.5x$    
+\end{enumerate}
+\end{multicols}
+\item 用解方程的方法，求以下问题中的未知量：
+\begin{enumerate}
+    \item 已知公式$\ell=\ell_0(1+\alpha t)$中，$\ell= 80.096$，$\ell_0 = 80$，$\alpha=0.000012$，试求$t$。
+\item 已知一梯形的面积是120$cm^2$，上底是12$cm$，高
+是8$cm$，试求下底长是多少？
+\item 在公式$S=\frac{1}{2}at^2$中，$S=168$, $t=4$，试求$a$。
+\item 在公式$F=32+1\frac{4}{5}C$中，已知$F=77$，试求$C$。
+\end{enumerate}
+
+\item 下列各方程的解法是否正确？如果有错，请把它改正过
+来：
+\begin{enumerate}
+    \item 解： 
+    \[\begin{split}
+        3(x-1)&=7-x\\
+        3x-3&=7-x=3x+x=7+3\\
+        &=4x=10\\
+        &=x=2\frac{1}{2}
+    \end{split}\]
+    $\therefore\quad x=2\frac{1}{2}$
+    \item 解： 
+    \[\begin{split}
+        \frac{y}{2}+\frac{y}{4}&=1\\
+        2y+y&=1\\
+        3y&=1
+    \end{split}\]
+    $\therefore\quad y=\frac{1}{3}$
+    \item 解： 
+    \[\begin{split}
+        \frac{x+1}{3}-\frac{x-2}{6}&=\frac{4+x}{2}\\
+        2x+2-x-2&=12+3x\\
+        2x-x-3x&=12\\
+        -2x&=12
+    \end{split}\]
+    $\therefore\quad x=-6$
+    \item 解：
+    \[\begin{split}
+        \frac{0.1x-0.5}{0.2}+1&=0\\
+        \frac{x-5}{2}+10&=0\\
+        x-5+20&=0\\
+        x&=-20+5
+    \end{split}\]
+    $\therefore\quad x=-15$
+\end{enumerate}
+
+\item 解下列方程：
+\begin{enumerate}
+\item $\frac{0.4 y+0.9}{0.5}-\frac{0.03-0.02 y}{0.03}-\frac{y-5}{2}=0$
+\item $x-\frac{1}{2}\left[x-\frac{1}{2}(x-1)\right]=\frac{2}{3}(x-1)$
+\item $\frac{1}{2}\left\{\frac{1}{2}\left[\frac{1}{2}\left(\frac{1}{2} y-3\right)-3\right]-3\right\}-3=0$
+\item $\frac{1}{8}\left\{4\left[\frac{5}{8}(t-1)+\frac{3}{8}(1-t)\right]-7(1-t)\right\}=100$
+\item $\frac{9}{8}\left[\frac{2}{3}\left(\frac{4}{5} x-\frac{2}{3}\right)+1\right]=\frac{2}{3} x\left(\frac{1}{2}-\frac{1}{3}\right)-\frac{5}{8}$
+\item $\frac{1}{2}\left\{x-\frac{1}{3}\left[x-\frac{1}{4}\left(x-\frac{2}{3}\right)-\frac{3}{2}\right]\right\}=x+\frac{3}{4}$
+\end{enumerate}
+
+\item 解下列方程：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $|x-4|=0$
+    \item $|x+1|=5$
+    \item $|x-1|+1=2$
+    \item $|2-x|=3|x-2|$
+\end{enumerate}
+\end{multicols}
+
+\item 解下列文字系数的一元一次方程：
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $ax+1=0\quad (a\ne 0)$
+        \item $5x-a+1=0$
+        \item $ax+5=x-3\quad (a\ne 1)$
+        \item $ax+b=8-x\quad (a\ne -1)$
+        \item $\frac{x}{a}+\frac{x}{b}=1\quad (a+b\ne 0)$
+    \end{enumerate}
+    (这里的字母$a,b$都是已知数)
+    \end{multicols}
+
+    \item 如果已知方程$mx+2=2(m-x)$的根是$x=\frac{1}{2}$，试
+求这个方程中$m$的值。
+\end{enumerate}
+
+
+\section{一次方程组}
+\subsection{二元一次方程}
+    先看下边的实例：
+
+    今有货物10吨，要用大、小两种卡车一次运走，
+如果每辆大车能装2吨货，每辆小车只能装1吨货。
+试问：应派大、小车各几辆才能在每辆车都装满的情
+况下，正好一次运走全部货物？
+    
+显然，派车的方案不止一种，比如：派五辆大车
+而不派小车；或派四辆大车和两辆小车等等，一共有
+多少种可行方案呢？我们用代数解法去讨论。
+
+设派出大车$x$辆，小车$y$辆，则由问题所给出的条件可以得出：
+\begin{equation}
+    2x+y=10
+\end{equation}
+
+显然这是一个方程式，它与一元一次方程相比，
+只是多了一个未知数(元)。而其余的特点是一样
+的：分母不含未知数、方程的次数是1，因此，我们
+就把“\textbf{含有两个未知数且分母不含未知数的一次方
+程}”，叫做\textbf{二元一次方程式}。
+
+\textbf{能够使二元一次方程两边的值相等的未知数$x,y$
+的一组值}，叫做这个\textbf{二元一次方程的一个解}，记作
+$(x,y)$。比如：方程(2.6)的一个解，可以记作：
+ $ (x,   y)=(5,  0)$，这就是说，把$x=5$, $y=0$这一
+组值代入(2.6)的两边，计算结果是相等的。
+
+    前边已经说过，我们所提问题的“派车方案”不
+止一种，因此，方程(2.6)的解就不止一个。但由于
+这里的$x,  y$都表示所派的卡车辆数，因而它们的值
+就只能是\textbf{非负整数}了.否则，所得结果就毫无意义
+了.用列表的方法，很容易把所有的“派车方案”
+  (也就是方程(2.6)的解)找出来，这就是：
+\begin{center}
+    \begin{tabular}{c|cccccc}
+        \hline
+  $x$ &5&4&3&2&1&0\\
+  \hline    
+  $y$ &0&2&4&6&8&10\\
+  \hline
+    \end{tabular}
+\end{center}
+其中每一个$(x,y)$的\textbf{数组值}，就是方程(2.6)的一
+个解，也就是所提问题的一种“派车方案”。
+
+    把所有能使方程(2.6)成立的，且符合实际问题
+的各个\textbf{数组值}所组成的\textbf{集合}，可以表示为：
+\[A=\{(x,y)\}=\{(5,0),\; (4,2),\;(3,4),\;(2,6),\;(1,8),\;(0,10)\}\]
+
+这个集合中的每一组值，都是(2.6)的一个解，
+我们把集合刀叫做方程(2.6)的符合题意的\textbf{解集}.
+
+    应该指出：如果不考虑具体问题，只是从数学上
+考虑方程$2x + y=10$的解时，就不能限制在\textbf{非负整数}
+的范围内了，而应该考虑到所有的有理数范围。这
+时，只要任意取$x$的一个有理数值，代入方程(2.6)
+就可以求出$y$的一个相应的值，从而得到方程(2.6)
+的一个解；当然，也可以先随便取$y$的一个值，代入
+方程(2.6)，就能求出$x$的一个相应值，同样可得到
+方程(2.6)的一个解。这样可以无止境的作下去，因
+此，可以得到方程(2.6)的无限多个解。如下表：
+\begin{center}
+    \begin{tabular}{c|ccccccccc}
+        \hline
+  $x$ &$\cdots$& $-3$ & $-\frac{1}{2}$  & $-1$  & $0$  & $\frac{1}{2}$ & $0.7$ &$10.6$  &$\cdots$\\
+  \hline    
+  $y$ &$\cdots$& $16$ & $11$  & $12$  &  $10$ & $9$ & $8.6$  &$-11.2$ &$\cdots$\\
+  \hline
+    \end{tabular}
+\end{center}
+
+所以，我们说：
+\textbf{任一个二元一次方程有无数多个解}。正因为如
+此，二元一次方程也被称为\textbf{不定方程}。
+
+\begin{example}
+    试求二元一次方程$3x +y=8$的正整数解。
+\end{example}
+
+\begin{analyze}
+    二元一次方程虽有无数多个解，但本题
+只要求\textbf{正整数解}，因而\textbf{可能}是只有有限几个解。
+\end{analyze}
+
+\begin{solution}
+可将原方程变形为：
+\begin{align*}
+    y=8-3x   \tag{移项变号}
+\end{align*}
+
+  然后，可以设$x$分别取正整数1、2，相应地代
+入上式，求出$y$值分别为：
+\[y=8-3\x1=5, \qquad  y=8-3\x 2=2\]
+
+    如果继续取$x=3$，代入上式可知，$y=8-3\x3=-1$，这已经不符合所要求的“正整数”解。显然，
+$x$取比3大的正整数时，相应的$y$值更不是“正整
+数”了，所以方程$3x +y=8$的正整数解集是：
+\[\{(x,y)\}=\{(1,5),\; (2,2)\}  \]
+
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 求$3y=9-6x$的非负整数解集。
+    \item 求$3x+2y=16$的正整数解集。
+\end{enumerate}
+\end{ex}
+          
+\subsection{方程组与方程组的解}
+    如果我们把前边所提到的实例，另加要求条件，
+改为“要用大、小卡车共六辆，一次运走10吨货物，
+大车每辆装满2吨，小车每辆装满1吨。试问：应如
+何派车？
+
+    不难发现，只是增加了一个条件“只能派六辆
+车”。也就是说，用代数法解决这个问题时，不仅可
+列出方程
+\begin{equation}
+    2x+y=10
+\end{equation}
+而且还应该增加一个条件：
+\begin{equation}
+    x+y=6
+\end{equation}
+
+(2.8)式同样是一个二元一次方程，其中的$x,y$同样表示大、小卡车的辆数，也应限制在\textbf{非负整数}
+范围内取值。它的解也列表如下：
+\begin{center}
+    \begin{tabular}{c|ccccccc}
+        \hline
+$x$ &6&5&4&3&2&1&0\\
+\hline
+$y$ &0&1&2&3&4&5&6 \\
+\hline      
+    \end{tabular}
+\end{center}
+
+因此，方程(2.8)的非负整数解集为：
+\[B=\{(x,y)\} =\{(6,0),\; (5,  1),\; 
+      (4, 2),\; (3,  3),\; (2,   4),\; 
+      (1,5),\; (0,6)\} \]
+
+要解决所提的问题，只要求出同时适合方程(2.7)
+和方程(2.8)的数组值，也就是求出非负整数解集$A$
+与解集$B$的\textbf{公共解解集}就可以了。这样的解集中的数
+组值，一定满足方程(2.7)与方程(2.8)，因而也就
+是我们所提问题的解决方案。
+
+显然，这个公共解就是：
+          \[(x,y)=(4, 2)\]
+也就是说，只要“派出大车4辆，小车2辆”就符合
+这个问题的要求。
+
+    在此，我们把\textbf{集合$A$与集合$B$的公共部分所组成
+的新集合}，叫做集合$A$与$B$的\textbf{交集合}，简称\textbf{交集}，记作：$A\cap B$，读成“$A$与$B$的交”。
+
+    如上例：
+\[\begin{split}
+    A&=\{(5,  0),\; (4, 2),\; (3,  4),\;  (2,  6),\; (1,  8),\; (0,  10)\} \\
+B&=\{(6,  0),\; (5,  1),\; (4,  2),\; (3,  3),\; (2,  4),\; (1, 5),\;     (0,  6)\}\\
+A\cap B&=\{(4,  2)\}
+\end{split}  \]
+
+\begin{figure}[htp]
+\begin{center}
+    \begin{tikzpicture}[scale=1.5]
+\draw (0,0) circle (1.2);
+\draw (2,0) circle (1.8);
+
+\fill [pattern=north west lines] (0.55,1.07) to [bend left=28] (1.2,0) to [bend left=28]  (0.55,-1.07)to [bend left=34]  (0.55, 1.07);
+
+\node at (0,.8){$A$};
+\node at (.7,.25)[fill=white]{$A\cap B$};
+\node at (.7,-.25)[fill=white]{$(4,  2)$};
+\node at (2.2,1.5){$B$};
+
+\node at (-.4,.5){$(5,0)$};
+\node at (-.4,0){$(3,  4)\;  (2,  6)$};
+\node at (-.4,-.5){$(1,  8)\; (0,  10)$};
+
+\node at (2.5,.6){$(6,  0)\quad (5,  1)$};
+\node at (2.5,0){$(3,  3)\quad (2,4)$};
+\node at (2.5,-.6){$(1, 5)\quad  (0,  6)$};
+    \end{tikzpicture}
+\end{center}
+    \caption{}
+\end{figure}
+
+由此可见，在解决应用问题时，还可以引入两个
+或更多个未知数，列出几个方程式，把它们联合起来
+求得公共解。
+
+    我们把\textbf{几个方程式联合在一起，组成一个整体}，
+就叫做\textbf{联立方程式}，也叫\textbf{方程组}。一个方程组中的几个方程，应用“\{”标出。如：
+\[\begin{cases}
+   2x+y=10\\
+   x-y=6 
+\end{cases},\qquad \begin{cases}
+    2x=y-5\\
+    3x=-4y
+\end{cases}\]    
+都表示方程组。
+
+\textbf{含有两个未知数的一次方程组，称为二元一次方
+程组}。比如:
+\[\begin{cases}
+    x+y=2\\
+    y=1 
+ \end{cases},\qquad \begin{cases}
+     x-2y=3\\
+     x+y=7
+ \end{cases},\qquad \begin{cases}
+    x=2+y\\
+    y=-x
+\end{cases}\]   
+都是二元一次方程组。
+
+\textbf{能够同时满足方程组中每一个方程的未知数的一
+组值}，叫做\textbf{方程组的解}。
+
+\textbf{也就是说：一个方程组中，每个方程的解集的交
+集}，就是这一\textbf{方程组的解集}。例如：
+    $x=4$,  $y=2$能够同时满足$2x+y=10$与$x+y=6$，
+因此，$(x,y)=(4,2)$就是方程组
+$\begin{cases}
+    2x+y=10\\
+    x+y=6 
+ \end{cases}$的一个解。
+
+\begin{ex}
+\begin{enumerate}
+    \item 检验下列方括号中的数值组$(x,y)$，
+    有没有方程组$\begin{cases}
+        2x+y=-5\\
+        3x=-4y 
+     \end{cases}$的解？
+    \[[(4,3),\quad (4,-3),\quad (-4,3), \quad (0,-5)  ] \]
+
+    \item 如果给你一个数值组$(x,  y) = (1,1)$。你能造出一个二元
+    一次方程组，使它的解是这个数值组吗？
+\end{enumerate}
+\end{ex}
+
+\subsection{二元一次方程组的解法}
+    求方程组的解的过程，叫做\textbf{解方程组}。
+
+    如何解二元一次方程呢？
+
+    假如按照上边所说方法：“先求出方程组中每一
+个方程的解集，再求这些解集的\textbf{交集}”去作的话，就
+会发现：这种方法按理说没有问题，但实际作起来既
+繁，又没有准儿。因为每一个方程都有无限多个解，
+全部找出来不易；要求每个方程的公共解，就更不容
+易了。为此，我们需要进一步探求二元一次方程组求
+解的普遍可行的有效方法。
+
+    一般来说，解二元一次方程组的关键是：\textbf{设法把
+二元转化为一元方程求解}。总称为\textbf{消元法}。
+
+\subsubsection{代入消元法}
+
+
+
+\begin{example}
+解方程组
+    \begin{numcases}{}
+      2x+y=13\\
+      7x+9y=84  
+    \end{numcases}
+\end{example}
+
+\begin{analyze}
+方程(2.9), (2.10)既然组成一个方程
+组，因而两个方程式中的未知数$x$就是表示同一个数
+量，而未知数$y$也表示另一个相同的数量。这样，就
+可以从(2.9)中首先解出：$y= 13-2x$ (移项变号)，
+再把这个关系式代入(2.10)式中，去代换(2.10)中的$y$。
+从而使(2.10)式中消去未知数$y$，变成：
+              \[7x+9(13-2x) = 84\]
+解这个一元一次方程，就能求出二值。再利用(2.9)式，
+就能求出$y$的相应值。
+\end{analyze}
+
+\begin{solution}
+由(2.9)式可得
+\begin{equation}
+    y=13-2x
+\end{equation}
+把(2.11)式代入(2.10)式，可得
+    \[7x+9(1.3-2x)=84\]
+解这个一元一次方程，经过去括号、移项变号及
+合并同类项，可得
+        \[-11x=-33\]  
+$\therefore\quad x=3$
+
+把$x=3$再代入(2.11)式，可得
+\[y=13-2\x3 =7\]
+\end{solution}
+
+\textbf{验算：} 把$x=3$, $y=7$同时代入(2.9)与(2.10)的两
+边，代入(2.9)：
+\[ \text{左}=2\x 3+7=13,\qquad \text{右}=13\]
+\[\text{左边}=\text{右边}\]
+
+代入(2.10)：
+\[\text{左}=7 \x 3+9 \x7=84,\qquad \text{右}=84\]
+\[\text{左边}=\text{右边}\]
+
+因此，原方程组的解是$(x,y)=(3,7)$。
+即，原方程组的解集为：$\{(x,y)\}=\{(3,7)\}$。
+
+\begin{example}
+    解方程组
+\begin{numcases}{}
+    3x+4y=6\\
+    2x+3y=5
+\end{numcases}
+\end{example}
+
+\begin{solution}
+由(2.13)式得：
+\begin{equation}
+    x=\frac{5-3y}{2}
+\end{equation}
+(2.14)代入(2.12)得：
+\[3\x \frac{5-3y}{2}+4y=6 \]
+解这个一元一次方程
+\[\begin{split}
+    15-9y+8y&=12\\
+    -y&=-3\\
+    y&=3
+\end{split}\]
+把$y=3$代入(2.14)得
+\[x=\frac{5-3\x 3}{2}=-2\]
+经检验可知，原方程组的解是$(x,y)=(-2,3)$，即原方程组的解集是
+\[\{(x,y)\}=\{(-2,3)\} \]
+\end{solution}
+
+通过以上两例，可以总结这种解法的步骤和要点如下：
+\begin{blk}{}
+\begin{enumerate}[I. ]
+    \item 由方程组中的任一个方程出发，把一个
+    未知数写成含有另一个未知数的算式。
+    \item 把这个算式代入另一个方程中去，使它
+    转化为一元方程式，达到\textbf{消元}的目的。
+    \item 解所得的一元方程。
+    \item 得到一个未知数的值以后，把它再代回
+    I所得的算式(其实，代入原方程组中的任一
+    个方程中都可以)，进而求得相应的另一个未知
+    数的值。
+\end{enumerate}    
+\end{blk}
+
+这种求解的方法，叫做\textbf{代入消元法}，简称\textbf{代入法}。
+\begin{ex}
+    用代入法解下列方程组：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\begin{cases}
+        2x+3y=40\\ y=2x
+    \end{cases}$
+    \item $\begin{cases}
+        7x+2y=11\\ x-y=-1
+    \end{cases}$
+    \item $\begin{cases}
+        5x=7y-1\\ 5x=17-14y
+    \end{cases}$
+    \item $\begin{cases}
+        x+y=1\\ 10x+y=5\frac{1}{2}
+    \end{cases}$
+    \item $\begin{cases}
+        \frac{x}{2}+\frac{y}{2}=\frac{1}{2}\\ 2x-4y=-1
+    \end{cases}$
+    \item $\begin{cases}
+        3x+5y-8=0\\ 7x-4y-3=0
+    \end{cases}$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+\subsubsection{加减消元法}
+\begin{example}
+    解方程组
+    \begin{numcases}{}
+        x+y=12\\
+        3x-y=4
+    \end{numcases}
+\end{example}
+
+\begin{analyze}
+由于每一个方程都是一个含有未知数
+的等式，而我们所要求的正是使每个方程能同时成为
+真正等式时未知数的值。因而，等式所具有的性质，
+对这些方程当然应该有效，特别是：两个等式的两边
+分别相加(或相减)，其结果仍是一个等式，即如果
+$A=B$，$C=D$，那么就有$A\pm C=B\pm D$。对方程也
+应适用。
+
+    根据这个道理，再观察这个方程组中的两个方程
+式，发现它们当中“同一个未知数$y$的系数是互为相
+反数”。因而，可以把两个方程式的两边分别相加，
+消去未知数$y$，得到一个只含有$x$的一元方程，从而
+就能解出$x$值，再进一步利用原方程组中的任一个方
+程，求出相应的$y$值。使问题得到解决。
+\end{analyze}
+
+\begin{solution}
+将方程(2.15)，(2.16)相加，(2.15)+(2.16)得：
+\[4x=16  \qquad \therefore\quad x=4 \]
+把$x=4$代入(2.15)：
+\[4+y=12 \qquad \therefore\quad y=8\]
+经检验，原方程组的解是$(x,y)=(4,8)$，即：原方程组的解集是
+\[\{(x,y)\}=\{4,8\}\]
+\end{solution}
+
+通过这个例题的分析与解法，试想一想：在什么情况下，两个方程相加能消元？又在什么情况下，两个方程相减能消元？
+
+不难知道，只有在\textbf{两个方程式中，同一个末知数
+的两个系数绝对值相等}的情况下，才能\textbf{相加}或\textbf{相减达
+到消元}。而且，当某一未知数的\textbf{系数相同}时，可以\textbf{相
+减}；当某一未知数的\textbf{系数互为相反数时}，可以\textbf{相加}。
+
+
+\begin{example}
+    解方程组
+\begin{numcases}{}
+    2x+3y=8\\
+    3x+4y=11
+\end{numcases}
+\end{example}
+
+\begin{analyze}
+这个方程组中，未知数的系数没有什
+么特点，不具备“相加或相减”进行消元的条件。但
+是，我们可以应用等式的性质，设法创造条件，也就
+是设法使其中某一个未知数的两个系数绝对值相等以
+后，再去消元。
+
+    根据这个想法，就要用等式性质：
+
+如果$A=B$, $C=D$，且有非零数$m, n$。那么，就
+有等式：$mA+nC= mB + nD$
+\end{analyze}
+
+\begin{solution}
+方程(2.17)两边同乘以3。（简写为：(2.17)$\x 3$），得：
+\begin{equation}
+    6x+9y=24
+\end{equation}
+(2.18)$\x 2$得：
+\begin{equation}
+    6x+8y=22
+\end{equation}
+(2.19)$-$(2.20)得：$y=2$
+
+把$y=2$代入(2.17)（或代入(2.18)）得
+\[2x+3\x 2=8\qquad \therefore\quad x=1\]
+经检验，原方程组的解是$(x,y)=(1,2)$，即：原方程组的解集是
+\[\{(x,y)\}=\{(1,2)\}  \]
+\end{solution}
+
+通过例2.17，例2.18的分析与解法，可以总结出这种
+解法的步骤与要点如下:
+\begin{blk}{}
+\begin{enumerate}[I. ]
+    \item   两方程中，若有“\textbf{同一未知数的两个系
+    数绝对值相同}”的特点，可以\textbf{相加或相减}进行\textbf{消
+    元}；若没有上述特点，可以运用等式性质，先使
+    原方程组变形为具有这一特点的形式，然后再把
+    变形后的两方程\textbf{相加或相减}，达到\textbf{消元}的目的。
+    \item   解所得的一元方程。
+    \item   把得到的一个未知数的值，代入原方程
+    组中的任一个方程，求出另一个未知数相应的
+    值。    
+\end{enumerate}
+\end{blk}
+
+这种求解的方法，叫做\textbf{加减消元法}，简称\textbf{加减
+法}。
+
+\begin{ex}
+    用加减消元法解下列方程组：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\begin{cases}
+        x  +  y  = 8  \\ x  -  y  = 4  \\
+    \end{cases}$
+    \item $\begin{cases}
+       3 x  +  2y  =21   \\ 2x  + 2 y  = 16  \\
+    \end{cases}$
+    \item $\begin{cases}
+       2 x  +  \frac{y}{2}  = 2  \\ \frac{y}{2} =x +\frac{1}{2}       \\
+    \end{cases}$
+    \item $\begin{cases}
+      7- 3 x =2  y    \\ -9+ 7 y  =5x   \\
+    \end{cases}$
+    \item $\begin{cases}
+       0.1=\frac{x}{4} -\frac{y}{2}   \\ \frac{3x}{4}=\frac{1}{10}+\frac{5y}{2}   \\
+    \end{cases}$
+    \item $\begin{cases}
+      5m-4n  = 33  \\3m+2n= 33  \\
+    \end{cases}$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+归根结底，解二元一次方程组的关键就是消元，
+无论那种方法，在运用时都要注意：先由运算通性及
+等式性质把方程组的每个方程进行变形，整理成为一
+般形式：
+\[\begin{cases}
+    a_1x+b_1y=c_1\\
+    a_2x+b_2y=c_2
+\end{cases} \text{ ($a_1,b_1,c_1,a_2,b_2,c_2$都是已知数)}\]
+
+    然后再根据特点，具体分析，灵活选用代入法或
+加减法进行\textbf{消元}。方法力求简捷、方便。
+
+\begin{example}
+解方程组：
+\begin{multicols}{2}
+    \begin{enumerate}
+    \item $\begin{cases}
+4x+3y=7        \\
+12x+9y=21   
+    \end{cases}$
+    \item $\begin{cases}
+        4x+3y=7\\
+        8x+6y=11
+    \end{cases}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+\begin{solution}
+\begin{enumerate}
+    \item 
+    \begin{numcases}{}
+        4x+3y=7        \\
+        12x+9y=21  
+    \end{numcases}
+如果把(2.21)式乘以3，得
+\begin{equation}
+    12x+9y=21
+\end{equation}
+(2.23)$-$(2.22)可得：$0=0$。
+
+这个结果并不奇怪，仔细观察原方程组，就会发
+现，(2.22)式正是(2.21) $\x 3$的结果。这说明所给方程
+组，实质上是一个二元一次方程，因此，可以断定:
+\textbf{原方程组有无数多个解}。
+
+\item \begin{numcases}{}
+    4x+3y=7\\
+    8x+6y=11
+\end{numcases}
+(2.24)$\x 2$可得：
+\begin{equation}
+    8x+6y=14
+\end{equation}
+(2.25)$-$(2.26)可得：$0=-3$，这是不可能的。
+
+因此，原方程组就是\textbf{矛盾方程组，无解}。
+\end{enumerate}
+\end{solution}
+
+通过这一例题，你能不能发现：方程组如果有无
+数多解或无解，它们两个方程的各项系数之间应该具
+有什么规律和特点？
+
+\begin{ex}
+解下列方程组：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\begin{cases}
+        \frac{x}{3}-\frac{y}{7}=1\\
+        1\frac{2}{3}x-\frac{5}{7}y=5
+    \end{cases}$
+    \item $\begin{cases}
+        x=9-7y\\
+        3x+y=19-20y
+    \end{cases}$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+学习了二元一次方程组的解法以后，在解决实际
+问题时，就可以引入两个未知数，根据题目中的条
+件，列出两个方程式，组成方程组。进而解出方程组，
+使问题得到解决.
+
+\begin{example}
+    兄弟二人的语文考试成绩共190分，如果
+知道兄是弟的成绩的90，那么，兄、弟各得多少
+分？
+\end{example}
+
+\begin{solution}
+    设弟弟得$x$分，兄得$y$分，则由题目所给条件可以得出：
+\begin{numcases}{}
+    x+y=190\\
+    y=\frac{90}{100}x
+\end{numcases}
+将(2.28)代入(2.27)：$x+\frac{90}{100}x=190$
+解得 \qquad $x=100$
+
+把$x=100$代入(2.28)：$y=90$
+
+答：兄得90分，弟得100分。
+\end{solution}
+
+\begin{ex}
+    引入两个未知数，列方程组解：
+\begin{enumerate}
+    \item 某两数之和为100，之差为50。求两数。
+    \item 班上男、女同学共52人，而女生人数的一半比男生总数少
+      4人。求男、女生各几人？
+\end{enumerate}
+\end{ex}
+
+\subsection{三元一次方程组及其解法}
+\textbf{含有三个未知数的一次方程组}，叫做\textbf{三元一次方
+程组}。例如：
+
+    方程组
+\[\begin{cases}
+    2x+3y+z=38\\3x+4y+2z=56\\4x+5y+z=66
+\end{cases}\quad \begin{cases}
+    x+y+z=2\\x-y+z=0\\x\qquad -z=4
+\end{cases}\quad  \begin{cases}
+    2m-R+2n=8\\ \qquad\;\; R+2n=-2\\ 3m+R-4n=1
+\end{cases}   \]
+等等，都是三元一次方程组。
+
+    解三元一次方程组的关键，仍然是消元，其具体
+方法仍是代入法和加减法。通过逐步消元，将三元转
+化为二元，再转化为一元。每一次转化，都是运用
+“通性”和等式性质。以保证解出一元方程的解，再
+逐步求得三元一次方程组的解。
+
+\begin{example}
+    解方程组
+\begin{numcases}{}
+    2x+3y+z=38\\
+    3x+4y+2z=56\\
+    4x+5y+z=66    
+\end{numcases}
+\end{example}
+
+\begin{analyze}
+方程组中，未知数$z$的各项系数较简单，
+    所以，可考虑先消去$z$，转化为二元一次方程组求解。
+\end{analyze}
+
+\begin{solution}
+(2.31)$-$(2.29)：$2x+2y=28$，即：
+\begin{equation}
+    x+y=14
+\end{equation}
+(2.29)$\x 2-$(2.30)：    
+\begin{equation}
+    x+2y=20
+\end{equation}
+将(2.32)、(2.33)联立，由(2.33)$-$(2.32)：$y=6$
+
+将$y=6$代入(2.32)：解出$x=8$。
+
+把$x=8,\quad y=6$代入(2.29)：解出$z=4$。
+
+所以，原方程的解是：$(x,y,z)=(8,6,4)$
+\end{solution}
+
+\begin{rmk}
+三元一次方程组的一个解，也是一个
+\textbf{数值组}，它由三个有顺序的数组成，不能忽视$(x, y, z)
+=( 8,  6,  4 )$的写法。如果写成解集的形式就是：
+\[\{(x,y,z)\}=\{(8,6,4)\}  \]
+\end{rmk}
+
+\begin{example}
+解方程组：
+\begin{numcases}{}
+    x+y+z=2\\
+    x-y+z=0\\
+    x\qquad -z=4
+\end{numcases}
+\end{example}
+
+\begin{analyze}
+这个方程组的特点是：各个未知数的
+系数绝对值在每个方程中都是1。因而，直接运用加
+减法消元比较方便。
+\end{analyze}
+
+
+\begin{solution}
+    (2.34)$-$(2.35)：$2y=2$，$\therefore\quad y=1$
+
+    (2.34)$+$(2.36)：
+    \begin{equation}
+        2x+y=6
+    \end{equation}
+
+    把$y=1$代入(2.37)：$2x+1=6$，$\therefore\quad x=\frac{5}{2}$
+
+ 把$x=\frac{5}{2}$代入(2.36)：$\frac{5}{2}-z=4$，$\therefore\quad z=-\frac{3}{2}$
+
+ 所以，原方程组的解为：$(x,y,z)=\left(\frac{5}{2},1,-\frac{3}{2}\right)$，即解集为：
+$$\{(x,y,z)\}=\left\{\left(\frac{5}{2},1,-\frac{3}{2}\right)\right\}$$
+\end{solution}
+
+\begin{example}
+解方程组：
+\begin{numcases}{}
+    x+y\qquad =3\\
+    \qquad y+z=5\\
+x\qquad +z=4
+\end{numcases}    
+\end{example}
+
+
+\begin{analyze}
+这个方程组的特点是：每一个方程中
+    都缺少一个未知数，且系数都是1，分布很均匀。用
+    消元法可以灵活处理。
+\end{analyze}
+
+\begin{solution}
+(2.38)$+$(2.39)$+$(2.40)：$2x+2y+2z=12$，即：
+\begin{equation}
+    x+y+z=6
+\end{equation}
+应用(2.41)$-$(2.39)，(2.41)$-$(2.40)，(2.41)$-$(2.38)就可立即得出：
+\[x=1,\quad y=2,\quad z=3 \]
+
+所以，原方程组的解为：$(x,y,z)=(1,2,3)$，即解集为：
+\[\{(x,y,z)\}=\{(1,2,3)\}  \]    
+\end{solution}
+
+引入三个未知数，列出三个一次方程，也可以解
+一些实际问题。
+\begin{example}
+   某中学应届毕业生总共有$a$人，其中升入
+高校和升入中专的占总人数的60\%；参加工作的正好
+与升入高校的人数一样多。试问：升入高校、升入中
+专和参加工作的各占多少人？ 
+\end{example}
+
+\begin{solution}
+    设升入高校$x$人，升入中专$y$人，参加工作
+的$z$人，则由题目所给条件，可以列出：  
+\begin{numcases}{}
+    x+y+z=a\\
+    x+y=\frac{60}{100}a\\
+    x=z
+\end{numcases}
+
+解这个方程组，(2.42)$-$(2.43)：$z=a-\frac{60}{100}a$，$\therefore\quad z=\frac{2}{5}a$
+
+把$z=\frac{2}{5}a$代入(2.44)：$\therefore\quad x=\frac{2}{5}a$
+
+把$x=z=\frac{2}{5}a$代入(2.42)：$y=a-\frac{2}{5}a-\frac{2}{5}a$，$\therefore\quad y=\frac{1}{5}a$。
+
+因此：这个班有$\frac{2}{5}a$人升入高校，有$\frac{1}{5}a$人升入中专，有$\frac{2}{5}a$人参加了工作。
+\end{solution}
+
+\begin{ex}
+    解下列三元一次方程组
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\begin{cases}
+        x+y-z=3\\-x+y+z=6\\x-y+z=4
+    \end{cases}$
+    \item $\begin{cases}
+        x+2y+3z=6\\ 2x+3y+z=6\\3x+y+2z=6
+    \end{cases}$
+    \item $\begin{cases}
+        2x+y=2\\2y+z=7\\x+2z=3
+    \end{cases}$
+    \item $\begin{cases}
+        x+y+z=3\\5x-y+z=9\\x-2y+7z=24
+    \end{cases}$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+\section*{习题2.3}
+\addcontentsline{toc}{subsection}{习题2.3}
+\begin{enumerate}
+ \item 已知方程$3x-y=1$，试先用$x$的算式表示出$y$来，再按下
+表给出的$x$值求出$y$的相应的每一个值：
+\begin{center}
+    \begin{tabular}{c|ccccccccc}
+   $x$ & $\cdots$ &$-3$&$-1$&0&$\frac{1}{2}$&$\frac{1}{3}$&1&2& $\cdots$\\
+   \hline
+   $y$ & $\cdots$ &&&&&&&&    $\cdots$\\
+    \end{tabular}
+\end{center}
+    \item 试求不定方程$3x+y=10$的正整数解。
+    \item 如果有10吨货物，要用马车和汽车一次运走，马车三辆
+可装一吨，汽车一辆能装3吨。试问：如何派车？有几种方
+案？
+\item 判断下边方括号中给出的数值组$(x, y)$，是不是以下方程
+组的解？
+ \[\begin{cases}
+    2x-y=7\\x+2y=-4
+ \end{cases}\]   
+\[[(-1,9),\quad  (1,-5),\quad  (0,-2),\quad  (2,-3),\quad  (3,-1),\quad  (-2,-1)] \]
+
+\item 已知不定方程$my-2x=7$的一个解是：$(x,y)=(1,3)$，
+试求$m$的值，并求出有一个未知数取0时，这个不定方程的
+两个解。
+\item 用代入法解下列二元一次方程组：
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\begin{cases}
+        7x+5y=6\\ y=x+3
+    \end{cases}$
+    \item $\begin{cases}
+        a+2b=0\\ 3a+4b=6
+    \end{cases}$
+    \item $\begin{cases}
+        7y-3=-11x\\ y=2x
+    \end{cases}$
+    \item $\begin{cases}
+x=\frac{5}{2}y\\ 3x-4y=-14        
+    \end{cases}$
+    \item $\begin{cases}
+        x+2y-1=0\\ x-4y+22=0
+    \end{cases}$
+    \item $\begin{cases}
+        3x=\frac{y+1}{2}\\ 3x=\frac{y}{4}
+    \end{cases}$
+    \item $\begin{cases}
+        \frac{1}{2}y-\frac{x}{4}=-\frac{5}{4}\\y=3(x-2)
+    \end{cases}$
+    \item $\begin{cases}
+        3x-2y=5\\ x+4y=18
+    \end{cases}$
+    \item $\begin{cases}
+        m+2n=4\\5m-1=4
+    \end{cases}$
+    \item $2(a+b)=3b+\frac{1}{2}=3a+b$
+\end{enumerate}
+\end{multicols}
+
+\item 用加减法解下列方程组：
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\begin{cases}
+            3x-2y=5\\ x+2y=11
+        \end{cases}$
+        \item $\begin{cases}
+           2x+3y=11\\ y-2x=1 
+        \end{cases}$
+        \item $\begin{cases}
+            5x+3y=7\\-5x+7y=3
+        \end{cases}$
+        \item $\begin{cases}
+            2x+5y=25\\4x+3y=15
+        \end{cases}$
+        \item $\begin{cases}
+            25x+17y=40\\17x+25y=40
+        \end{cases}$
+        \item $\begin{cases}
+            5x=1+3y\\3x+7y=27
+        \end{cases}$
+        \item $\begin{cases}
+            3x+5y=19\\ 8x-3y=67
+        \end{cases}$
+        \item $\begin{cases}
+            7x-3y=10\\  3\frac{1}{2}x-50=6y
+        \end{cases}$
+        \item $\begin{cases}
+            6.2v-4s=0.2\\ 8v-5s=1
+        \end{cases}$
+        \item $\begin{cases}
+            3(x-1)=4(y-4)\\5(y-1)=3(x+5)
+        \end{cases}$
+        \item $\begin{cases}
+            2(x+1)-3(y-1)=10\\ 2(x+1)+7(y-1)=20
+        \end{cases}$
+        \item $\begin{cases}
+            \frac{y}{2}+\frac{z}{3}=13\\ \frac{y}{3}-\frac{z}{4}=3
+        \end{cases}$
+        \item $\begin{cases}
+            \frac{m+n}{3}-\frac{m-n}{4}=+0.35\\ \frac{m+n}{3}+\frac{m-n}{2}=0.5
+        \end{cases}$
+        \item $0.1x-2=y+7=0.7x+y$
+        \item $2(t-1)-s=t-1=5s$
+    \end{enumerate}
+\end{multicols}
+
+\item 解下列方程组：(任选方法)
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\begin{cases}
+x=16-4y\\ y=34-4x
+\end{cases}$
+\item $\begin{cases}
+x+y=7\\x:5=y:2
+\end{cases}$
+\item $\begin{cases}
+\frac{2(x-0.5)}{5}-\frac{3(y+2)}{4}=1\\
+3(2x-1)+15(y+2)=5
+\end{cases}$
+\item $\begin{cases}
+\frac{v}{3}-\frac{t}{5}=\frac{2}{15}\\
+\frac{2v}{3}+\frac{t}{5}=\frac{13}{15}
+\end{cases}$
+\item $\begin{cases}
+3x-2y=7\\ 6x-4y=14
+\end{cases}$
+\item $\begin{cases}
+x+2y=-1\\ x+y=\frac{1}{2}x+3
+\end{cases}$
+    \end{enumerate}
+\end{multicols}
+
+\item 如果已知方程组
+\[\begin{cases}
+  (m+1)x-(n-3)y  =-11\\
+  mx+(n+2)y=7 
+    \end{cases}\]
+的一个解是$(x,y)=(1,-2)$，试求$m,n$的值。
+
+\item 如果遇到三个方程式组成的二元一次方程组时，可以
+先就其中任两个方程求出解答，再将解答代入第三个方程中
+去检验。假如所求解答也满足第三个方程，那么，这个解就
+是原方程组的解；假如不满足，那么，原方程组就无解。试
+用这种方法解下列方程组：
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\begin{cases}
+4x-3y=1\\4x+y=5\\x-y=0
+\end{cases}$
+\item $\begin{cases}
+4(x+y)+3=y+2\\ 7x-10=1-y\\ x+y=-1
+\end{cases}$
+\item $\begin{cases}
+    3(2x+y)-1=2\\ x+1=2\\ y-3=2
+    \end{cases}$
+    \end{enumerate}
+\end{multicols}
+
+\item 解下列三元一次方程组：
+    \begin{enumerate}
+\item $\begin{cases}
+    x+y+2z=2\\ 3x-y-4z=5\\ 2x+3y-2z=0
+    \end{cases}$
+\item $\begin{cases}
+    x-y=\frac{3}{2}\\x+z=\frac{7}{10}\\y-z=-\frac{6}{5}
+    \end{cases}$
+    \item $\begin{cases}
+    x+y=x+2y-3=z\\ 2x-3y+2z=5
+    \end{cases}$
+    \item $
+    x+y+z=y-8x+107=x-2(x+y)+84=108$
+    \end{enumerate}
+
+\item 把下列方程组中的字母$t$当作已知数，试解出下列方
+程组：
+\begin{multicols}{2}
+    \begin{enumerate}
+\item $\begin{cases}
+    x+y+t=3\\ x-y+3t=-1
+\end{cases}$
+\item $\begin{cases}
+    2x+3y=1+t\\ y=x-t
+\end{cases}$
+\end{enumerate}
+\end{multicols}
+
+\item 如果$a,b$都是已知数，并且$|a|\ne |b|$，试解下面的字
+母系数方程组：
+\[\begin{cases}
+    ax+by=b\\ bx+ay=a
+\end{cases} \]
+\end{enumerate}
+
+
+\section{解应用问题}
+    前面已经知道，用代数方法解决实际应用问题的
+时候，先要做好充分准备，打好基础，就是先要引入
+适当的未知数，根据题目中的数量关系直截了当地列
+出方程或方程组；然后再去运用由数系运算通性及等
+式性质而得出来的系统解法，求出符合题意的解答。
+
+    本节将集中讨论如何灵活地解决各种一次方程
+  (或方程组)的应用问题。
+
+    
+\begin{example}
+    小明买练习本、生字本共15本，总共用去
+一元四角钱。如果练习本的单价是一角六分，生字本
+的单价是六分。试问：小明买练习本、生字本各多少
+本？
+\end{example}
+
+\begin{analyze}
+ 方程就是一种等式。要列出符合题意
+    的方程，就要先明确问题中的\textbf{等量关系}。这个问题
+    中，有以下两个基本的等量关系：
+\begin{enumerate}
+    \item 总共15本，即 \[(\text{练习本数})+(\text{生字本数})=15 \]
+    \item 总共用钱1.40元，即
+    \[(\text{练习本数})\x(\text{单价})+(\text{生字本数})\x(\text{单价})=1.40\]
+\end{enumerate}
+因此，可以有两种考虑方法：
+   
+\textbf{解法1：} 引入一个未知数
+
+设小明买练习本$x$本，则利用关系1可知，买生字本$(15-x)$本，
+再利用关系2就可列出方程：
+   \[x\cdot (0.16)+(15-x)\cdot(0.06)=1.4\] 
+即：
+\[\begin{split}
+    0.16x+0.9-0.06x &= 1.4\\
+             0.1x&=0.5\\          
+    x&=5\text{(本)}
+\end{split}\]
+\[15-x=15-5=10\text{(本)}\]
+
+答: 小明买了练习本5本，生字本10本。
+
+
+\textbf{解法2：} 引入两个未知数
+
+设小明买练习本$x$本，生字本$y$本。
+则由关系式1与2，可以分别得出：
+\begin{numcases}{}
+    x+y=15\\
+    x\cdot 0.16+y\cdot 0.06=1.4
+\end{numcases}
+解这个二元一次方程组，就可得出：
+$(x,y)=(5,10)$
+
+答: 小明买了练习本5本，生字本10本。
+\end{analyze}
+
+由此可见，同一个问题，有时可以引入一个未知
+数，列出方程求解；也可以引入两个未知数，列出方
+程组求解。两种解法各有利弊：一元方程求解简便，
+但列方程较难；二元方程组列方程较易，但求解稍
+繁。因而，在应用中可以灵活选择，不必要求一律。
+一般来说，要选择“便于求解、引入未知数较少”的
+方法。
+
+\begin{ex}
+    引入恰当的未知数，解下列各题:
+    \begin{enumerate}
+        \item 鸡兔同笼，共有头12个，有脚36只。问：笼中有鸡、兔各
+  几只？
+\item 若干学生平分若干支铅笔：如果每人5支，最后还多余3
+支，如果每人7支，最后又缺5支。试问：有多少学生？
+有多少支铅笔？
+    \end{enumerate}
+\end{ex}
+
+\begin{example}
+兄弟二人，从他们的家出发走同一条路线，
+前往天安门广场。哥哥平均每小时走5公里，弟弟平
+均每小时走3公里，假如哥哥比弟弟晚出发一小时，
+却早到12分钟。试问：他们家到天安门广场有多远？
+\end{example}
+
+\begin{analyze}
+    这是一个“行程问题”，涉及到的等
+量关系是：
+\[\text{路程}=\text{速度}\x\text{时间}\]
+也可以写成：另外两种形式的关系：
+\[\begin{split}
+    \text{路程}\div \text{时间}&=\text{速度}\\
+    \text{路程}\div \text{速度}&=\text{时间}
+\end{split}\]
+题目中，不仅已知兄弟二人的速度，还已知兄弟二人走
+完这段路程的时间差。因此，只要选择适当的未知数，
+不难由基本等量关系列出方程式来，把问题解决的。
+\end{analyze} 
+
+\textbf{解法1：} 引入直接未知数
+
+设他们的家到天安门广场的路程为$x$公里，由
+关系式$\text{时间}=\text{路程}\div \text{速度}$，就可以得出：
+哥哥走到天安门广场所用时间为$\frac{x}{5}$小时；
+弟弟走到天安门广场所用时间为$\frac{x}{3}$小时。
+
+又由题意可知：哥比弟晚出发12分钟，这就是说：哥比弟少用$1\frac{12}{60}小时$，因此应有等量关系:
+\[\text{哥所用时间}+1\frac{12}{60}=\text{弟所用时间}\]
+即：
+\[\begin{split}
+    \frac{x}{5}+1\frac{12}{60}&=\frac{x}{3}\\
+    \frac{x}{5}+\frac{6}{5}&=\frac{x}{3}\\
+    2x&=18\\
+x&=9\text{公里}
+\end{split}\]
+答：他们家到天安门广场的距离为9公里。
+
+\textbf{解法2：} 引入间接未知数
+
+设弟弟到天安门广场总共用了$t$小时，则由题意可知：
+哥哥用了$\left(t-1\frac{1}{5}\right)$小时。因此，由基本关系式
+$\text{路程}=\text{速度}\x\text{时间}$ 可以知道：     
+\[\begin{split}
+ \text{哥哥所走路程}  &=5\x \left(t-1\frac{1}{5}\right) \text{（公里）}\\
+ \text{弟弟所走路程}&=3\x t \text{（公里）}
+\end{split}\]
+
+又知，哥、弟二人走的是同一路线，所以：
+\[\begin{split}
+    5\left(t-1\frac{1}{5}\right)&=3t\\
+    2t&=6\\
+    t&=3\text{（小时）}
+\end{split}\]
+
+这就是说：弟弟用了三小时走到天安门广场。
+
+由此，再利用基本关系式可以得到：他们家到天
+安门广场的路程为：$3\x3= 9$(公里)
+    
+答: 所求路程是9公里。
+
+从这里可以看出，在解决应用问题时，对于同一
+个间题，有时可以从不同的角度引进未知数(可以
+直接设所求的量为未知数，也可以间接设一个与所求
+量有关的未知数).由于引用未知数的不同，同一个
+问题完全可以列出不同形式的方程。但最终所求的量
+的答数是一样的.这真是“异途同归”了。
+
+
+\begin{ex}
+    解下列应用题:
+\begin{enumerate}
+    \item 甲、乙两地相距165里；小张以每小时30里的速度骑自行
+    车由甲地去乙地，小李以每小时25里的速度骑自行车由乙
+    地去甲地。
+    
+    问:他们两人如果同时出发，几小时后相遇?
+    在距甲地多少里的地方相遇?
+    \item 甲、乙两个车站相距284公里，甲站有一列快车以每小时70
+    公里的速度要开往乙站;而乙站有一列慢车以每小时48公
+    里的速度要开往甲站。如果慢车先开车一小时。
+    
+    试问:快车开
+    几小时后两车才能相遇?在距离甲站多少公里的地方相遇?
+\end{enumerate}
+\end{ex}    
+    
+通过以上例题，可以归纳出解应用问题的一般步
+骤是：
+
+\begin{blk}{}
+\begin{enumerate}[I. ]
+    \item 审清题意，明确数量关系。
+    \item 引入适当的未知数$x$.并注意写明未知
+    数所代表的量的单位.如:$x$公里，$x$小时等。
+    \item 用含有未知数的算式，表示其它有关的
+    量数。
+    \item 由基本关系式，列出方程或方程组(一
+    般说：列出的方程个数与所设未知数的个数是相
+    等的)。
+    \item 解方程(或方程组)。
+    \item 检验所求解是否符合题意后，写出答
+    案。
+\end{enumerate}
+\end{blk}
+
+必须指出：应用题的检验是必要的，一方面可以
+检查计算是否正确，另一方面还可以检验所求方程的
+解是否符合题意，不符合题意的要舍去。
+
+\begin{example}
+    两地相距28公里，小明以每小时15公里的
+速度，小亮以每小时30公里的速度，分别骑自行车和
+开汽车从同一地前往另一地。如果小明先出发一小
+时，试问：小亮几小时以后，才能乘汽车追上小明?
+\end{example}
+
+\begin{solution}    
+设小亮开车$x$小时能追上小明，
+        则小亮所行路程是：$30x$(公里)。
+
+    这时，先出发一小时的小明，已经走过的路程
+为：$15(x+1)=15x + 15$(公里)
+
+    小亮要追上小明，必须有关系式：
+            $  30x=15x+15$
+
+$\therefore\quad x= 1$(小时)
+
+    这就是说：小亮开车一小时，就能追上小明。
+
+\textbf{检验：} $x=1$，虽然能使方程$30x =15x + 15$
+成立，但这时，小亮开车走出30公里的路程，而两地
+实有距离只有28公里，由此可见，在题目所给出的两
+地之间，小亮是没有追上小明的。$x=1$不符合题意，
+应舍去。
+
+    答:在此两地之间，小亮追不上小明。
+\end{solution}
+
+
+\begin{ex}
+    解下列“追及问题”
+\begin{enumerate}
+    \item 甲、乙两人从同地出发练习短距离赛跑，甲每秒跑7米，
+    乙每秒跑6.5米。如果甲让乙先跑一秒钟，试问：甲经过
+    几秒钟才能追上乙?
+    \item    甲、乙两人同时从同地出发，绕400米一圈的跑道赛跑，
+    如果甲跑一圈要一分钟，乙跑一圈要一分零20秒，试问：
+    甲、乙出发几分钟以后，才能再相遇?
+\end{enumerate}  
+\end{ex}
+
+
+
+\begin{example}
+一只船在两个码头之间航行。顺水时需要
+4.5小时，逆水返回需要$5\frac{1}{3}$小时。如果水流速度是每
+小时1公里。试问：这两个码头相距多少公里?
+\end{example}
+
+\begin{analyze}
+    这种应用问题，实际上仍是“行程问
+题”。如果能求出这只船在顺水时的速度或在逆水中
+的速度，那么，两码头的距离就立即可以求出来，题
+目中只有水流速度.但只要注意：船在静水中的速度
+与水流速度、逆水速度、顺水速度有以下基本关系，
+问题就容易解决了。
+\[\begin{split}
+    \text{顺水速度}&=\text{船在静水中的速度}+\text{水速}\\
+    \text{逆水速度}&=\text{船在静水中的速度}-\text{水速}\\
+\end{split}\]    
+\end{analyze}
+
+\begin{solution}
+设船在静水中的速度是$x$公里/小时。
+则顺水速度为$(x+1)$公里/小时，
+
+因此，船在顺水中，行驶的距离为:
+      $(x+1) \x 4.5$ (公里)。
+
+又逆水速度为$(x-1)$公里/小时，因此船在逆水返回时，所行驶的路程为:
+$(x-1)\x5\frac{1}{3} $(公里)。
+    
+由于顺水、逆水都是航行于两码头之间，因此：
+\[(x+1)\x 4.5=(x-1)\x 5\frac{1}{3}\]
+解这个方程：    
+\[\begin{split}
+    27 (x+1)&=32 (x-1)\\
+(32-27)x&=27+32\\
+5x&=59\\
+x&=11\frac{4}{5}\text{（公里/小时）}
+\end{split}\]
+$\therefore\quad 4.5 (x+1) =4.5(11.8+1)=57.6$（公里）
+
+答：两码头之间相距57.6公里。
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 汽船从甲地顺流开往乙地，所用的时间比逆流由乙地开回
+    甲地所用时间少1.5小时，扣果这只汽船在静水中速度是
+    20公里/小时，水流速度是3公里/小时。试问:甲、乙两
+    地相距多少?
+    \item $A, B$两码头相距若千公里，某船由$A$码头顺水行至$B$码头
+    要3小时，回来时多用半小时，如果知道船在静水中的速
+    度是26公里/小时，试求水流的速度?
+\end{enumerate} 
+\end{ex}
+
+\begin{example}
+ 有一水池，用两台水泵抽水。如果单开甲
+    泵，5小时抽完这一池水；如果单开乙泵，2.5小时
+    才能抽完。试问：
+\begin{enumerate}
+    \item 两泵同时开，几小时能把水抽完?
+    \item 如果甲泵先抽2小时，剩下的再单用乙泵来
+抽，还需要多少时间才能抽完?
+\end{enumerate}
+\end{example}
+
+\begin{analyze}
+这是应用问题中常见的“工程问题”。
+常把整个“工程的量”看作“1”进行分析。
+
+    在这个问题中，如果把“一池水”的总量看作整
+体“1”，那么，由题意可知：甲泵一小时的抽水量
+为$\frac{1}{5}$;乙泵每小时的抽水量是$\frac{1}{2.5}$；因此甲、乙两
+泵一齐开，每小时的抽水量就是$\left(\frac{1}{5}+\frac{1}{2.5}\right)$。这样，
+再利用基本关系：
+\[\text{每小时的工作量} \x \text{工作时间}=\text{总工作量}1\]
+就可以解决问题了。
+    
+\end{analyze}
+
+\begin{solution}
+\begin{enumerate}
+    \item 设两泵同时开，$x$小时可以抽完这池水，因此就有：
+\[\begin{split}
+    \left(\frac{1}{5}+\frac{1}{2.5}\right)x&=1\\
+    \frac{3}{5}x&=1\\
+    x&=\frac{5}{3} \text{（小时）}
+\end{split}\]
+这就是说，两泵合开，$1\frac{2}{3}$时(1小时40分钟)
+可以抽完这一池水。
+
+    经检验，符合题意。
+
+    答：两泵合并，1小时40分钟可以抽完。
+
+\item  设乙泵再抽$x$小时将水抽完，
+因此，依题意就有:
+\[\begin{split}
+    \frac{1}{5}\x 2+\frac{1}{2.5}\x x&=1\\
+    \frac{1}{2.5}x&=\frac{3}{5}\\
+    x&=1.5 \text{（小时）}
+\end{split}\]
+
+答：甲泵抽2小时后，乙泵再抽1.5小时，就可以抽完这一池水。
+\end{enumerate}
+\end{solution}
+
+
+
+
+\begin{ex}
+\begin{enumerate}
+    \item 检修一台机器，甲班需要7.5小时完成，乙班需要5小时
+    完成.试问:
+    \begin{enumerate}
+        \item 两班同时参加检修，要几小时才能完成?
+        \item 如果甲班先做4小时，其余的工作由乙班完成，
+    还要多少时间才能完成?
+    \end{enumerate}
+    
+    \item 某工程，甲队需要20天完成，乙队需要30天完成，丙队需
+    要40天完成；如果甲、乙、丙三队联合工作8天以后，其
+    余工程由甲队单独完成。试问：甲队还需要几天完成?
+\end{enumerate}
+\end{ex}
+
+\begin{example}
+浓度为95\%的盐水有600克，问：
+\begin{enumerate}
+    \item 只要再加多少水，就能稀释成浓度为75\%的盐水?
+    \item 只要再加多少盐，就能得到浓度是98\%的盐水?
+\end{enumerate}
+\end{example}
+
+
+\begin{analyze}
+这是应用题中的“浓度问题”(即百
+分数问题)。只要明确基本关系:
+\begin{enumerate}
+    \item $\text{浓度(百分比)}=\frac{\text{溶质}}{\text{溶质}+\text{溶剂}}$
+    \item 增加溶剂，可使浓度减小，但其中的溶质总量不变。
+    \item 增加溶质，可使浓度加大，但其中的溶剂总量不变。
+\end{enumerate}
+这一类应用问题是不难解决的。
+\end{analyze}
+
+\begin{solution}
+\begin{enumerate}
+    \item  设加水(溶剂)$x$克，
+    则加水前，95\%的盐水600克中，含有纯盐(溶
+质)的总量是: $600 \x 95\%$克
+
+    加水后，75\%的盐水$(600+x)$克中，含有纯盐的
+总量是: $(600+x) \x 75\%$克.
+
+    因此，由分析中的关系2可知:
+            \[  600 x 95\%=(600+x) \x 75\%\]
+即：$8\x95=600+x$
+$\therefore\quad x=160$(克)
+
+答:需要加水160克，就得到浓度是75\%的盐水.
+\item  设加盐(溶质)$y$克，
+则加盐前，95\%的盐水600克中，含有水量:
+        $600\x (1-95\%)$克
+
+加盐后，98\%的盐水$(600+y)$克中，含有水量:
+$(600+y) \x (1-98\%)$克。
+
+因此由分析中的关系3可知：
+        \[600 \x (1-95\%)=(600+y) \x (1-98\%)\]
+    即：\[\begin{split}
+        600\x5\%&=(600+y) \x 2\%\\
+        300\x 5&=600+y\\
+    y&=900 \text{(克)}
+    \end{split}\]
+
+    答：只要加盐900克，就可得到浓度为98\%的盐
+水。
+\end{enumerate}       
+\end{solution}
+
+\begin{example}
+实验室里只有浓度为8\%的盐水和浓度为
+5\%的盐水；现在需要把两种浓度的盐水混合起来，
+制成浓度为6\%的盐水300克，试问：这两种浓度的
+盐水各用多少克才能合适?    
+\end{example}
+
+\begin{analyze}
+这同样是浓度问题。解决这类稍复杂
+的混合溶液问题的关键是要抓住：\textbf{混合前、后的总重量不变；混合前、后纯溶质(盐等)的重量不变；混
+合前、后纯溶剂(水等)的重量当然也不变}等关系，
+引进未知数，列出方程式。
+
+    由此，对本题可作如下列表分析:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+溶液  & \multicolumn{2}{c|}{混合前} &混合后\\
+\hline
+浓度 & $\quad8\%\quad$  & 5\% & 6\%\\
+\hline
+总重量& \multicolumn{2}{c|}{$x\text{克}\quad +\quad y\text{克}$} &300克\\
+\hline
+纯盐重  & \multicolumn{2}{c|}{$(x\cdot 8\%+y\cdot 5\%)\text{克}$} &$300\x 6\%$克\\
+\hline
+\end{tabular}
+\end{center}
+ \end{analyze}
+
+
+\begin{solution}
+设需用浓度8\%的盐水$x$克，需用浓度5\%的盐水$y$克。
+    则由题意可得：
+\[\begin{cases}
+    x+y=300\\
+    x\x 8\% +y\x 5\%=300\x 6\%
+\end{cases}\]
+    解这个二元一次方程组，可得:
+           \[(x,y)=(100,200) \]
+
+    答:用100克浓度为8\%的盐水和200克浓度为500
+的盐水，混合后就可得到浓度为6\%的盐水300克。
+
+\textbf{注:} 引入一个未知数也可以解这一题，试试
+看.
+    
+\end{solution}
+
+\begin{ex}
+\begin{enumerate}
+    \item 含糖15\%的糖水20斤。
+    \begin{enumerate}
+        \item 要想得到含糖10\%的糖水，需要加多少斤的水?
+        \item 要想得到含糖24\%的糖水，需要蒸
+发掉多少斤水?
+    \end{enumerate} 
+\item 两种铜块，分别含铜64\%和80\%。试问:这两种铜块各取
+多少克熔化以后，才能得到含铜74\%的铜块500克?
+\end{enumerate}
+ \end{ex}
+
+
+
+\begin{example}
+(我国古代问题)：上禾三束、中禾二束、
+下禾一束，共有禾三十九斗；上禾二束、中禾三束、
+下禾一束，共有禾三十四斗；上禾一束、中禾二束、
+下禾三束，共有禾二十六斗。
+
+问:上、中、下禾每束
+各有禾几斗?
+\end{example}
+
+\begin{note}
+    上、中、下禾，就是“上等谷物、中
+    等谷物、下等谷物”；一束，就是“一捆”；斗，是
+    古代一种衡器，可以用来量谷物的容积。
+\end{note}
+
+\begin{solution}
+    设上禾每束有禾$x$斗，
+    中禾每束有禾$y$斗，
+    下禾每束有禾$z$斗。
+    则依题意可得出下列各方程:
+\[\begin{cases}
+    3x+2y+z=39\\
+    2x+3y+z=34\\
+    x+2y+3z=26
+\end{cases}\] 
+解这个三元一次方程组，可以得出:
+\[ (x,y,z)=\left(9\frac{1}{4},\; 4\frac{1}{4},\; 2\frac{3}{4}\right)\]
+
+答：上禾每束有禾$9\frac{1}{4}$斗；
+中禾每束有禾$4\frac{1}{4}$斗；
+下禾每束有禾$2\frac{3}{4}$斗。
+\end{solution}
+
+
+
+\section*{习题2.4}
+\addcontentsline{toc}{subsection}{习题2.4}
+
+适当选择未知数，列方程解下列问题：
+\begin{enumerate}
+    \item 甲煤场有煤2000吨，每天运出15吨；乙煤场有煤800吨，
+每天运进25吨。几天后两煤场的煤存量相同？
+\item 有一个仓库存货200吨，每天运出25吨；第二仓库存货
+80吨，每天运进5吨。几天后第一仓库存货是第二仓库存货
+的三倍？
+\item  $A, B$两油槽中，分别有油480升、180升，要使$A$中的油
+是$B$中的二倍，须从$A$中抽出多少油给$B$才行？
+\item 生产队现有水田108亩，旱地54亩。要使全队的旱地只
+占水田的20\%，还应把多少亩旱地改为水田？
+\item 一面靠墙，其余三面要用350米的篱笆围成一个长方形
+养猪场，要使它的长是宽的2倍，应如何围法？
+\item 长方形的长与宽之比为5:2，周长28尺，试求这个长方
+形的面积。
+\item 一桶煤油毛重8斤，从桶中取出煤油一半以后，毛重4.5
+斤，问：这一桶煤油有多少？桶重多少？
+\item 小华现已读数学书41页，英语书28页。她的计划是每天
+读数学书5页、英语书4页。问：几天后，她读的数学书页
+数是英语书的两倍？
+\item 甲、乙两人共有图书78本.如果甲赠给乙5本以后，两
+人的图书就一样多.问：甲、乙原来各有几本？
+\item 一堆水果，如果用每筐能装45斤的小筐来装，可以装
+40筐，如果改用大筐装，每筐可比小筐多装$\frac{1}{10}$.问：这堆水
+果能装几大筐？
+\item 一个班共有学生52人，其中共青团员、少先队员、同
+学的人数比为2:10:1。问：这个班应有团、队员和同学各几
+人？
+\item 甲、乙两地相距162公里，甲地有一列慢车，每小时可
+以开48公里，乙地有一列快车，每小时可以开60公里，试
+问：
+\begin{enumerate}
+    \item  两火车同时相向而行，多少时间可以相遇？
+    \item  两车同时相背而行，几小时以后，两车相距270公
+里。
+\item  如果两车相向而行，慢车先开出一小时，再用多少
+时间两车才能相遇？
+\item  两车同时同向而行(快车在后边)。几小时后，快
+车可以追上慢车？
+\item  两车同时同向而行(慢车在后边)。几小时后，两
+车相距200公里？
+\end{enumerate}
+ 
+\item  卡车以每小时30公里的速度由甲地开往乙地，半小时
+以后，小轿车以每小时40公里的速度也从甲地开往乙地，结
+果两车同时到达。问：甲、乙两地相距多少公里？
+\item  甲、乙两运动员在四百米环形跑道上竞走，甲每分钟
+走150米，乙每分钟走100米.如果两人同时由同一起点出
+发，问：几分钟以后，甲才能再一次与乙相遇？
+\item  买进水果若干筐，每筐原价3元.如果按照每筐四元
+的价钱卖出，那么，卖出全部水果的一半又10筐时，就已经
+收回了全部水果的成本。问：一共买进水果多少筐？
+\item  轮船在静水里的速度是16公里/小时，由甲地顺水航行
+到乙地要7小时，逆水返回要9小时，试求甲、乙两地的距
+离.
+\item  如果风速是3公里/小时，汽车速度是20公里/小时.
+要求这一汽车由$A$地顺风开往$B$地比逆风开回来少用1.5小
+时，试求:$A,B$两地的距离.
+\item  一件工作，甲单独做5小时完成，乙单独做8小时完
+成.问：两人合做几小时完成？
+\item  某项任务，师傅单独做4小时可以完成，徒弟单独做6
+小时可以完成.如果先由徒弟单独做2小时以后，师、徒二
+人再合做，试问：他们再做几小时，才能完成这一任务？
+\item  某游泳池装有$A, B, C$三个进水管，若单独开放一管，
+分别要45分钟、1小时、1.5小时才能注满.问：三管一齐
+开，需要几小时才能注满？
+\item  甲、乙、丙三个生产队合修一条水渠，计划用52人，
+按照各队收益面积的比3:4:6摊派劳动力.问：各队应派几
+人？
+\item  100个工人，100一台机器，老工人一人看管3台，徒工
+3个人看管一台。问：有多少老工人？有多少徒工？
+\item  现有含氮16\%的氨水30斤.要配置成0.15\%的氨水对
+菜地追肥.问：需要加多少水？
+\item  现有含盐8\%和20\%的两种盐水，要配置成含盐12\%
+的盐水100公斤，两种盐水应各取多少？
+
+\item  在含酒精20\%的液体中，加入10公斤的水，就变成含
+酒精16\%的液体，试求:原来的液体有多少公斤？
+\item  两块合金，一块含铜90\%，一块含铜80\%。现在要把
+两块熔合在一起，得到含铜82.5\%的合金240克，问：应各
+取多少克？
+
+\item 锡的比重是7.3${\rm g}/{\rm cm}^3$，铅的比重是11.3${\rm g}/{\rm cm}^3$，现在要想得到铅锡合金166g，它的比重是8.3${\rm g}/{\rm cm}^3$。试问：铅、锡应各取多少克？
+
+\item 一个容器装49升水，另一个容器装56升水，如果把第
+二个容器的水倒满第一个容器，那么第二个容器还剩下的水
+相当于这个容器容量的一半，如果把第一个容器的水倒满第
+二个容器，那么第一个容器还剩下的水相当于这个容器的容
+量的三分之一。求这两个容器的容量各是多少？
+\item $M, N$两地相距24公里，公共汽车和直达快车在8点
+45分准时从$M$和$N$迎面开出。这两辆车平常都在8点52分相
+遇。有一次，直达快车晚开8分钟，就在8点57分与公共汽
+车相遇。试求这两种车的速度各是多少？
+
+\end{enumerate}
+
+将下列应用题，引入两个(或三个)未知数求解。
+
+\begin{enumerate}
+    \item  甲数的7\%与乙数的8\%一共是12；而甲数的8\%与乙
+    数的7\%的差是4.5，求这两个数。
+    \item 如果把长方形的长增加6米，宽减少3米，它的面积不
+    变；如果长减少3米，宽增加2.4米，它的面积仍不变。试
+    求长方形原来的长和宽各是多少？
+    \item 甲、乙两班学生，开学初团员共有8人，各占全班人
+    数的$\frac{1}{10}$、$\frac{1}{12}$，学期末团员共有18人，各占全班人数的$\frac{1}{4}$、$\frac{1}{6}$。
+    问:两班各有学生多少人？
+    \item 某人乘车以每小时40公里的速度可以按时由甲地到达
+    乙地，但因出发时间晚了15分钟，汽车便以每小时50公里速
+    度行驶，结果却比预定时间还提前3分钟到达乙地。试求:
+    甲、乙两地之间的距离。
+    \item 小王与小张从相距36公里的$A, B$两地相向而行。如果
+    小王先动身2小时，则他们在小张动身两小时三十分钟后相
+    遇；如果小张先动身2小时，则他们在小王动身3小时后相
+    遇。试问：小张与小王每小时各走多少公里？
+    \item 甲、乙二人同时绕400米的环形跑道行走.如果他们同
+    时从同一起点背向而行，2,5分钟可以相遇；如果他们同时
+    由同一起点同向而行，12.5分钟甲能追上乙，试求甲、乙两
+    人每分钟各走几米？
+    \item 一批零件共420个，如果甲先做2天，再与乙合做2天
+    可以做完，如果乙先做2天，再与甲合做3天可以做完.试
+    求:甲、乙两人每人每天各能做多少个零件？
+    \item 有52人要担任运土、挖土两项任务，如果每人平均挖土
+    6方或运土480。公斤(已知每方土重1.8吨)，问：如何分
+    配人力，才能使挖土、运土主作配套，不至于窝工？
+    \item 一艘轮船载重量为520吨，容积为3000立方米.现有
+    $A, B$两种货物，$A$货每吨有2立方米，$B$货每吨有8立方
+    米.问：这艘船应装$A, B$两种货物各多少吨，才能充分利
+    用它的船仓？
+    \item 有三个数总和是15。第一个数与第二个数的差恰是第
+    二个数与第三个数的差，而且第二、三两数的和比第一个数
+    大2。求这三个数各是多少?
+    \item 有人民币三种：二角、伍角、一元共37张，价值13元9
+    角.如果已知二角票的张数是伍角票张数的二倍，问：三种
+    票各有几张?
+    \item (我国古代问题)今有上禾二束、中禾兰束、下禾四
+    束都有谷不满一斗，若上禾取中禾、中禾取下禾，下禾取上
+    禾各一束，则有谷都正好一斗，问：上、中、下禾一束各有
+    谷几斗？
+    
+\end{enumerate}
+
+\section*{本章内容要点}
+
+一、这一章主要是应用数系运算通性及等式性
+质，解一次方程和方程组，并且能解决相应的应用问
+题。
+
+\vskip 2ex 
+
+    二、含有未知数的等式，叫做方程。能使方程式
+两边相等的未知数的值，就是方程的解。
+
+\vskip 2ex 
+
+    三、含有一个未知数的方程，叫做一元方程，如
+果只含有一个未知数，分母不含未知数，且最高次项
+的指数是1的方程，叫做一元一次方程。解一元一次
+方程的原理和方法是：由数的运算通性和等式性质，
+归纳出去分母、去括号、移项变号、合并同类项、除
+以未知数的系数等具体规则，应用这些具体规则，就
+可以把方程的解求出来。
+
+\vskip 2ex 
+
+    四、含有两个未知数的一次方程，叫做二元一次
+方程。二元一次方程的解是一个数值组，记作$(x, y)$；
+任一个二元一次方程的解都有无限多个。
+
+\vskip 2ex 
+
+    五、两个以上的方程联合在一起，组成一个方程
+组。因而，由几个含有两个未知数的一次方程所组成
+的方程组二网做三元一次方程组。能够同时满足方程
+组中所有各个方程的未知数所取的数值组，叫做这个
+方程组的解。
+
+\vskip 2ex 
+
+    六、解多元一次方程组的关键是消元。具体方法
+有：加、减消元法和代入消元法。
+
+\vskip 2ex 
+
+    这里应特别指出：加减法消元是较普遍且重要的
+方法，其要点就是，应用等式的性质，将两个方程中
+相同的某一个未知数的系数变形成为绝对值相等。然
+后把方程的两边分别相加或相减，就可以消去这个未
+知数。
+
+    因此，可以说：解多元一次方程的过程，就是逐
+步消元求解的过程。即
+\begin{center}
+\begin{tikzpicture}[>=latex, scale=1.3]
+\node  (A) at (0,0) {\Large 多元} ;
+\node  (B) at (2,0) {\Large ……} ;
+\node  (C) at (4,0) {\Large 三元} ;
+\node  (D) at (6,0) {\Large 二元} ;
+\node  (E) at (8,0) {\Large 一元} ;
+
+\draw[->] (A)--node[above]{消元}(B);
+\draw[->] (B)--node[above]{消元}(C);
+\draw[->] (C)--node[above]{消元}(D);
+\draw[->] (D)--node[above]{消元}(E);
+
+\end{tikzpicture}
+\end{center}
+
+\vskip 2ex 
+
+七、解应用问题就是运用数学工具解决实际问
+题，这就要:
+\begin{enumerate}
+    \item 审题：弄清题意，分析问题中涉及到的量与量
+    之间的关系。
+    \item 引入未知数，并用未知数表示出有关的量。
+    \item 正确列出方程(或方程组)。一般来说，引入
+    的未知数个数与所列方程的个数是相等的。
+    \item 准确地求出来知数的值，即所列方程(方程
+    组)的解。
+    \item 检验：所列方程(方程组)的解是否符合题
+    意。将不合理的值舍去，从而写出正确答案。
+\end{enumerate}
+
+        其中，分析量之间的关系是列方程的关键;列方
+    程是解决问题的基础；解方程又是解决问题的主要手
+    段。这都是解应用问题时，必须注意的几个重要环节。
+
+\section*{复习题二}
+\addcontentsline{toc}{section}{复习题二}
+
+\begin{enumerate}
+    \item 如果已知汽车的速度是$a$公里/小时，摩托车的速度是$b$
+    公里/小时 $(a>b)$。试求：
+\begin{enumerate}
+    \item 两车同时、同地、同向开出，5小时后，两车相距
+    多少公里?
+    \item 一个人坐汽车走了$m$小时，接着又坐摩托车走了，小
+    时，一共走了多少公里?
+    \item 两车都开出了10公里，汽车比摩托车少用几小时?
+    \item 两车都开了$d$小时，摩托车比汽车少走多少公里?
+\end{enumerate}
+
+        \item 用图中已知的字母，表示出阴影部分的面积来:
+\begin{center}
+\begin{tikzpicture}[>=latex,scale=.7]
+\begin{scope}
+\draw[pattern=north east lines] (2,1.5) circle (2.5);
+\draw[fill=white] (0,0) rectangle (4,3);
+\draw[<->](0,0)--node[above]{$2R$}(4,3);
+\node at (2,0)[above]{$a$};
+\node at (0,1.5)[right]{$b$};
+
+\end{scope}    
+\begin{scope}[xshift=6cm]
+    \draw[pattern=north east lines] (0,0) rectangle (5,3);
+    \draw[fill=white]  (.5,0) arc (180:0:2);
+    \draw [->] (2.5,0)--node[above]{$R$}+(40:2);
+    \node at (2.5,3)[above]{$a$};
+    \node at (5,1.5)[right]{$b$};
+\end{scope} 
+\begin{scope}[yshift=-6cm]
+    \draw[pattern=north east lines]  (0,0) arc (180:0:2.6); 
+    \draw[fill=white](2.6,1.3) circle(1.3);
+    \draw (0,0)--(5.2,0);
+    \draw[|<->|] (0,-.2)--node[below]{$D$}(5.2,-.2);
+\end{scope} 
+\begin{scope}[xshift=6cm, yshift=-6cm]
+
+\fill  [pattern=north east lines] (0,0) rectangle (6,4);
+\fill [white](0,0) rectangle (1,1);
+\fill [white](0,3) rectangle (1,4);
+\fill [white](5,0) rectangle (6,1);
+\fill [white](5,3) rectangle (6,4);
+
+\foreach \x in {0,4}
+{
+    \draw (1,\x)--(5,\x);
+    \draw (\x*1.5, 1)--(\x*1.5, 3);
+}
+
+\draw (0,1)--(1,1)--node[left]{$x$}(1,0);
+\draw (0,3)--(1,3)--node[left]{$x$}(1,4);
+\draw (5,0)--(5,1)--(6,1);
+\draw (5,4)--(5,3)--node[above]{$x$}(6,3);
+\node at (3,4)[above]{$4x$};
+\node at (6,2)[right]{$2x$};
+
+\end{scope}     
+\end{tikzpicture}
+\end{center}    
+
+\item 解下列方程式：
+\begin{enumerate}
+    \item $\frac{x}{2}-7-\frac{x}{5}=\frac{1}{5}-\frac{x}{4}+\frac{x}{20}  $
+    \item $\frac{1}{3}\left(3x+\frac{10-7x}{2}\right)-\frac{1}{6}\left(2x+\frac{2x+2}{3}\right)=\frac{x}{2}-1$
+    \item $3\left\{x-\frac{3x+1}{4}-\left[1-2\left(x-\frac{3-x}{5}\right)\right]\right\}=8x-6$
+    \item $(x-4)(x+3)=(x+1)(x+2)$
+    \item $(2x+3)(2x-3)=(2x-3)^2$
+\end{enumerate}
+提示：最后两题先用分配律展开。
+
+\item \begin{enumerate}
+    \item 在公式$V=\frac{\pi\cdot N\cdot D}{1000}$中，已知$V=120$，$D=80$，$\pi=3.14$，求$N$（保留两位小数）。
+    \item 如果球的体积公式是$V=\frac{4}{3}\pi R^3$，已知球的半径$R=20{\rm cm}$，体积$V=3.2\x 10^4{\rm cm}^3$。试计算$\pi$的值应取多少？
+\end{enumerate}
+
+\item 解下列字母系数的方程式：
+\begin{enumerate}
+    \item $mx+n=m(2x+1)\qquad (m\ne 0)$
+    \item $mx+\frac{x}{m}=1\qquad (m\ne 0)$
+    \item $\frac{x}{a}+\frac{1}{b}=2\qquad (a\ne 0,\quad b\ne 0)$
+\end{enumerate}
+
+\item 试求下列各题中的$k$值。
+\begin{enumerate}
+    \item $kx^2-12x-3=0$ 有一个根为1
+    \item $x^2+kx+15=0$ 有一个根为$-\frac{1}{2}$
+    \item $x^2+kx-2k=0$ 有一个根为$0$
+    \item $x^2-2ax+k=0$ 有一个根为$a$
+\end{enumerate}
+
+\item 解下列方程：
+\[|x-2|=1,\qquad |2x-4|+|x-2|=0\]
+
+\item 求不定方程$3x+5y=15$的非负整数解。
+
+\item 已知方程组$\begin{cases}
+    mx+2y=n\\ 4x-ny=2m-1
+\end{cases}$的解是$(x,y)=(1,-1)$，试求$m,n$的值。
+
+\item 解下列方程组：
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\begin{cases}
+        \frac{1}{2}x-y+1=0\\ 2\frac{1}{2}x+6y=28
+    \end{cases}$
+    \item $\begin{cases}
+        \frac{x}{2}=\frac{y}{5}\\ 75\%x+40\%y=1.4
+    \end{cases}$
+    \end{multicols}
+    
+    \item $\begin{cases}
+        \frac{2x-3y+1}{2}+\frac{3x-2y-3}{3}=1\\
+        \frac{x+2y+6}{4}-\frac{4x+2y-2}{5}=0
+    \end{cases}$
+    \item $\frac{2x+y+6}{4}=\frac{4x-3y-7}{8}=\frac{-6x-7y+10}{8}$
+    \item $2x-y+11=-7y+3z=7x+z+7=7$
+    \begin{multicols}{2}
+    \item $\begin{cases}
+        \frac{y}{2}+\frac{z}{3}=x+2\\x-y=\frac{1}{2}-\frac{z}{4}\\\frac{x}{4}+\frac{y}{2}=\frac{z}{2}-\frac{7}{4}
+    \end{cases}$
+    \item $\begin{cases}
+        x+y=3a\\y+z=4a\\z+x=5a
+    \end{cases}$（$a$是已知数）
+    \item $\begin{cases}
+        x+2y=2\\y+3z=1\\z-t=4\\x+y+z+t=-1
+    \end{cases}$
+    \item $\begin{cases}
+        x+y+z+u=a\\ x+y-z-u=b\\ x-y+z-u=c\\x-y-z-u=d
+    \end{cases}$
+\end{multicols}
+\end{enumerate}
+
+\item 如果已知$3x-z=x+y+z=4x+2y-z$，试求：$x:y:z$
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\begin{cases}
+        x=t\\ y=2t^2
+    \end{cases}$
+    \item $\begin{cases}
+        x=3-t\\ y-5=t+1
+    \end{cases}$
+\end{enumerate}
+\end{multicols}
+
+\end{enumerate}
+
+\textbf{适当引入未知数，列出方程或方程组解下列各应用题:
+}
+
+\begin{enumerate}
+    \item 如果有三个紧相连的整数之和为126，试求这三个整
+    数。
+    \item 如果三个相邻的偶数之和为114，求出这三个偶数来.
+    \item 一个分数的分子是分母的$\frac{5}{8}$，且分子、分母之和为
+    143，试求这个分数.
+    \item 一个二位的自然数恰好等于它的两个数字之和的五倍，
+    试求这个二位数是多少？
+    \item 一个四位数$7abc$，如果把7调到最后一位上，就变成
+    另一个四位数$abc7$，那么，这个四位数就比原来减少了864，
+    试求这个四位数。
+    \item 一个六位数$1abcde$的三倍，正好是六位数$abcde1$。试
+    求这个六位数。
+        
+    \textbf{提示:} 这类数字问题，均可设未知部分为$x$，再由已知数字所在的位数，把这个数表示成含二的算式。如:
+
+    第5题中，设$abc=x$，则$7abc=7000+abc = 7000+x$
+
+    第6题中，设$abcde = x$，则$1abcde =100000 + x$等
+
+ \item  一个长方形的长是宽的三倍，如果把宽增加3米，这个
+ 长方形就变成一个正方形了。试求这个长方形的面积是多少？
+    
+\item   一个正方形环(如图)面积
+为56${\rm cm}^2$，这个环形各边的
+宽都是2cm，试求这个环形的
+外周长、里周长各是多少?
+
+\begin{center}
+\begin{tikzpicture}[>=latex, scale=.7]
+\fill[pattern=north east lines, draw] (0,0) rectangle (4.5,4.5);
+\draw [fill=white](1.2,1.2) rectangle (3.3,3.3);
+\draw [<->](3.3,1.5)--node[fill=white, above]{2}(4.5,1.5);
+\end{tikzpicture}
+\end{center}
+
+\item  老陈用13.10元钱，买笔记本和笔尖两种用品，笔记本
+与笔尖的单价分别是1.50元与0.80元，你能知道老陈买了几
+本笔记本？几个笔尖？
+\item  一批任务，原计划每天要完成120件，实际上每天比原
+计划多完成40件，结果提前6天完成任务。问:原计划几天
+完成？这批任务一共多少件？
+\item  加工一批零件，第一天完成$\frac{1}{2}$，第二天完成剩下的$\frac{1}{3}$，
+这时只剩下18个零件没有加工。试问：第一、二两天各加工
+了多少个零件?
+\item  抽水机若干台，在规定时间内可以完成任务，如果减
+少3台机器，就要延长6小时，如果增加2台机器，就能提
+前2小时完成任务，问：原有几台抽水机?原计划几小时完
+成所给任务?
+\item  甲从$A$到$B$用8小时，乙从$B$到$A$用12小时，且甲比乙
+每小时多走10里，如果甲、乙二人同时由$A, B$相向而行，经
+过几小时，他们两人在距A多远的地方相遇?
+\item  甲、乙、丙三人，甲每分钟走20丈，乙每分钟走22.5
+丈，丙每分钟走25丈.如果甲、乙二人在东村，丙在西村，
+他们三人同时相向而行。丙遇到乙以后三分钟才遇到甲。求
+东、西两村之间的距离是多少丈?
+\item  甲、乙二人同绕400米环形道赛跑，如果他们同时由
+同一起点出发背向而跑，25秒相遇，如果他们同时由同一起
+点同向而跑，2分零5秒甲能追上乙。试求甲、乙二人每秒
+钟各跑几米?
+\item  某市举行环城自行车赛。35分钟以后最快的运动员遇
+到最慢的。已知环城一周为6公里，最慢的运动员的速度是
+最快的速度的$\frac{5}{7}$。试求这两名运动员的速度各是多少?
+\item  两个伐木队在一月份共伐木900立方米。二月份比一月
+份第一队多伐15\%，第二队多伐12\%，因而二月份共伐木
+1020立方米.试求二月份两队各伐木多少?
+\item $A, B$两块合金，$A$重12公斤，含纯银70\%； $B$含纯银
+56\%，现用两块合金熔化后得到含纯银60\%的新合金，求$B$
+合金的重量。
+\item 水池的进水管被堵，流量减少40，试间:注满一池
+水所需要的时间增加了百分之几?
+\item 由金、银、铜制成三种合金$A, B,C$；已知金、银、铜
+的重量比在三种合金中分别是:在$A$中$1:3:2$，在$B$中
+$2:1:1$；在$C$中$1:2:5$。而且知道三种合金中总共含金
+5.5克，含银8克，含铜9.5克.试求:三种合金$A, B,C$各
+自的重量.
+\item 某车间每天可以生产甲种零件300个或乙种零件500个
+或丙种零件600个。这三种零件各一个可以配成一套.现在
+要在63天的生产中，便所生产的三种零件全部配套.试问:
+这个车间应该对这三种零件的生产各用几天才成?
+\item 小光用0.93元买了单价各为0.10元、0.12元、0.15元的
+铅笔一共8支，如果把0.10元的铅笔数与0.12元的对调一
+下，就可以节约0. 02元钱.问:小光原先买三种铅笔各多少
+支?
+
+\item （中国古代数学问题）
+\begin{enumerate}
+    \item 好马日行240里，劣马日行150里.今劣马先行12日，
+    好马几日可追上劣马?
+    \item 以绳测井。若将绳三折测之，绳多4尺，若将绳四
+    折测之，绳多1尺。求绳长，井深各几何?
+    \item 今卖牛二、羊五，可买猪十三，尚余钱一千；若卖
+      牛三、猪三，恰可买羊九；若卖羊六，猪八，只能买牛五，
+      还欠钱六百。试问:牛、羊、猪的单价各是多少?
+\end{enumerate}
+
+
+  \item 由海里提出40升海水，经化验知道其中含清水36.6
+升；在这40升海水中又增添了若干清水后，再从中提出40
+升，经化验后知道，这时含清水38升。试求:增添了多少清
+  水?
+
+\end{enumerate}
+
